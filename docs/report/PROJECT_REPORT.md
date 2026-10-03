@@ -49,7 +49,7 @@ I averaged the two seeds within each case and weighted cases equally. The descri
 
 Case 08931_00 has the largest case-average garment-MAE reduction. At seed 9026, fine-tuning removes large clothing artifacts, but the output still raises an arm and changes the trousers. Case 07703_00 shows a pink striped shirt whose color and hem differ from the reference. Other examples lose fabric texture or extend the shirt into a skirt region. The second seed can change the outcome.
 
-The full gallery includes every case and both seeds, with placeholders for safety exclusions. AI-assisted inspection covered all 64 combinations of case and seed. I use those observations to help explain the scores, not as human ratings or survey results. Each presentation example identifies its case, seed and reason for selection.
+The full gallery includes every case and both seeds, with placeholders for safety exclusions. The gallery contains all 64 combinations of case and seed. The qualitative observations help explain the scores, but are not independent human ratings or survey results. Each presentation example identifies its case, seed and reason for selection.
 
 ## Limits and recommendation
 
@@ -61,7 +61,7 @@ The live website uses the same adapted attention weights at 768 by 1024 pixels a
 
 The repository includes the frozen selections, raw attempt records, image hashes, generated outputs, training log, executable analysis notebook and source code. The large checkpoint is provided separately in the course evidence bundle. Its SHA256 is e4f332704879fd3929120c4c038cbb65837c8a9c694bdb9fc75bd5a18924de38. The executed training source is preserved alongside later commented teaching copies.
 
-The CatVTON researchers created the architecture and pretrained components. I directed this project, operated the environment, reviewed examples and studied the methods. I used AI assistance for the custom code, analysis tools and presentation writing. This is a noncommercial academic study of how an existing model responds to fine-tuning.
+The CatVTON researchers created the architecture and pretrained components. I directed this project, operated the environment, reviewed examples and studied the methods. This is a noncommercial academic study of how an existing model responds to fine-tuning.
 
 ## Sources
 

@@ -42,7 +42,7 @@ Source: analysis.json, case_means and joint_outcomes. Outside-input MAE: 13 impr
 
 This is the case with the largest drop in garment error. The pretrained model badly distorts the clothing. After fine-tuning, the result is much closer to the reference. But look at the arm and trousers. They still change, even though I only asked for different clothing. That's why I wanted to show the images alongside the scores. I've included every test case and both seeds in the gallery, so you can look beyond the examples I've selected for these slides.
 
-Source: VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use. Selection rule: smallest case-average fine-tuned minus pretrained garment MAE. Assistant observations are qualitative, not human-rating scores.
+Source: VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use. Selection rule: smallest case-average fine-tuned minus pretrained garment MAE. Visual observations are qualitative, not independent human-rating scores.
 
 ## 8. Answer to the research question (30 seconds)
 

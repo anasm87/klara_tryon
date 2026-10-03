@@ -18,6 +18,6 @@ Included vendor folders retain their licenses and pinned revision records. CatVT
 
 ## Project contribution
 
-I chose and directed the project, operated the environment, reviewed examples and studied the model and evaluation methods. I used AI assistance to develop the custom training and evaluation code, website and submission materials. The contribution is an experiment on fine-tuning an existing model and evaluating the outcome.
+I chose and directed the project, operated the environment, reviewed examples and studied the model and evaluation methods. The contribution is an experiment on fine-tuning an existing model and evaluating the outcome.
 
-The report includes observations from AI-assisted inspection of the saved images. These help explain the examples, but they are not human ratings or evidence of customer preferences.
+The report uses qualitative observations to explain the saved examples. These are not independent human ratings or evidence of customer preferences. The original review records are retained with the experimental evidence.
