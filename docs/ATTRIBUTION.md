@@ -20,4 +20,4 @@ Included vendor folders retain their licenses and pinned revision records. CatVT
 
 I chose and directed the project, operated the environment, reviewed examples and studied the model and evaluation methods. The contribution is an experiment on fine-tuning an existing model and evaluating the outcome.
 
-The report uses qualitative observations to explain the saved examples. These are not independent human ratings or evidence of customer preferences. The original review records are retained with the experimental evidence.
+The presentation uses qualitative observations to explain the saved examples. These are not independent human ratings or evidence of customer preferences. The original review records are retained with the experimental evidence.

@@ -9,6 +9,7 @@ __pycache__/
 *.pt
 *.ckpt
 *.zip
+!evidence/source-at-run.zip
 *.tar.gz
 login.json
 app-auth.json
@@ -27,3 +28,9 @@ slides.json
 *.html
 MANIFEST-SHA256.json
 BUNDLE_MANIFEST-SHA256.json
+
+# Local reruns and original-resolution downloads
+runs/
+data/edit-data/samples/
+data/edit-data/qa-*.jpg
+data/final-test-data/samples/

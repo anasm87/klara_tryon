@@ -1,83 +1,100 @@
 # Klara: can we trust the clothing preview?
 
-**A data-science project by Anas Mhana, WBS Coding School DS#055.**
+**Anas Mhana | WBS Coding School DS#055**
 
-When I tried the clothing examples in Klara, some results looked good at first. A closer look showed the wrong color or extra clothing that I hadn't asked for. I wanted to understand whether fine-tuning the model could make the preview more faithful to the garment.
+Some of my first virtual try-on results looked convincing until I noticed the wrong color or clothing I had not requested. That led to one question: **does fine-tuning CatVTON-MaskFree's existing self-attention weights improve garment reconstruction while preserving the person and background?**
 
-I investigated one question: **does fine-tuning CatVTON-MaskFree's existing self-attention weights improve garment reconstruction while preserving the person and background?** This project is for developers building virtual clothing previews for online shoppers.
-
-**Explore:** [Presentation](docs/final/Klara_Final.pdf) · [Analysis notebook](notebooks/Klara_Final_Study.ipynb) · [Read the code](docs/CODE_MAP.md) · [Reproduce the results](REPRODUCE.md)
+[Final presentation](docs/final/Klara_Final.pdf) | [Executed analysis notebook](notebooks/Klara_Final_Study.ipynb) | [Research demo](https://klara-app.de)
 
 ## A working example
 
-![Input person, requested black shirt, pretrained output, fine-tuned output and original reference. The fine-tuned output retains the orange trousers and more closely matches the requested shirt.](docs/examples/working-example.png)
+![Person input, requested garment, pretrained output, fine-tuned output and reference photograph.](docs/examples/working-example.png)
 
-The fine-tuned model puts the requested black shirt on the person while retaining the orange trousers and pose. The pretrained output changes the trousers and introduces other visible differences. This is a saved output from the final test, not a retouched demonstration image.
+The requested black shirt replaces the red top while the orange trousers remain recognizable. This is a saved test output. I selected case `11215_00`, seed `9026`, because it has the lowest fine-tuned garment error among the 11 cases that improved both garment and preservation error. It shows what worked; it does not represent every result.
 
-Case `11215_00`, seed `9026`. I selected it because it has the lowest fine-tuned garment MAE among the 11 cases that improved both garment and outside-clothing error. It is a selected success, not a claim that every preview works this well. The results below use all 27 complete paired cases.
-
-## What I found
-
-On the final test, average garment error fell **15.6%**, with improvement in **21 of 27 complete paired cases**. The preservation result was mixed: average outside-clothing error fell, but **14 of 27 cases became worse** on that measure. The improvement matters, but I would still want someone to inspect the preview before trusting it.
+## What the experiment showed
 
 | Measure | Pretrained | Fine-tuned | Cases improved |
 |---|---:|---:|---:|
-| Garment MAE, lower is better | 0.13355 | 0.11270 | 21 / 27 |
-| Garment SSIM, higher is better | 0.40831 | 0.47388 | 23 / 27 |
-| Outside-clothing MAE to input, lower is better | 0.04769 | 0.03534 | 13 / 27 |
+| Garment MAE (lower) | 0.13355 | 0.11270 | 21 / 27 |
+| Garment SSIM (higher) | 0.40831 | 0.47388 | 23 / 27 |
+| Outside-clothing MAE to input (lower) | 0.04769 | 0.03534 | 13 / 27 |
 
-![Each point compares garment error with preservation error for one final-test case.](docs/final/preservation-tradeoff.svg)
+Average garment error fell **15.6%**. However, **14 of 27 cases became worse outside the clothing**, even though that measure improved on average. Only 11 cases improved on both measures.
 
-MAE measures pixel differences, so a lower value is better. SSIM measures structural similarity, so a higher value is better. Neither tells us whether the garment would physically fit.
+![Paired garment and preservation differences; each point is one test case.](docs/final/preservation-tradeoff.svg)
 
-I tested 32 cases with two models and two fixed random seeds, giving 128 attempts. The safety checker excluded six attempts across five cases. That left 27 cases with all four outputs available. I kept those exclusions without retrying and averaged the two seeds within each case.
+I would keep this as a research prototype. Better clothing reconstruction alone does not make a preview reliable. The presentation includes a failure where the clothing improves but the arm and trousers still change.
 
-## Where improvement still falls short
+## Method
 
-![Input person, requested white top, pretrained output, fine-tuned output and reference. Fine-tuning improves the clothing but still changes the arm pose and trousers.](docs/examples/remaining-failure.png)
+- **Data:** VITON-HD and VITON-HD-edit: edited person input, requested garment, original reference photograph, and evaluation masks.
+- **Split:** 1,000 training cases, 64 validation cases and 32 final-test cases. These are custom splits within the original VITON-HD test partition, not an official benchmark.
+- **Training:** three epochs, 3,000 updates, batch size 1, AdamW at `1e-5`. Only the existing self-attention parameters learn: **49,574,080 weights and biases in 16 modules**. The VAE and other U-Net weights stay frozen.
+- **Objective:** predict the known noise added to the target-and-garment latent canvas. The final run uses ordinary noise MSE, without a regional preservation penalty.
+- **Comparison:** both models use 384 x 512 images, 20 DDIM steps, guidance 2.5, eta 1.0 and seeds 9026/9027. Masks define measurement regions for MAE and SSIM; they are not inputs to the generator.
+- **Analysis:** average the two seeds within each case, then compare models within that case. There were 128 attempts and 122 saved images. Six safety exclusions affected five cases, leaving 27 complete paired cases without retries.
 
-Case `08931_00`, seed `9026`, had the largest case-average reduction in garment error. Yet the fine-tuned result still changes the arm and trousers. Looking at this alongside the working example explains why I report reconstruction and preservation separately.
+## Repository
 
-## The experiment
+| Folder | Contents |
+|---|---|
+| [code/](code/) | Data preparation, training, generation and image analysis |
+| [notebooks/](notebooks/) | One executed notebook explaining the results |
+| [data/](data/) | Fixed case selections and original download/verification records |
+| [evidence/](evidence/) | Training log, final-test images, references and recorded scores |
+| [docs/](docs/) | Presentation PDF, README visuals and attribution |
 
-- **Data:** VITON-HD and VITON-HD-edit. Each case has an edited person image, catalog garment, original reference photograph and evaluation masks.
-- **Split:** 1,000 training cases, 64 validation cases and 32 final-test cases. This custom split reuses the original VITON-HD test partition; it is not an official benchmark result.
-- **Adaptation:** 49,574,080 parameters in 16 existing self-attention modules. The VAE and other U-Net weights stayed frozen.
-- **Training:** three epochs, 3,000 AdamW updates, batch size 1, learning rate 0.00001, noise-prediction MSE. The optional preservation loss had weight zero.
-- **Final evaluation:** 384×512 images, 20 DDIM steps, guidance 2.5, eta 1.0, seeds 9026 and 9027. Both models used the same settings.
+The main path is [training_core.py](code/training/training_core.py) | [train_1000.py](code/training/train_1000.py) | [evaluate_final_1000.py](code/training/evaluate_final_1000.py) | [analyze.py](code/analyze.py). Image metrics are in [metrics.py](code/metrics.py); paired comparisons are in [paired_statistics.py](code/paired_statistics.py).
 
-## Start here
+## Reproduce the results on a CPU
 
-1. [Final presentation](docs/final/Klara_Final.pdf).
-2. [Research report](docs/report/PROJECT_REPORT.md), with the full method and limitations.
-3. [Executed analysis notebook](notebooks/Klara_Final_Study.ipynb).
-4. [Code map](docs/CODE_MAP.md) and [reproduction guide](REPRODUCE.md).
-
-All final-test outputs and their references are in [the evidence folder](evidence/final-test-1000-01). The executed notebook explains the paired results and links them to the experiment records.
-
-The repository has four main parts: `code/` for the research implementation, `data/` for fixed plans and provenance, `evidence/` for recorded runs and outputs, and `notebooks/` for the executed analysis. `docs/` contains the presentation, report and attribution. The website source and personal teaching notes are kept separately; they are not needed to reproduce these scores.
-
-The live research demo is [klara-app.de](https://klara-app.de). It needs the GPU server and an access code provided separately. The site uses the trained checkpoint at 768×1024 and 50 steps, so the controlled research scores do not directly measure website quality.
-
-## Reproduce the analysis
-
-Use Python 3.10 or newer in an activated virtual environment, from the repository root:
+From the repository root, using Python 3.12 in a virtual environment:
 
 ```bash
 python -m pip install -r notebooks/requirements.txt
-python code/analyze_final_1000.py --output evidence/final-test-1000-01 --plan data/final-evaluation-plan.json --evaluator code/training-feasibility/evaluate_final_1000.py
+python code/analyze.py
 ```
 
-This recomputes the image metrics and paired analysis on a CPU. It makes no model, cloud or paid API calls. The notebook also checks the recorded training epochs. The large attention checkpoint is available separately on request; its hash and loading instructions are in [CHECKPOINT.md](CHECKPOINT.md).
+This verifies the saved image hashes and recomputes the scores and paired statistics. It does not download models, call the website or overwrite the original evidence. The notebook also checks the three complete training epochs.
 
-## Where I would be careful
+All final generated images and research-resolution references are included. Original-resolution inputs can be downloaded again with the preparation scripts; source revisions and download receipts remain in `data/`.
 
-These inputs are edited versions of reference photographs. They cover a limited range of people, poses and garments. I checked source IDs and exact image duplicates, but that doesn't prove that different splits contain different people, or that the pretrained model has never seen related images.
+<details>
+<summary>GPU reproduction and checkpoint</summary>
 
-The final comparison is small and leaves out cases with incomplete outputs. That can affect the result. The final model comes from one training run, so I don't know how much a different training seed would change the outcome. The image scores cannot establish realism, correct logos, identity preservation, sizing or customer preference.
+The recorded run used Python 3.10, PyTorch 2.8.0+cu128 and an NVIDIA L4. In a compatible CUDA environment:
 
-## Attribution and contribution
+```bash
+python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install -r code/training/requirements.txt
+python code/training/prepare_1000_data.py
+python code/training/train_1000.py --preflight
+python code/training/train_1000.py --output training-rerun
+```
 
-The CatVTON researchers created the model. This project builds on their work using PyTorch and Hugging Face Diffusers. My contribution is the fine-tuning experiment, its evaluation and the web demonstration. I directed the project, operated the environment, reviewed examples and studied how the model works.
+The loader verifies the fixed selection, files, source groups and recorded sample-review coverage. Investigate changed verification records rather than replacing review decisions. New runs go in ignored `runs/` folders.
 
-[Sources, licenses and data attribution](docs/ATTRIBUTION.md). Noncommercial academic research. Third-party code and images retain their original terms.
+The trained attention checkpoint is about 190 MiB and available separately on request. Its SHA-256 is `e4f332704879fd3929120c4c038cbb65837c8a9c694bdb9fc75bd5a18924de38`.
+
+To regenerate the final comparison, place `attention-adapter.safetensors` in `evidence/training-1000-01/`, then run:
+
+```bash
+python code/training/prepare_final_1000_data.py
+python code/training/evaluate_final_1000.py --preflight
+python code/training/evaluate_final_1000.py
+```
+
+This evaluator requires the recorded checkpoint. A new checkpoint needs a separate evaluation plan. The loader builds pinned pretrained components; `apply_adapter()` then copies the saved attention weights into the U-Net.
+
+The readable source is narrowed to the final experiment. [source-at-run.zip](evidence/source-at-run.zip) preserves the exact training, loss, evaluation and metric files whose hashes occur in the original records. Those records remain unchanged. The simplified code was checked on CPU against the original loss and recorded image scores; the GPU training run was not repeated for this cleanup.
+
+</details>
+
+## Limits and contribution
+
+The data contains edited reference photographs and a limited range of people, poses and garments. Duplicate and source-group checks cannot establish identity-disjoint splits or absence of upstream training exposure. One training run, a small test and excluded outputs limit the conclusion. Pixel scores do not establish physical fit, realism or customer preference.
+
+CatVTON's authors created the pretrained architecture and weights. My project investigates an attention-only adaptation, evaluates its trade-offs and demonstrates the checkpoint through a web app. The demo requires a running GPU server and an access code. It uses a higher resolution and 50 steps, so these research scores do not directly measure website quality.
+
+[Data, model and code attribution](docs/ATTRIBUTION.md). Noncommercial academic research; upstream licenses and credits are retained.
