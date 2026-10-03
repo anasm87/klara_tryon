@@ -12,8 +12,6 @@ Start with the experiment and follow one example through it.
 | `code/training-feasibility/evaluate_final_1000.py` | Two-model generation with fixed cases and seeds |
 | `code/analyze_edit_evaluation.py` | Exact regional MAE and SSIM definitions |
 | `code/analyze_final_1000.py` | Output verification and the final paired analysis |
-| `code/website/studio_engine.py` | Load pretrained components, replace attention weights, generate on demand |
-| `code/website/studio.py` | HTTP requests, sessions and generation jobs |
 | `notebooks/Klara_Final_Study.ipynb` | Reproduce the scientific results in one place |
 
-`evidence/executed-training-source/` preserves the source actually hashed in the training record. `code/` also includes teaching comments added later. Earlier small-data experiments remain outside this focused submission.
+`evidence/executed-training-source/` preserves the source actually hashed in the training record. The research model loader and evaluator are included here; the optional website implementation is maintained separately. Earlier small-data experiments remain outside this focused submission.

@@ -15,3 +15,15 @@ app-auth.json
 studio-jobs/
 *.pem
 *_ed25519
+# Local presentation preparation and learning material
+private/
+Klara_Private/
+*_explained.py
+SPEAKER_NOTES.md
+REHEARSAL.md
+JURY_QUESTIONS.md
+SUBMISSION_CHECKLIST.md
+slides.json
+*.html
+MANIFEST-SHA256.json
+BUNDLE_MANIFEST-SHA256.json

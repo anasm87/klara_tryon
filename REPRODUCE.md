@@ -16,14 +16,14 @@ See CHECKPOINT.md for the trained attention weights. The pretrained VAE and diff
 
 The original training runner expects the data and evidence layout described in code/training-feasibility/data_1000.py. Frozen selections and download receipts live in data/. The pinned upstream dataset is NXN-Labs/VITON-HD-edit, revision 9de94ee10e15f5069fd650ce4c914215f124eb6f. Full training photographs are not bundled. prepare_1000_data.py documents their retrieval and verification. It expects the original experiment directory layout; copying it to a new machine requires arranging that layout first.
 
-The GPU environment used PyTorch 2.8.0+cu128 on an NVIDIA L4. Additional pinned dependencies are in code/training-feasibility/requirements.txt. Source snapshots of train_1000.py and training_core.py actually used for training are in evidence/executed-training-source/. Commented teaching copies in code/ have the same intended behavior but do not necessarily have the same source hash.
+The GPU environment used PyTorch 2.8.0+cu128 on an NVIDIA L4. Additional pinned dependencies are in code/training-feasibility/requirements.txt. Source snapshots of train_1000.py and training_core.py actually used for training are in evidence/executed-training-source/. These snapshots preserve the exact source hashes recorded by the run.
 
 The included run_final_1000.sh records how the final evaluation ran on the original VM. It references that VM's paths and systemd studio service, so it is not a portable one-command setup script. The test cases have now been evaluated; tuning against them would require a new held-out test for future claims.
 
 ## Website
 
-code/website/ contains the server, authentication module, model engine and static interface. Authentication configuration and user uploads are deliberately absent. The engine expects the verified adapter in models/attention-adapter.safetensors or at KLARA_ADAPTER_PATH. The README in that directory explains the source snapshot and preview command.
+The optional demonstration is at https://klara-app.de, with access provided separately. The website implementation is maintained separately from this research repository. Neither the website nor a GPU is required to reproduce the recorded results. The research source includes the model loading and generation code used by the controlled evaluation.
 
 ## Integrity
 
-MANIFEST-SHA256.json records the hand-in files. The checkpoint has its own recorded digest. Source-data receipts and raw attempt hashes provide the link from inputs to outputs. The original training run.json retains its historical “evaluation pending” status; final-test-1000-01/results.json records the later completed evaluation. Historical run records have not been rewritten to change that chronology.
+The checkpoint has its own recorded digest. Source-data receipts and raw attempt hashes provide the link from inputs to outputs. The original training run.json retains its historical “evaluation pending” status; final-test-1000-01/results.json records the later completed evaluation. Historical run records have not been rewritten to change that chronology.

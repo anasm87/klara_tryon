@@ -1,8 +1,0 @@
-{
-  "code_revision": "7818397f25613beedb3d861a34769f607cfcf3b1",
-  "models": {
-    "zhengchong/CatVTON-MaskFree": "b034d7700d6bf0e8ae1c01f9398f2eb54df5f52a",
-    "timbrooks/instruct-pix2pix": "31519b5cb02a7fd89b906d88731cd4d6a7bbf88d",
-    "stabilityai/sd-vae-ft-mse": "31f26fdeee1355a5c34592e401dd41e45d25a493"
-  }
-}

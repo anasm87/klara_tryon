@@ -32,13 +32,12 @@ I tested 32 cases with two models and two fixed random seeds, giving 128 attempt
 
 ## Start here
 
-1. [Final presentation](docs/final/Klara_Final.pdf) and [speaker notes](docs/final/SPEAKER_NOTES.md).
+1. [Final presentation](docs/final/Klara_Final.pdf).
 2. [Research report](docs/report/PROJECT_REPORT.md), with the full method and limitations.
 3. [Executed analysis notebook](notebooks/Klara_Final_Study.ipynb).
-4. [MVP presentation](docs/mvp/Klara_Mvp.pdf), focused on the question and experimental design.
-5. [Code map](docs/CODE_MAP.md) and [reproduction guide](REPRODUCE.md).
+4. [Code map](docs/CODE_MAP.md) and [reproduction guide](REPRODUCE.md).
 
-After cloning or downloading the repository, open `demo/index.html` for the complete recorded gallery. It works offline. GitHub's normal file view does not run the HTML application.
+All final-test outputs and their references are in [the evidence folder](evidence/final-test-1000-01). The executed notebook explains the paired results and links them to the experiment records.
 
 The live research demo is [klara-app.de](https://klara-app.de). It needs the GPU server and an access code provided separately. The site uses the trained checkpoint at 768×1024 and 50 steps, so the controlled research scores do not directly measure website quality.
 
@@ -51,7 +50,7 @@ python -m pip install -r notebooks/requirements.txt
 python code/analyze_final_1000.py --output evidence/final-test-1000-01 --plan data/final-evaluation-plan.json --evaluator code/training-feasibility/evaluate_final_1000.py
 ```
 
-This recomputes the image metrics and paired analysis on a CPU. It makes no model, cloud or paid API calls. The notebook also checks the recorded training epochs. The large attention checkpoint is supplied separately in the course evidence bundle; its hash and loading instructions are in [CHECKPOINT.md](CHECKPOINT.md).
+This recomputes the image metrics and paired analysis on a CPU. It makes no model, cloud or paid API calls. The notebook also checks the recorded training epochs. The large attention checkpoint is available separately on request; its hash and loading instructions are in [CHECKPOINT.md](CHECKPOINT.md).
 
 ## Where I would be careful
 

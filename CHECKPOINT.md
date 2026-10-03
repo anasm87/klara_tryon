@@ -7,6 +7,6 @@ The website uses the 1,000-case checkpoint, not the older small-data experiment.
 - Training: 1,000 cases, three epochs, 3,000 updates.
 - Scope: selected existing U-Net self-attention weights, 49,574,080 parameters.
 
-The large binary is excluded from ordinary Git history. Anas provides it in the accompanying course evidence bundle, under `evidence/training-1000-01/attention-adapter.safetensors`. Copy it to the same relative path here to enable the notebook's optional weight-file hash check. The model still needs the pinned pretrained components listed in the reproduction guide.
+The large binary is excluded from ordinary Git history and the compact presentation hand-in. It is available separately from Anas on request. Place it at `evidence/training-1000-01/attention-adapter.safetensors` to enable the notebook's optional weight-file hash check. The model still needs the pinned pretrained components listed in the reproduction guide.
 
-For an external reader without the bundle, all recorded image measurements and outputs remain available to reproduce the final analysis. Contact the repository owner for the research checkpoint, subject to the upstream model terms.
+All recorded image measurements and outputs remain available to reproduce the final analysis without this binary. Contact the repository owner for the research checkpoint, subject to the upstream model terms.
