@@ -1,0 +1,61 @@
+{
+  "stable-diffusion-v1-5/stable-diffusion-inpainting": {
+    "revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "feature_extractor/preprocessor_config.json",
+      "model_index.json",
+      "safety_checker/config.json",
+      "safety_checker/model.fp16.safetensors",
+      "safety_checker/pytorch_model.bin",
+      "safety_checker/pytorch_model.fp16.bin",
+      "scheduler/scheduler_config.json",
+      "sd-v1-5-inpainting.ckpt",
+      "text_encoder/config.json",
+      "text_encoder/model.fp16.safetensors",
+      "text_encoder/pytorch_model.bin",
+      "text_encoder/pytorch_model.fp16.bin",
+      "tokenizer/merges.txt",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "unet/config.json",
+      "unet/diffusion_pytorch_model.bin",
+      "unet/diffusion_pytorch_model.fp16.bin",
+      "unet/diffusion_pytorch_model.fp16.safetensors",
+      "vae/config.json",
+      "vae/diffusion_pytorch_model.bin",
+      "vae/diffusion_pytorch_model.fp16.bin",
+      "vae/diffusion_pytorch_model.fp16.safetensors"
+    ]
+  },
+  "zhengchong/CatVTON": {
+    "revision": "2969fcf85fe62f2036605716f0b56f0b81d01d79",
+    "files": [
+      ".gitattributes",
+      "DensePose/Base-DensePose-RCNN-FPN.yaml",
+      "DensePose/densepose_rcnn_R_50_FPN_s1x.yaml",
+      "DensePose/model_final_162be9.pkl",
+      "README.md",
+      "SCHP/exp-schp-201908261155-lip.pth",
+      "SCHP/exp-schp-201908301523-atr.pth",
+      "config.json",
+      "dresscode-16k-512/attention/model.safetensors",
+      "flux-lora/pytorch_lora_weights.safetensors",
+      "mix-48k-1024/attention/model.safetensors",
+      "vitonhd-16k-512/attention/model.safetensors"
+    ]
+  },
+  "stabilityai/sd-vae-ft-mse": {
+    "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "diffusion_pytorch_model.bin",
+      "diffusion_pytorch_model.safetensors"
+    ]
+  }
+}

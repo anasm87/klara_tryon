@@ -1,0 +1,31 @@
+{
+  "status": "sample-reviewed-no-blocking-technical-anomaly",
+  "reviewer_type": "assistant_visual_inspection",
+  "verification_sha256": "e5db1ec79a65a33bffb19a32c4905c3afe71dbc1227c312fcae81fc5db98b853",
+  "sample_ids": [
+    "02660_00",
+    "08800_00",
+    "10680_00",
+    "09644_00",
+    "10402_00",
+    "00008_00",
+    "10078_00",
+    "14181_00",
+    "03696_00",
+    "10562_00",
+    "10679_00",
+    "10495_00",
+    "13728_00",
+    "12822_00"
+  ],
+  "coverage": "14 predetermined cases: 10 training and 4 validation; not all 1064 cases",
+  "artifacts": [
+    "qa-1.jpg",
+    "qa-2.jpg",
+    "qa-3.jpg",
+    "qa-4.jpg"
+  ],
+  "findings": "Inspected edited source, catalog garment, original target and target mask. Catalog garments match target clothing; masks broadly cover the target garments. Edits include sleeve/neckline changes and some changes around arms or pose; these are dataset limitations, not grounds for selecting easier cases.",
+  "exclusions": [],
+  "limitations": "Contact-sheet resolution; no identity-disjointness claim, no inspection of every case, no independent human ratings. Input masks technically decoded but not included in these contact sheets."
+}

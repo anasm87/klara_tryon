@@ -1,0 +1,5 @@
+# Preserve exact bytes: experimental records and source hashes are verified.
+* -text
+*.png binary
+*.jpg binary
+*.pdf binary

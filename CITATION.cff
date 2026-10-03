@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite the upstream CatVTON and data sources as well as this project when using the work."
+title: "Klara: Evaluating Attention Fine-Tuning for AI Virtual Try-On"
+authors:
+  - family-names: Mhana
+    given-names: Anas
+date-released: 2026-10-03
+repository-code: "https://github.com/anasm87/klara_tryon"

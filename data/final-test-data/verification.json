@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "plan_sha256": "e189f29e940dd09c245f3d4632d34065818b663cc5be0a860689a36f53de9d96",
+  "cases": 32,
+  "files_decoded": 160,
+  "development_images_checked": 3192,
+  "cross_split_exact_duplicates": 0,
+  "receipt_sha256": "5a1547657f54410d5d9bc6dd154584737117ccacbc631d1aef2aa4d21f8cd216",
+  "identity_disjoint": "unverified",
+  "generation_started": false
+}

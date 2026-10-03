@@ -1,0 +1,1346 @@
+[
+  {
+    "id": "10832_00",
+    "group": "10832_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/10832_00/person.jpg",
+        "source": "test/image-edit/10832_00.jpg",
+        "provider": "hf",
+        "sha256": "d11cc20ceb47d8654b117fd5201f21fa48741102ccae5710bf6457bd4bc96da0",
+        "bytes": 124469
+      },
+      {
+        "file": "samples/10832_00/garment.jpg",
+        "source": "test/cloth/10832_00.jpg",
+        "provider": "zip",
+        "sha256": "06963b56e61c6af20cf948d6b010fe80f7161cff301cf790a5cf19e3b3e02d2c",
+        "bytes": 238833
+      },
+      {
+        "file": "samples/10832_00/target.jpg",
+        "source": "test/image/10832_00.jpg",
+        "provider": "zip",
+        "sha256": "cfe82e9a29ae8bcc32dedd602d752d43b6adb716250dccbee7a3eaaeb145a0ae",
+        "bytes": 140160
+      },
+      {
+        "file": "samples/10832_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/10832_00.png",
+        "provider": "hf",
+        "sha256": "3b80a350f25ac020f0e4c56d0a7650750f28a694dd456d75e0af1c8e2f6e3f95",
+        "bytes": 8420
+      },
+      {
+        "file": "samples/10832_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/10832_00.png",
+        "provider": "hf",
+        "sha256": "822bca9deb8b25569ffcc311326ec9acb5eeed2834386a827ad52a6a213ece66",
+        "bytes": 10788
+      }
+    ]
+  },
+  {
+    "id": "12219_00",
+    "group": "12219_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/12219_00/person.jpg",
+        "source": "test/image-edit/12219_00.jpg",
+        "provider": "hf",
+        "sha256": "93cbda05505d292b9475021ba0747edbe41a440531b707fb047661a4a956d997",
+        "bytes": 115736
+      },
+      {
+        "file": "samples/12219_00/garment.jpg",
+        "source": "test/cloth/12219_00.jpg",
+        "provider": "zip",
+        "sha256": "4c84a26e23521bf759fe71babdcd1fc21a7d1ca4dee14d56b8a843b8f23553a0",
+        "bytes": 118641
+      },
+      {
+        "file": "samples/12219_00/target.jpg",
+        "source": "test/image/12219_00.jpg",
+        "provider": "zip",
+        "sha256": "269801fa61c04054d5f20ac289634420fef497236e1eaa50c3713ca7b05ce727",
+        "bytes": 106058
+      },
+      {
+        "file": "samples/12219_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/12219_00.png",
+        "provider": "hf",
+        "sha256": "caa6b7488872c15c7f7d69d97a1bb699a335102736602f702bbef934cedab606",
+        "bytes": 8768
+      },
+      {
+        "file": "samples/12219_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/12219_00.png",
+        "provider": "hf",
+        "sha256": "8778448fd4b0b9bfb2d3977401ffa8586acc61b5c196669f0ddfa3d4d07e205a",
+        "bytes": 8357
+      }
+    ]
+  },
+  {
+    "id": "11215_00",
+    "group": "11215_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/11215_00/person.jpg",
+        "source": "test/image-edit/11215_00.jpg",
+        "provider": "hf",
+        "sha256": "4461f548217570f1737734fecad7b3d0974d8975c0e828b2985e885f879b7dd6",
+        "bytes": 172750
+      },
+      {
+        "file": "samples/11215_00/garment.jpg",
+        "source": "test/cloth/11215_00.jpg",
+        "provider": "zip",
+        "sha256": "96f73ad55e3ed70835e1d39520f6cf47110c7da75af87108e0f17668e4b47290",
+        "bytes": 85582
+      },
+      {
+        "file": "samples/11215_00/target.jpg",
+        "source": "test/image/11215_00.jpg",
+        "provider": "zip",
+        "sha256": "eb2f24bc640fd4d14ba1297f1018e6a40acdaab43f7954b406a8f6bb60f763ba",
+        "bytes": 116139
+      },
+      {
+        "file": "samples/11215_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/11215_00.png",
+        "provider": "hf",
+        "sha256": "fb98340c8344d30dfa55a0ad98b276ab097fb043a6a124e6d673ad8318f4964d",
+        "bytes": 10919
+      },
+      {
+        "file": "samples/11215_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/11215_00.png",
+        "provider": "hf",
+        "sha256": "6239fe902c822a36433d256cdde9bb8867069388daa6b271d5f8818fd1645cfa",
+        "bytes": 12501
+      }
+    ]
+  },
+  {
+    "id": "02327_00",
+    "group": "02327_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/02327_00/person.jpg",
+        "source": "test/image-edit/02327_00.jpg",
+        "provider": "hf",
+        "sha256": "118c5d83e1917dba52f66ea7c6b8e78964c845b6b7768f213a2aafc83eb46261",
+        "bytes": 213526
+      },
+      {
+        "file": "samples/02327_00/garment.jpg",
+        "source": "test/cloth/02327_00.jpg",
+        "provider": "zip",
+        "sha256": "80e65c214957b1e930144de3fb01f3c9493248fd2711d4c965553fca6edb0d53",
+        "bytes": 123609
+      },
+      {
+        "file": "samples/02327_00/target.jpg",
+        "source": "test/image/02327_00.jpg",
+        "provider": "zip",
+        "sha256": "0914d9c6204d969117e1234075d3e5ea1684277b61b3ee7d7e1dd60d7f60f57c",
+        "bytes": 190174
+      },
+      {
+        "file": "samples/02327_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/02327_00.png",
+        "provider": "hf",
+        "sha256": "cb99a1df71e929e9727c6269e234318461a6c69d786e78dac92ff368d67918f4",
+        "bytes": 18376
+      },
+      {
+        "file": "samples/02327_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/02327_00.png",
+        "provider": "hf",
+        "sha256": "39a9c3e91c2e7a1323cff9dd045d9995d305022ea103564eff2ebcd5f73bc0c0",
+        "bytes": 15646
+      }
+    ]
+  },
+  {
+    "id": "07365_00",
+    "group": "07365_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/07365_00/person.jpg",
+        "source": "test/image-edit/07365_00.jpg",
+        "provider": "hf",
+        "sha256": "77cf36a5c69de3c9c6d600d7d3a6003246939ad6693b1b2d3c19f63f987b20bf",
+        "bytes": 147641
+      },
+      {
+        "file": "samples/07365_00/garment.jpg",
+        "source": "test/cloth/07365_00.jpg",
+        "provider": "zip",
+        "sha256": "1ec89e7d01beb2935cdd04163c269453d35a7592f24281218a45b8fd7b13a20d",
+        "bytes": 73002
+      },
+      {
+        "file": "samples/07365_00/target.jpg",
+        "source": "test/image/07365_00.jpg",
+        "provider": "zip",
+        "sha256": "afbc1f6d918aa75cc48c1db72c017ea2de20a36778e831411acd300d9b0b585d",
+        "bytes": 107585
+      },
+      {
+        "file": "samples/07365_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/07365_00.png",
+        "provider": "hf",
+        "sha256": "6342555b12dedc08a51087dae5fcb364b216b585f99fb97c4ee24371b6d2638f",
+        "bytes": 8250
+      },
+      {
+        "file": "samples/07365_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/07365_00.png",
+        "provider": "hf",
+        "sha256": "b7826b200730802784acf9605a456fdb046f38020ef21ab885f195a708415ffb",
+        "bytes": 10359
+      }
+    ]
+  },
+  {
+    "id": "10901_00",
+    "group": "10901_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/10901_00/person.jpg",
+        "source": "test/image-edit/10901_00.jpg",
+        "provider": "hf",
+        "sha256": "ec75ba32380f6fc2c795baea875d4b8c15ae918de38e8e63ddec90a9a73dcac2",
+        "bytes": 103842
+      },
+      {
+        "file": "samples/10901_00/garment.jpg",
+        "source": "test/cloth/10901_00.jpg",
+        "provider": "zip",
+        "sha256": "fa8a1d317206be4d684a811b3e5099a41e7ffd8e58be0fd21709e27d5d378167",
+        "bytes": 235149
+      },
+      {
+        "file": "samples/10901_00/target.jpg",
+        "source": "test/image/10901_00.jpg",
+        "provider": "zip",
+        "sha256": "d560e80f347505861ce096f7d8a3758937208e93104f11ac40c4a746a328e24f",
+        "bytes": 152593
+      },
+      {
+        "file": "samples/10901_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/10901_00.png",
+        "provider": "hf",
+        "sha256": "67184eb0b1db641c613bb78de25397807fed005513802bdf68e6560f3dd23724",
+        "bytes": 16148
+      },
+      {
+        "file": "samples/10901_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/10901_00.png",
+        "provider": "hf",
+        "sha256": "8319e214666e56898a5c334eb5750b9dca24db155ea246426d75ba5ba325c138",
+        "bytes": 12748
+      }
+    ]
+  },
+  {
+    "id": "06180_00",
+    "group": "06180_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/06180_00/person.jpg",
+        "source": "test/image-edit/06180_00.jpg",
+        "provider": "hf",
+        "sha256": "0e2aa02e153e099af766b140672b210e70fba8eedd96c3415fb7b5c002bdfb29",
+        "bytes": 208106
+      },
+      {
+        "file": "samples/06180_00/garment.jpg",
+        "source": "test/cloth/06180_00.jpg",
+        "provider": "zip",
+        "sha256": "76d9dbd669a81b6105c88d6d54905be7ae85f85c06fbd48e0fe5a9db64b513de",
+        "bytes": 64417
+      },
+      {
+        "file": "samples/06180_00/target.jpg",
+        "source": "test/image/06180_00.jpg",
+        "provider": "zip",
+        "sha256": "a51cf52a8cfe45ff29ab9212edd04ea927d8b3fe6a79810e50aa64819fc42efb",
+        "bytes": 98183
+      },
+      {
+        "file": "samples/06180_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/06180_00.png",
+        "provider": "hf",
+        "sha256": "5dd49ee1ad8ae2c0f49655c9757c995dc9ce248d7b6fd98e020d1962e0f336ab",
+        "bytes": 15708
+      },
+      {
+        "file": "samples/06180_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/06180_00.png",
+        "provider": "hf",
+        "sha256": "dd8b142d5e8209b097d14d6a1574bf89d0dd75e381d2d457be20f8ebb4941d03",
+        "bytes": 19780
+      }
+    ]
+  },
+  {
+    "id": "05562_00",
+    "group": "05562_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/05562_00/person.jpg",
+        "source": "test/image-edit/05562_00.jpg",
+        "provider": "hf",
+        "sha256": "ef5a496a9bebd70c356e4ec9593e17fa704090de37c96d02916e3b7c2db73798",
+        "bytes": 131970
+      },
+      {
+        "file": "samples/05562_00/garment.jpg",
+        "source": "test/cloth/05562_00.jpg",
+        "provider": "zip",
+        "sha256": "e5992609d1cf9e9bb24d33792934e5f3d1010eb162857cc727dff4df71416d16",
+        "bytes": 59355
+      },
+      {
+        "file": "samples/05562_00/target.jpg",
+        "source": "test/image/05562_00.jpg",
+        "provider": "zip",
+        "sha256": "5566dba611b48c69926d8fb39f36829f638dd63b384683eacdc7114c73826acf",
+        "bytes": 99371
+      },
+      {
+        "file": "samples/05562_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/05562_00.png",
+        "provider": "hf",
+        "sha256": "25d7373db88a97ffbea73ac2e556b5fb411e8fb31d0be798d92dbb4e2eaf80e9",
+        "bytes": 7242
+      },
+      {
+        "file": "samples/05562_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/05562_00.png",
+        "provider": "hf",
+        "sha256": "d50f3b6013b5965102970fb393d18baecb4540a57ca0d58d23ed099e81d526ce",
+        "bytes": 8685
+      }
+    ]
+  },
+  {
+    "id": "05966_00",
+    "group": "05966_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/05966_00/person.jpg",
+        "source": "test/image-edit/05966_00.jpg",
+        "provider": "hf",
+        "sha256": "49a9c450d71ade16b000ae53c1886ca9147d4b630a3ec37dc6fa5d3e71fadfe6",
+        "bytes": 149575
+      },
+      {
+        "file": "samples/05966_00/garment.jpg",
+        "source": "test/cloth/05966_00.jpg",
+        "provider": "zip",
+        "sha256": "7c6fe342d4158af9d1d78b5e39e92ba71526e266f350ad506048e2dbe07a08b3",
+        "bytes": 110485
+      },
+      {
+        "file": "samples/05966_00/target.jpg",
+        "source": "test/image/05966_00.jpg",
+        "provider": "zip",
+        "sha256": "63ffae1924e50e4322bb981fb7988c92e988b9e07537ca07e189424ba0179e7a",
+        "bytes": 125431
+      },
+      {
+        "file": "samples/05966_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/05966_00.png",
+        "provider": "hf",
+        "sha256": "6fc03b8c695f03af4dccdfec654093fe54586825f4558130e7a0d9322972a9ad",
+        "bytes": 10872
+      },
+      {
+        "file": "samples/05966_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/05966_00.png",
+        "provider": "hf",
+        "sha256": "919a910aaaf51c500f8d39e9663304610b283e45c2180b365ec6c580cd6ff4cc",
+        "bytes": 14726
+      }
+    ]
+  },
+  {
+    "id": "06110_00",
+    "group": "06110_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/06110_00/person.jpg",
+        "source": "test/image-edit/06110_00.jpg",
+        "provider": "hf",
+        "sha256": "3ac9da87d3a28e7c384da897ed22f34948a019f49c4efab6b85cd27a063d9808",
+        "bytes": 158113
+      },
+      {
+        "file": "samples/06110_00/garment.jpg",
+        "source": "test/cloth/06110_00.jpg",
+        "provider": "zip",
+        "sha256": "00ef25b457db7b2c1275eb0bbd9e8d52c2ff4c81ee39f3d8e9c9958a01eacc67",
+        "bytes": 141509
+      },
+      {
+        "file": "samples/06110_00/target.jpg",
+        "source": "test/image/06110_00.jpg",
+        "provider": "zip",
+        "sha256": "9d10d576a78bcd6468f9a94da33714a788aa23de8d25b03c8d0e142eca800d09",
+        "bytes": 129761
+      },
+      {
+        "file": "samples/06110_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/06110_00.png",
+        "provider": "hf",
+        "sha256": "1318450bfdb868f6ab0ffd214e0a69359bf64d70e6a0a13bae1f5c24b0080075",
+        "bytes": 9232
+      },
+      {
+        "file": "samples/06110_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/06110_00.png",
+        "provider": "hf",
+        "sha256": "e7e2c94b0036fe1f36c6d823f7ea19fdfebc34d4495c5ced629b2e15d0fe7492",
+        "bytes": 13295
+      }
+    ]
+  },
+  {
+    "id": "11626_00",
+    "group": "11626_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/11626_00/person.jpg",
+        "source": "test/image-edit/11626_00.jpg",
+        "provider": "hf",
+        "sha256": "fc8e48b484d5ec6a7cc9f94ea6f381f9767aeaf17cccbd050bb3c568c72fd891",
+        "bytes": 138851
+      },
+      {
+        "file": "samples/11626_00/garment.jpg",
+        "source": "test/cloth/11626_00.jpg",
+        "provider": "zip",
+        "sha256": "33ebdb0f41eb135bfdcd3cdb4b351a676e5268058744860521072e2a66682f90",
+        "bytes": 103449
+      },
+      {
+        "file": "samples/11626_00/target.jpg",
+        "source": "test/image/11626_00.jpg",
+        "provider": "zip",
+        "sha256": "600b95dfeaa70f93729381b69aedddb0ea7762b1b82aa51ff1651d93f390ff56",
+        "bytes": 122832
+      },
+      {
+        "file": "samples/11626_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/11626_00.png",
+        "provider": "hf",
+        "sha256": "98a2a4202fb367daf9754ded5d0c8fa5ef40cd753783f984ff73179a1113c84c",
+        "bytes": 15176
+      },
+      {
+        "file": "samples/11626_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/11626_00.png",
+        "provider": "hf",
+        "sha256": "2e82b8b7f971e563859dd194dd590775828ba1214817ce6152d4521570d30723",
+        "bytes": 15190
+      }
+    ]
+  },
+  {
+    "id": "08863_00",
+    "group": "08863_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/08863_00/person.jpg",
+        "source": "test/image-edit/08863_00.jpg",
+        "provider": "hf",
+        "sha256": "fc7af28a2e281b8d1018687a16f06e0e8eb3664be4b62262c9666fd206ab200b",
+        "bytes": 194505
+      },
+      {
+        "file": "samples/08863_00/garment.jpg",
+        "source": "test/cloth/08863_00.jpg",
+        "provider": "zip",
+        "sha256": "d56d7fcafe21b5a8e777cab86bb9391857640c3fe6654b9d80056c5749d56e18",
+        "bytes": 72942
+      },
+      {
+        "file": "samples/08863_00/target.jpg",
+        "source": "test/image/08863_00.jpg",
+        "provider": "zip",
+        "sha256": "2b9f3a3e42f659ccfca392b9d2372db0c5e91c460dbb5b99a24ad4fc457ae774",
+        "bytes": 125909
+      },
+      {
+        "file": "samples/08863_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/08863_00.png",
+        "provider": "hf",
+        "sha256": "1460c07ab8fc8824dd28811b387d63319a3659a93f59f4a83bb7209dd2589b5e",
+        "bytes": 12096
+      },
+      {
+        "file": "samples/08863_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/08863_00.png",
+        "provider": "hf",
+        "sha256": "8911b805720a22d63a74814736bd6788714f3cf90be55806da65e1ff27feaac9",
+        "bytes": 16929
+      }
+    ]
+  },
+  {
+    "id": "14274_00",
+    "group": "14274_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/14274_00/person.jpg",
+        "source": "test/image-edit/14274_00.jpg",
+        "provider": "hf",
+        "sha256": "12316a09beecc29b2ed33237203e72d55d2905ae3041da5049bc397548cbfe68",
+        "bytes": 100076
+      },
+      {
+        "file": "samples/14274_00/garment.jpg",
+        "source": "test/cloth/14274_00.jpg",
+        "provider": "zip",
+        "sha256": "715d154be12a36c0ceea4e5fe89f6c84c27ac6db3bc0dfe5401746965139a2cd",
+        "bytes": 77325
+      },
+      {
+        "file": "samples/14274_00/target.jpg",
+        "source": "test/image/14274_00.jpg",
+        "provider": "zip",
+        "sha256": "bc2105a010693699978ac751a0c506cd6d17e53bda8896dc53d2eb5ceae7dce2",
+        "bytes": 89287
+      },
+      {
+        "file": "samples/14274_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/14274_00.png",
+        "provider": "hf",
+        "sha256": "19480284d3f06cdf75c227079796f5f196414c83ad1c62cac2d14ce42fe0d8f3",
+        "bytes": 17272
+      },
+      {
+        "file": "samples/14274_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/14274_00.png",
+        "provider": "hf",
+        "sha256": "107d42a47f436c8c40d534c61187370aaf7b9f48e79b94d8e36ab25207ae291a",
+        "bytes": 12818
+      }
+    ]
+  },
+  {
+    "id": "10737_00",
+    "group": "10737_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/10737_00/person.jpg",
+        "source": "test/image-edit/10737_00.jpg",
+        "provider": "hf",
+        "sha256": "24ae518c311b034711b2aff58bc79a3fb3e21dee7ee23eee353f1ffa729bec35",
+        "bytes": 138263
+      },
+      {
+        "file": "samples/10737_00/garment.jpg",
+        "source": "test/cloth/10737_00.jpg",
+        "provider": "zip",
+        "sha256": "7417ceb2f69c509bd362b4af009bf90bd96060c84e88a41797feeb6f4a70431b",
+        "bytes": 221663
+      },
+      {
+        "file": "samples/10737_00/target.jpg",
+        "source": "test/image/10737_00.jpg",
+        "provider": "zip",
+        "sha256": "af0a8ecb2e742d934df3ed79903317e3063ac1a1fb23ebfa343de4151d725105",
+        "bytes": 169331
+      },
+      {
+        "file": "samples/10737_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/10737_00.png",
+        "provider": "hf",
+        "sha256": "8b57e0e65722806aaa6cd8a131803d47967f4e17e1b3f6f7156e61ce03abae01",
+        "bytes": 9236
+      },
+      {
+        "file": "samples/10737_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/10737_00.png",
+        "provider": "hf",
+        "sha256": "0ce555f5c6fbf64d8c9b9d271df673a6fc492fc43502bdea4a2699bdd0c7d6a4",
+        "bytes": 11157
+      }
+    ]
+  },
+  {
+    "id": "13008_00",
+    "group": "13008_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/13008_00/person.jpg",
+        "source": "test/image-edit/13008_00.jpg",
+        "provider": "hf",
+        "sha256": "fc517944d92bfb06b7c85e169bc77e26d3735868ef999a9510826ccf1476b1de",
+        "bytes": 146317
+      },
+      {
+        "file": "samples/13008_00/garment.jpg",
+        "source": "test/cloth/13008_00.jpg",
+        "provider": "zip",
+        "sha256": "4b3c63840b6f33b09b49e1f00e61a3c18473988f196d29b3c024b3ed2cbb4424",
+        "bytes": 60403
+      },
+      {
+        "file": "samples/13008_00/target.jpg",
+        "source": "test/image/13008_00.jpg",
+        "provider": "zip",
+        "sha256": "a1daeb003b190e33d990664b7fbc31d2185c4f12b69097c4c7606986c6177247",
+        "bytes": 121982
+      },
+      {
+        "file": "samples/13008_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/13008_00.png",
+        "provider": "hf",
+        "sha256": "3291934cabb3284368221d9e99050507c16c4f811457ce5b97157f1e2b5cd90e",
+        "bytes": 14851
+      },
+      {
+        "file": "samples/13008_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/13008_00.png",
+        "provider": "hf",
+        "sha256": "4699e8bda783e14e870e265f684cfb41618b13e82817842a3b577c917db6191e",
+        "bytes": 9597
+      }
+    ]
+  },
+  {
+    "id": "09623_00",
+    "group": "09623_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/09623_00/person.jpg",
+        "source": "test/image-edit/09623_00.jpg",
+        "provider": "hf",
+        "sha256": "48ead0e197d41276c9d91b384e40597a052274de5c4d59dd3b48bf3e8d2cad0e",
+        "bytes": 174900
+      },
+      {
+        "file": "samples/09623_00/garment.jpg",
+        "source": "test/cloth/09623_00.jpg",
+        "provider": "zip",
+        "sha256": "585a240c472e59ec4ac6106049a5c6ac04ab9e61bbb039abaf8158114b6919f7",
+        "bytes": 72220
+      },
+      {
+        "file": "samples/09623_00/target.jpg",
+        "source": "test/image/09623_00.jpg",
+        "provider": "zip",
+        "sha256": "3139e59c9a19fe877f120ab339fa182cc0b7aa7c9dce5f9a2041bdc2edb4cd7c",
+        "bytes": 117239
+      },
+      {
+        "file": "samples/09623_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/09623_00.png",
+        "provider": "hf",
+        "sha256": "4f4bd010a16c6361f150d0e5e4c4d65bb15bfb41002bb8ce6558e9cba8f27176",
+        "bytes": 19781
+      },
+      {
+        "file": "samples/09623_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/09623_00.png",
+        "provider": "hf",
+        "sha256": "2690fe7cfb058aa0f19e7fcffaa8f543bf48e498f90bf1f425ceaa9cd05ce870",
+        "bytes": 17375
+      }
+    ]
+  },
+  {
+    "id": "01527_00",
+    "group": "01527_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/01527_00/person.jpg",
+        "source": "test/image-edit/01527_00.jpg",
+        "provider": "hf",
+        "sha256": "f053109473d92b9a5fad3678f343041bab8f289ea920fa728ee035e12f79bcb5",
+        "bytes": 143385
+      },
+      {
+        "file": "samples/01527_00/garment.jpg",
+        "source": "test/cloth/01527_00.jpg",
+        "provider": "zip",
+        "sha256": "ba6372b6598e3aeee518242f33b9fcad5876a6898637e2482b93c911e9359fcc",
+        "bytes": 80118
+      },
+      {
+        "file": "samples/01527_00/target.jpg",
+        "source": "test/image/01527_00.jpg",
+        "provider": "zip",
+        "sha256": "343b0600b6648b6dd2edd504bc8fee081cdffefdc95b998e372c453a426a9d98",
+        "bytes": 91635
+      },
+      {
+        "file": "samples/01527_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/01527_00.png",
+        "provider": "hf",
+        "sha256": "4891f2d010f28b602c763e72aab77f9a425e623fd19360f3306ed6b6a1df0cf6",
+        "bytes": 11098
+      },
+      {
+        "file": "samples/01527_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/01527_00.png",
+        "provider": "hf",
+        "sha256": "10ca0f75679dd351f849a3bd1676b0f708fac774a6586c4a5ee3bce9df5721f2",
+        "bytes": 11230
+      }
+    ]
+  },
+  {
+    "id": "05923_00",
+    "group": "05923_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/05923_00/person.jpg",
+        "source": "test/image-edit/05923_00.jpg",
+        "provider": "hf",
+        "sha256": "05fe1bd2c687223a9550f0a3fe9cc037d638a00e0865441a22252fff98cbb65e",
+        "bytes": 197235
+      },
+      {
+        "file": "samples/05923_00/garment.jpg",
+        "source": "test/cloth/05923_00.jpg",
+        "provider": "zip",
+        "sha256": "6efb5169ee1e966271b35564aa8e54cd27a1cd231ef22bf4f9633e8f4a5833c9",
+        "bytes": 43191
+      },
+      {
+        "file": "samples/05923_00/target.jpg",
+        "source": "test/image/05923_00.jpg",
+        "provider": "zip",
+        "sha256": "55b166bc313c18772c738a78546ffe51fe6248c75fe1e5bb77a1776065e69128",
+        "bytes": 142116
+      },
+      {
+        "file": "samples/05923_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/05923_00.png",
+        "provider": "hf",
+        "sha256": "feb5bf1d95802feea1585d7f88c0311d42365a1891f771108ff78126df45a1c2",
+        "bytes": 13808
+      },
+      {
+        "file": "samples/05923_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/05923_00.png",
+        "provider": "hf",
+        "sha256": "5a352c2c17b43029961e420b353751baa5a316bfe18907050a04532af3616803",
+        "bytes": 13142
+      }
+    ]
+  },
+  {
+    "id": "12024_00",
+    "group": "12024_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/12024_00/person.jpg",
+        "source": "test/image-edit/12024_00.jpg",
+        "provider": "hf",
+        "sha256": "89b3747fd85fce988dff47867d7720adbe8f433d672cac3bbce54821e5ad764a",
+        "bytes": 147313
+      },
+      {
+        "file": "samples/12024_00/garment.jpg",
+        "source": "test/cloth/12024_00.jpg",
+        "provider": "zip",
+        "sha256": "0b7922fd67cfe18cce0fa4356cde88ebd55f157449c6cb6e68940857950d5650",
+        "bytes": 101094
+      },
+      {
+        "file": "samples/12024_00/target.jpg",
+        "source": "test/image/12024_00.jpg",
+        "provider": "zip",
+        "sha256": "ddf4ca66aac658c420dad36a5536d0c0b11c023cf1f7acaab201308174dd449e",
+        "bytes": 116011
+      },
+      {
+        "file": "samples/12024_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/12024_00.png",
+        "provider": "hf",
+        "sha256": "3e77fa76ab3a8563e2526f39af936e6e75b27be8e32ef6f5a5551b7c266eb316",
+        "bytes": 8913
+      },
+      {
+        "file": "samples/12024_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/12024_00.png",
+        "provider": "hf",
+        "sha256": "279967381b3ef5bf490836eb5532231deffb03c99fe5b32e4b7ab3ca59af67ea",
+        "bytes": 11048
+      }
+    ]
+  },
+  {
+    "id": "02427_00",
+    "group": "02427_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/02427_00/person.jpg",
+        "source": "test/image-edit/02427_00.jpg",
+        "provider": "hf",
+        "sha256": "4e0355b0445007ec2c8a9d133cdabf96d638fbfbc572b21a63ee3339a58621ca",
+        "bytes": 164240
+      },
+      {
+        "file": "samples/02427_00/garment.jpg",
+        "source": "test/cloth/02427_00.jpg",
+        "provider": "zip",
+        "sha256": "1f85e64508ad6b3d21938739d281970911903734016f7ba36c1d1aa3a745f024",
+        "bytes": 147134
+      },
+      {
+        "file": "samples/02427_00/target.jpg",
+        "source": "test/image/02427_00.jpg",
+        "provider": "zip",
+        "sha256": "d4d8bfb0d6d8ee67a8f6220d1917e9d52bbe823f2a161ec765b2d320fce500dc",
+        "bytes": 128981
+      },
+      {
+        "file": "samples/02427_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/02427_00.png",
+        "provider": "hf",
+        "sha256": "35e69472975df67d17b9fdeeb797e8cb62526de09c9618f68b53895e6f00197d",
+        "bytes": 5754
+      },
+      {
+        "file": "samples/02427_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/02427_00.png",
+        "provider": "hf",
+        "sha256": "54782680030573c73afb909738ab08928ac3778b391df51b1a87c068e100b41e",
+        "bytes": 8506
+      }
+    ]
+  },
+  {
+    "id": "12598_00",
+    "group": "12598_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/12598_00/person.jpg",
+        "source": "test/image-edit/12598_00.jpg",
+        "provider": "hf",
+        "sha256": "8b05a49ea8201064ae025fab2285d42a26ced0cb3aaf80acccb9762996a25c91",
+        "bytes": 107437
+      },
+      {
+        "file": "samples/12598_00/garment.jpg",
+        "source": "test/cloth/12598_00.jpg",
+        "provider": "zip",
+        "sha256": "a52c00ba6a6ab1d60eedb8a3e5687705c449177e1eb23ab15ee5b47ef64fab04",
+        "bytes": 74636
+      },
+      {
+        "file": "samples/12598_00/target.jpg",
+        "source": "test/image/12598_00.jpg",
+        "provider": "zip",
+        "sha256": "2b1366bca1cda28b89a89bfee588d6478db12c057dc346a3476599b882beec7e",
+        "bytes": 95931
+      },
+      {
+        "file": "samples/12598_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/12598_00.png",
+        "provider": "hf",
+        "sha256": "8e8ad3e595deec5d2526e21d9ab7d7b382d4ee8a8c89265a272fbacde3dc7277",
+        "bytes": 23597
+      },
+      {
+        "file": "samples/12598_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/12598_00.png",
+        "provider": "hf",
+        "sha256": "c714cc8eb6ca30bd598472cff8815f6620e0d046b02712a8f079c928a07b507a",
+        "bytes": 21202
+      }
+    ]
+  },
+  {
+    "id": "04579_00",
+    "group": "04579_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/04579_00/person.jpg",
+        "source": "test/image-edit/04579_00.jpg",
+        "provider": "hf",
+        "sha256": "89bdd2218ed6de64c7dcb9565701a7d201a97228dc2b46580ab63513ab5bf3c9",
+        "bytes": 173016
+      },
+      {
+        "file": "samples/04579_00/garment.jpg",
+        "source": "test/cloth/04579_00.jpg",
+        "provider": "zip",
+        "sha256": "cd09dd720d76e08c6d572117b2e1399c1b6020cecfe6ca679a2992818387194f",
+        "bytes": 184095
+      },
+      {
+        "file": "samples/04579_00/target.jpg",
+        "source": "test/image/04579_00.jpg",
+        "provider": "zip",
+        "sha256": "88f1c116bbd8c599e77db2faf6c7833ba82de7007eb107ebca119af271ec4fcd",
+        "bytes": 191235
+      },
+      {
+        "file": "samples/04579_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/04579_00.png",
+        "provider": "hf",
+        "sha256": "ddbce1d5ebd4d103846a3b64a3d50f47fef45bc1e83c83268967636bff963972",
+        "bytes": 11633
+      },
+      {
+        "file": "samples/04579_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/04579_00.png",
+        "provider": "hf",
+        "sha256": "ba570e4f7a8713fed8e52be3a58b42531a9c97272d605373097a1752831c6220",
+        "bytes": 12331
+      }
+    ]
+  },
+  {
+    "id": "05006_00",
+    "group": "05006_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/05006_00/person.jpg",
+        "source": "test/image-edit/05006_00.jpg",
+        "provider": "hf",
+        "sha256": "047d7ed3d0c16f3687df33873f22f5bb9839853b80a978812b0a0c7be6c273b4",
+        "bytes": 108443
+      },
+      {
+        "file": "samples/05006_00/garment.jpg",
+        "source": "test/cloth/05006_00.jpg",
+        "provider": "zip",
+        "sha256": "81d2852a17e58c5edac0718c373226804a65421980c8f9f94747df1824e9a928",
+        "bytes": 170007
+      },
+      {
+        "file": "samples/05006_00/target.jpg",
+        "source": "test/image/05006_00.jpg",
+        "provider": "zip",
+        "sha256": "90ceca9108bc5d1a1572c67513d942ca69fd857f8700fd3adf4156bf365e589a",
+        "bytes": 149586
+      },
+      {
+        "file": "samples/05006_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/05006_00.png",
+        "provider": "hf",
+        "sha256": "62171568c10afc3eca455894c0cb549ee6c34b85fba99c4a63b418f3cf7e315f",
+        "bytes": 20501
+      },
+      {
+        "file": "samples/05006_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/05006_00.png",
+        "provider": "hf",
+        "sha256": "5c66cd26c36eb698e96bf33ebfe36a27c3f531bf46ca0698bc66ea12ba375dec",
+        "bytes": 13875
+      }
+    ]
+  },
+  {
+    "id": "07567_00",
+    "group": "07567_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/07567_00/person.jpg",
+        "source": "test/image-edit/07567_00.jpg",
+        "provider": "hf",
+        "sha256": "e7bcbee4c7c90cc2ba450a5b5d8410d9f4b12b4ca92082c09c07ed65090e7f1d",
+        "bytes": 142270
+      },
+      {
+        "file": "samples/07567_00/garment.jpg",
+        "source": "test/cloth/07567_00.jpg",
+        "provider": "zip",
+        "sha256": "8c760d1b1aaf7dd997e519707960b55c2a9260afa70d4b733628031dc16ed824",
+        "bytes": 141433
+      },
+      {
+        "file": "samples/07567_00/target.jpg",
+        "source": "test/image/07567_00.jpg",
+        "provider": "zip",
+        "sha256": "6ce00a5ec9e2a9ee64172d6f859d850c50c15d2b545f552bfea0b621c6d3418c",
+        "bytes": 158373
+      },
+      {
+        "file": "samples/07567_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/07567_00.png",
+        "provider": "hf",
+        "sha256": "6285b5f25df049a44d8ce2fecaae8f7496f85eba4132a66c05a7f483dfd0ce89",
+        "bytes": 10908
+      },
+      {
+        "file": "samples/07567_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/07567_00.png",
+        "provider": "hf",
+        "sha256": "07e3d78e1da9ceef88aad16ed4deea11ccf8d84e11d4621a58a75ed7e8e0a5d6",
+        "bytes": 11992
+      }
+    ]
+  },
+  {
+    "id": "00579_00",
+    "group": "00579_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/00579_00/person.jpg",
+        "source": "test/image-edit/00579_00.jpg",
+        "provider": "hf",
+        "sha256": "918aa14dd55d22f7025e3c9fac4658a6b4e909838499c14ea8c480370d1616fa",
+        "bytes": 190242
+      },
+      {
+        "file": "samples/00579_00/garment.jpg",
+        "source": "test/cloth/00579_00.jpg",
+        "provider": "zip",
+        "sha256": "8fde8cf2eec94c47c03f2bb52192918910b267ee42be68cbf377fcd4ea3a9ecf",
+        "bytes": 94645
+      },
+      {
+        "file": "samples/00579_00/target.jpg",
+        "source": "test/image/00579_00.jpg",
+        "provider": "zip",
+        "sha256": "f09f909815a3ec9d58a164e72f5062037303cd96d1657906147fc103057b9d0b",
+        "bytes": 157960
+      },
+      {
+        "file": "samples/00579_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/00579_00.png",
+        "provider": "hf",
+        "sha256": "1e743368b2cb26b860bbe868f5649ac999391b3f93c1fd6c6563cd4ccf19420c",
+        "bytes": 8698
+      },
+      {
+        "file": "samples/00579_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/00579_00.png",
+        "provider": "hf",
+        "sha256": "36d5ecb2542bb2c2ce427e7aeb3a8ab2de24fae0142495453a56a80f8c24fa28",
+        "bytes": 10777
+      }
+    ]
+  },
+  {
+    "id": "08432_00",
+    "group": "08432_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/08432_00/person.jpg",
+        "source": "test/image-edit/08432_00.jpg",
+        "provider": "hf",
+        "sha256": "18ab1295251932ae4a54a7be77900654f3ea3acacdf42c1c5a7c910abc26c681",
+        "bytes": 103942
+      },
+      {
+        "file": "samples/08432_00/garment.jpg",
+        "source": "test/cloth/08432_00.jpg",
+        "provider": "zip",
+        "sha256": "879bcce1327466edb7ab8394a76015acd76c61ffa31bc67f9db1db02ebdfd2f5",
+        "bytes": 156578
+      },
+      {
+        "file": "samples/08432_00/target.jpg",
+        "source": "test/image/08432_00.jpg",
+        "provider": "zip",
+        "sha256": "b60db913be3527bdd5879aeb8d435c0cfbe058fca0a76642cbb429baa6276931",
+        "bytes": 118587
+      },
+      {
+        "file": "samples/08432_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/08432_00.png",
+        "provider": "hf",
+        "sha256": "362ed666444d6ca03a567cdcbeeb4d730db168ca00024d311d3f0dea110e7fc1",
+        "bytes": 12478
+      },
+      {
+        "file": "samples/08432_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/08432_00.png",
+        "provider": "hf",
+        "sha256": "769f29d4f05a3807bcfe095bba89cac286212e13a4459f3cf3a7009829cbfae9",
+        "bytes": 8938
+      }
+    ]
+  },
+  {
+    "id": "11297_00",
+    "group": "11297_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/11297_00/person.jpg",
+        "source": "test/image-edit/11297_00.jpg",
+        "provider": "hf",
+        "sha256": "df099646e8a2b9524e1b53d712d9436b1b6b837223280358d6507299886eef96",
+        "bytes": 123488
+      },
+      {
+        "file": "samples/11297_00/garment.jpg",
+        "source": "test/cloth/11297_00.jpg",
+        "provider": "zip",
+        "sha256": "ec03ed2302a21d808662799bcace899866130b723acf3336a538ff6fc47fced2",
+        "bytes": 93363
+      },
+      {
+        "file": "samples/11297_00/target.jpg",
+        "source": "test/image/11297_00.jpg",
+        "provider": "zip",
+        "sha256": "154b14f92e13694cea9ba4a3fb31a816d54480f02e5d6ce3f48aa74d10a524d3",
+        "bytes": 109744
+      },
+      {
+        "file": "samples/11297_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/11297_00.png",
+        "provider": "hf",
+        "sha256": "5c982d68acfbd72a31af646fb94ed9ae293283f2a4ab821dee44c61a83b29f33",
+        "bytes": 8319
+      },
+      {
+        "file": "samples/11297_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/11297_00.png",
+        "provider": "hf",
+        "sha256": "5315dc3712785f3b711381e1f8514d1f3f2a4df24a0bf52815b526109359c1be",
+        "bytes": 10010
+      }
+    ]
+  },
+  {
+    "id": "00396_00",
+    "group": "00396_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/00396_00/person.jpg",
+        "source": "test/image-edit/00396_00.jpg",
+        "provider": "hf",
+        "sha256": "1bad4ee504823f96f4aecae2eacf63948fee46f5d2871a8d27077fb90078d3cb",
+        "bytes": 151978
+      },
+      {
+        "file": "samples/00396_00/garment.jpg",
+        "source": "test/cloth/00396_00.jpg",
+        "provider": "zip",
+        "sha256": "b75a1a6c84fd0d507c7881a6197c974ef02d236ca543d35a765ebddf73d7427d",
+        "bytes": 128362
+      },
+      {
+        "file": "samples/00396_00/target.jpg",
+        "source": "test/image/00396_00.jpg",
+        "provider": "zip",
+        "sha256": "6836ed4feaae6d0d3a33650952fcd2c7481bf1efb4294ddd143bfe813abd1e39",
+        "bytes": 121662
+      },
+      {
+        "file": "samples/00396_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/00396_00.png",
+        "provider": "hf",
+        "sha256": "a1105ee2818affaccccbac50f4dd8600398fd3a74bb797c4f2ab85599bbea7cc",
+        "bytes": 7050
+      },
+      {
+        "file": "samples/00396_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/00396_00.png",
+        "provider": "hf",
+        "sha256": "b3efe97fda9c4d1362f3c680676fca9baa1dcfe088e7f68dd27b189a087e448c",
+        "bytes": 13533
+      }
+    ]
+  },
+  {
+    "id": "14296_00",
+    "group": "14296_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/14296_00/person.jpg",
+        "source": "test/image-edit/14296_00.jpg",
+        "provider": "hf",
+        "sha256": "322ce88293c09fd184b04a47ec39e22d026d5a7219dbabd9914ac80b2727686c",
+        "bytes": 144980
+      },
+      {
+        "file": "samples/14296_00/garment.jpg",
+        "source": "test/cloth/14296_00.jpg",
+        "provider": "zip",
+        "sha256": "b935e43b3edb7c58d5ef42dad4d8597dfd8581b9196737f99ce32402b44b61b9",
+        "bytes": 90575
+      },
+      {
+        "file": "samples/14296_00/target.jpg",
+        "source": "test/image/14296_00.jpg",
+        "provider": "zip",
+        "sha256": "3e423ffd8d589a4425b6c0c15a34a27512e1c6671a6d3bc2161074d922260016",
+        "bytes": 128873
+      },
+      {
+        "file": "samples/14296_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/14296_00.png",
+        "provider": "hf",
+        "sha256": "26466952992e24d6d467e4bcf0c1c2e78aeac49e44c6143b34a4b77ccef28fa2",
+        "bytes": 17794
+      },
+      {
+        "file": "samples/14296_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/14296_00.png",
+        "provider": "hf",
+        "sha256": "d45a47e851ec09c0187cc3f6e5ebd9765eda93a1d16b4cb37428bbbdd8f35be3",
+        "bytes": 14688
+      }
+    ]
+  },
+  {
+    "id": "11985_00",
+    "group": "11985_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/11985_00/person.jpg",
+        "source": "test/image-edit/11985_00.jpg",
+        "provider": "hf",
+        "sha256": "de1b025f5d8e3be21f72821a378e4b4d4e3a339e71b7619637fa32a7949da0cd",
+        "bytes": 114576
+      },
+      {
+        "file": "samples/11985_00/garment.jpg",
+        "source": "test/cloth/11985_00.jpg",
+        "provider": "zip",
+        "sha256": "d89158c009c484925637081d01e72ad7abc09ca72aa024fed7ea301663412e65",
+        "bytes": 226153
+      },
+      {
+        "file": "samples/11985_00/target.jpg",
+        "source": "test/image/11985_00.jpg",
+        "provider": "zip",
+        "sha256": "aa8b3f640f5a17a6d58a9830c8539a4f0790bac4049ec847e685aa93387cc010",
+        "bytes": 172037
+      },
+      {
+        "file": "samples/11985_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/11985_00.png",
+        "provider": "hf",
+        "sha256": "3c7e503cc7d640b31d9e1ca23dd2e0b3610bbcff0c1e98123b08d9ea01d70ed1",
+        "bytes": 13705
+      },
+      {
+        "file": "samples/11985_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/11985_00.png",
+        "provider": "hf",
+        "sha256": "c7bfc48a2d88221b505c916c6735b518d1ff6b0bdcb03171b802a6bf63c79ba3",
+        "bytes": 18990
+      }
+    ]
+  },
+  {
+    "id": "07703_00",
+    "group": "07703_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/07703_00/person.jpg",
+        "source": "test/image-edit/07703_00.jpg",
+        "provider": "hf",
+        "sha256": "40beea5a734631babd3cfba8b24c2ede96156430ca069beb03f1693862cae990",
+        "bytes": 135839
+      },
+      {
+        "file": "samples/07703_00/garment.jpg",
+        "source": "test/cloth/07703_00.jpg",
+        "provider": "zip",
+        "sha256": "325b405aa0993420cd885aa18b86a910542fdc3c4203787e3638c19e00c18906",
+        "bytes": 135800
+      },
+      {
+        "file": "samples/07703_00/target.jpg",
+        "source": "test/image/07703_00.jpg",
+        "provider": "zip",
+        "sha256": "2f11855abae523d08bf8e6c80b7bf19c957b0dca6589d865b29cbfefa6f88eb3",
+        "bytes": 141365
+      },
+      {
+        "file": "samples/07703_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/07703_00.png",
+        "provider": "hf",
+        "sha256": "13bb408c719579fffdc4b7880b590bc23c09cb18bc56861fa046ff37130f8714",
+        "bytes": 12781
+      },
+      {
+        "file": "samples/07703_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/07703_00.png",
+        "provider": "hf",
+        "sha256": "8e1c98b55f3372e687eac66a9f39138b076a70dd254a0943b58b8cea8a6d6fc0",
+        "bytes": 12990
+      }
+    ]
+  },
+  {
+    "id": "08931_00",
+    "group": "08931_00",
+    "split": "test",
+    "files": [
+      {
+        "file": "samples/08931_00/person.jpg",
+        "source": "test/image-edit/08931_00.jpg",
+        "provider": "hf",
+        "sha256": "6a897cf5869eefdb9d5ea0074c4d6dd863bf052f6ddcf8441f7bf0b573d03ba5",
+        "bytes": 159501
+      },
+      {
+        "file": "samples/08931_00/garment.jpg",
+        "source": "test/cloth/08931_00.jpg",
+        "provider": "zip",
+        "sha256": "e842bc28e742cd6b439d65e479243e7735518754e4c2aa9322342843f609cde6",
+        "bytes": 86545
+      },
+      {
+        "file": "samples/08931_00/target.jpg",
+        "source": "test/image/08931_00.jpg",
+        "provider": "zip",
+        "sha256": "97ccf008310a3422f50ff8f025ad687f949cecbf08f7532d089ef9e7ab7bb42b",
+        "bytes": 124339
+      },
+      {
+        "file": "samples/08931_00/edited-mask.png",
+        "source": "test/image-edit_cloth-mask/08931_00.png",
+        "provider": "hf",
+        "sha256": "34c599fc069bbbbf9054485c46f8d89247f0eddc2c4f63b07bd46d4660313eb3",
+        "bytes": 7721
+      },
+      {
+        "file": "samples/08931_00/target-mask.png",
+        "source": "test/gt_cloth_warped_mask/08931_00.png",
+        "provider": "hf",
+        "sha256": "32f578ffe7cc21f3bbb1ea410626314563427d37866d6c041e40a7b295bf52e6",
+        "bytes": 11335
+      }
+    ]
+  }
+]

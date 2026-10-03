@@ -1,0 +1,76 @@
+{
+  "person": [
+    {
+      "id": "11246_00",
+      "name": "Navy & denim",
+      "url": "/samples/person-11246_00.jpg"
+    },
+    {
+      "id": "14502_00",
+      "name": "Relaxed denim",
+      "url": "/samples/person-14502_00.jpg"
+    },
+    {
+      "id": "04734_00",
+      "name": "Black essentials",
+      "url": "/samples/person-04734_00.jpg"
+    },
+    {
+      "id": "04668_00",
+      "name": "Red knit",
+      "url": "/samples/person-04668_00.jpg"
+    },
+    {
+      "id": "02418_00",
+      "name": "Sage & white",
+      "url": "/samples/person-02418_00.jpg"
+    },
+    {
+      "id": "07662_00",
+      "name": "Rose print",
+      "url": "/samples/person-07662_00.jpg"
+    }
+  ],
+  "garment": [
+    {
+      "id": "00748_00",
+      "name": "Ivory knit",
+      "url": "/samples/garment-00748_00.jpg"
+    },
+    {
+      "id": "01095_00",
+      "name": "Burgundy V-neck",
+      "url": "/samples/garment-01095_00.jpg"
+    },
+    {
+      "id": "02418_00",
+      "name": "Sage tank",
+      "url": "/samples/garment-02418_00.jpg"
+    },
+    {
+      "id": "02702_00",
+      "name": "Orange halter",
+      "url": "/samples/garment-02702_00.jpg"
+    },
+    {
+      "id": "03844_00",
+      "name": "Teal tee",
+      "url": "/samples/garment-03844_00.jpg"
+    },
+    {
+      "id": "04668_00",
+      "name": "Red turtleneck",
+      "url": "/samples/garment-04668_00.jpg"
+    },
+    {
+      "id": "07662_00",
+      "name": "Rose blouse",
+      "url": "/samples/garment-07662_00.jpg"
+    },
+    {
+      "id": "11246_00",
+      "name": "Navy V-neck",
+      "url": "/samples/garment-11246_00.jpg"
+    }
+  ]
+}

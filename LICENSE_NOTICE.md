@@ -1,0 +1,1 @@
+This repository is a noncommercial academic project. Third-party code, model weights, source photographs and generated derivatives retain applicable upstream terms and attribution. See docs/ATTRIBUTION.md and the licenses inside code/ and vendor/. This notice is not a blanket license to use all repository contents commercially.

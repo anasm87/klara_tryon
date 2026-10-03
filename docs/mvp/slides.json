@@ -1,0 +1,44 @@
+[
+  {
+    "slide": 1,
+    "title": "Would you trust this preview?",
+    "seconds": 35,
+    "script": "Imagine choosing this pink striped shirt online. You ask an AI tool to show it on a person, and the preview looks believable. But the color is different. If the preview changes the item you are thinking of buying, how useful is it? That is the problem I am investigating with Klara.",
+    "source": "VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use."
+  },
+  {
+    "slide": 2,
+    "title": "The research question",
+    "seconds": 40,
+    "script": "My question is whether fine-tuning the model's attention weights can improve garment reconstruction while preserving the person and background. This is useful to developers building clothing previews. The data gives me an edited person photo, a requested garment and an original reference photo. That lets me compare the generated result with something concrete. It does not tell me whether the garment would physically fit a customer.",
+    "source": "VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use."
+  },
+  {
+    "slide": 3,
+    "title": "Separate data for learning and evaluation",
+    "seconds": 40,
+    "script": "The experiment uses one thousand training cases, sixty-four validation cases and thirty-two final-test cases. The roles are separate: training changes the weights, validation helps development, and the final test checks the fixed model. I check pairings, file quality and exact overlap. A limitation is that different source IDs do not guarantee different people. These are custom splits, so I will not present them as official benchmark results.",
+    "source": "Frozen experiment-plan.json and final-evaluation-plan.json. Split checks and provenance receipts."
+  },
+  {
+    "slide": 4,
+    "title": "Fine-tuning existing attention",
+    "seconds": 40,
+    "script": "I use the pretrained CatVTON-MaskFree model. I am focusing the experiment on existing self-attention projections inside its U-Net. Attention lets spatial features interact, including information from the person and garment. The VAE and the remaining U-Net weights stay frozen. The comparison is therefore between the original checkpoint and the attention-adapted version, rather than between unrelated applications.",
+    "source": "CatVTON-MaskFree pinned vendor source. configure_attention in training_core.py."
+  },
+  {
+    "slide": 5,
+    "title": "Evaluation plan",
+    "seconds": 45,
+    "script": "A realistic-looking image is not enough. I measure garment pixel error with MAE and structural agreement with SSIM. Outside the clothing region, I measure changes relative to the input. The colored areas show actual evaluation regions. Both models use the same cases, seeds and generation settings. I compare results case by case and inspect failures, because one average can hide very different outcomes.",
+    "source": "Exact regional masks and metrics in analyze_edit_evaluation.py. Green: eroded target clothing. Gold: outside dilated source/target union."
+  },
+  {
+    "slide": 6,
+    "title": "The feedback I need",
+    "seconds": 30,
+    "script": "For this MVP, I want feedback on the research question and how I explain the evaluation. Do these measurements cover the important part of the problem? And what would you simplify for the final jury? I will use that feedback to refine the scientific story and choose clear examples for the final presentation.",
+    "source": "DS#055 schedule and KLARA_DAILY_PROGRESS.md. Method-focused presentation scope, not a claim of unfinished execution."
+  }
+]

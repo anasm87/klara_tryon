@@ -1,0 +1,9 @@
+# Isolated environment. Keeps the already verified CUDA torch version.
+diffusers==0.29.2
+transformers==4.44.2
+accelerate==0.31.0
+huggingface-hub==0.25.2
+numpy==1.26.4
+Pillow>=10,<12
+safetensors>=0.4.3,<1
+tqdm>=4.66,<5

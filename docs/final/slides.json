@@ -1,0 +1,58 @@
+[
+  {
+    "slide": 1,
+    "title": "Would you trust this preview?",
+    "seconds": 25,
+    "script": "Imagine choosing this pink striped shirt online. You ask an AI tool for a preview, and the result looks believable. But the color has changed. Would that help you decide what to buy? Klara started with this problem: a convincing image can still show the wrong clothing.",
+    "source": "VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use."
+  },
+  {
+    "slide": 2,
+    "title": "Question and data",
+    "seconds": 40,
+    "script": "My question was whether attention fine-tuning could improve garment reconstruction while preserving the person and background. I used VITON-HD and VITON-HD-edit. The edited person and catalog garment are inputs. The original photo is the reference. I separated one thousand training cases, sixty-four validation cases and thirty-two final-test cases. This is a reconstruction study for clothing-preview developers. It does not test sizing or physical fit, and identity separation remains unverified.",
+    "source": "Data: NXN-Labs/VITON-HD-edit revision 9de94ee10e15f5069fd650ce4c914215f124eb6f. Frozen custom splits. No official benchmark claim."
+  },
+  {
+    "slide": 3,
+    "title": "What changed in the model",
+    "seconds": 35,
+    "script": "The starting point was CatVTON-MaskFree. I adapted the query, key, value and output projections in sixteen existing self-attention modules. The VAE and other U-Net weights stayed frozen. Training covered all one thousand cases in three epochs, with three thousand optimizer updates. The training loss compares predicted noise with the noise added to the target. The image metrics come later, during evaluation. Checks confirmed that frozen weights stayed unchanged and the checkpoint reloaded correctly.",
+    "source": "run.json and steps.jsonl. 49,574,080 selected parameters. Standard epsilon-MSE adaptation; not a reproduction of DREAM training."
+  },
+  {
+    "slide": 4,
+    "title": "A fair comparison",
+    "seconds": 40,
+    "script": "I fixed the checkpoint before the final test. Both models saw the same inputs and two fixed seeds, with identical generation settings. Garment MAE is the primary metric. SSIM checks structure, and outside-clothing error checks preservation. The masks define measurement regions; the generator receives no mask. There were one hundred twenty-eight attempts. Six safety exclusions left twenty-seven complete paired cases. I kept those exclusions and averaged the two seeds within each case.",
+    "source": "Frozen final-evaluation-plan.json. results.json: 128 attempts, 122 saved outputs. Six exclusions affect five cases."
+  },
+  {
+    "slide": 5,
+    "title": "Garment reconstruction improved on average",
+    "seconds": 45,
+    "script": "The fine-tuned model reduced average garment error by fifteen point six percent. Each line here is a test case. Green lines improve, and red lines worsen. Twenty-one of the twenty-seven complete cases improved. The mean fell from about zero point one three four to zero point one one three. The paired bootstrap interval was below zero, but it describes uncertainty across these cases. It does not establish performance across new populations or different training seeds.",
+    "source": "analysis.json, garment_mae. Equal case weights after averaging two seeds. 10,000 paired case-bootstrap resamples, seed 41026."
+  },
+  {
+    "slide": 6,
+    "title": "Preservation remained inconsistent",
+    "seconds": 40,
+    "script": "Preservation tells a more complicated story. Each dot is one case. Moving left means better garment reconstruction, and moving down means better preservation. Eleven cases improved on both. But fourteen had more outside-clothing error after fine-tuning, even though average outside error fell. Some larger improvements outweighed smaller regressions. This is why I would not describe the model as reliably preserving every person based on the average alone.",
+    "source": "analysis.json, case_means and joint_outcomes. Outside-input MAE: 13 improvements, 14 regressions; relative mean change \u221225.899%."
+  },
+  {
+    "slide": 7,
+    "title": "A metric gain can still contain visible errors",
+    "seconds": 45,
+    "script": "This case had the largest reduction in garment error, so it is a useful test of what the number means. The fine-tuned image removes much of the severe clothing distortion. But compare it with the input and reference: the arm is raised and the trousers still change. The improvement is real under the metric, while the image remains imperfect. I kept all cases and both seeds in the gallery so the audience can inspect more than a few selected successes.",
+    "source": "VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use. Selection rule: smallest case-average fine-tuned minus pretrained garment MAE. Assistant observations are qualitative, not human-rating scores."
+  },
+  {
+    "slide": 8,
+    "title": "Answer to the research question",
+    "seconds": 30,
+    "script": "My conclusion is that attention fine-tuning improved average reconstruction on this dataset, while preservation remained inconsistent. I would use Klara as a research demonstration with visible failures. The small complete-case test, edited inputs and one training seed limit broader claims. The website uses the trained checkpoint, and the offline gallery preserves the experiment. The next research step would be broader independent data and repeated training seeds.",
+    "source": "Final analysis and limitations. Website configuration differs: 768\u00d71024, 50 steps versus research 384\u00d7512, 20 steps."
+  }
+]

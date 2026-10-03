@@ -1,0 +1,5576 @@
+{
+  "name": "Klara 1000-case attention adaptation v1",
+  "status": "candidate-selection-prepared; data-audit-and-runner-pending",
+  "dataset": "NXN-Labs/VITON-HD-edit with original VITON-HD images",
+  "source_revision": "9de94ee10e15f5069fd650ce4c914215f124eb6f",
+  "base_split_sha256": "01bf63173d45e9d00431de682b7350340c7c741df9d4f03b9031d48bd27f7e6b",
+  "counts": {
+    "train": 1000,
+    "validation": 64,
+    "reserved_test": 32
+  },
+  "source_partition_counts": {
+    "validation": 302,
+    "train": 1417,
+    "test": 305,
+    "excluded_prior": 8
+  },
+  "known_corrupt_ids_excluded_before_selection": [
+    "11886_00"
+  ],
+  "selection_rule": "First 1000 non-quarantined train and 64 validation IDs in prior audit hash order. Fresh test: one ID per group, ranked by a new fixed hash, excluding previous final-test groups.",
+  "candidates": {
+    "train": [
+      {
+        "id": "02660_00",
+        "group": "02660_00",
+        "split": "train"
+      },
+      {
+        "id": "03289_00",
+        "group": "03289_00",
+        "split": "train"
+      },
+      {
+        "id": "14022_00",
+        "group": "14022_00",
+        "split": "train"
+      },
+      {
+        "id": "06504_00",
+        "group": "06504_00",
+        "split": "train"
+      },
+      {
+        "id": "04430_00",
+        "group": "04430_00",
+        "split": "train"
+      },
+      {
+        "id": "13743_00",
+        "group": "13743_00",
+        "split": "train"
+      },
+      {
+        "id": "13004_00",
+        "group": "13004_00",
+        "split": "train"
+      },
+      {
+        "id": "00725_00",
+        "group": "00725_00",
+        "split": "train"
+      },
+      {
+        "id": "03199_00",
+        "group": "03199_00",
+        "split": "train"
+      },
+      {
+        "id": "12202_00",
+        "group": "12202_00",
+        "split": "train"
+      },
+      {
+        "id": "00330_00",
+        "group": "00330_00",
+        "split": "train"
+      },
+      {
+        "id": "12748_00",
+        "group": "12748_00",
+        "split": "train"
+      },
+      {
+        "id": "09165_00",
+        "group": "09165_00",
+        "split": "train"
+      },
+      {
+        "id": "09018_00",
+        "group": "09018_00",
+        "split": "train"
+      },
+      {
+        "id": "07901_00",
+        "group": "07901_00",
+        "split": "train"
+      },
+      {
+        "id": "11485_00",
+        "group": "11485_00",
+        "split": "train"
+      },
+      {
+        "id": "01923_00",
+        "group": "01923_00",
+        "split": "train"
+      },
+      {
+        "id": "13468_00",
+        "group": "13468_00",
+        "split": "train"
+      },
+      {
+        "id": "13580_00",
+        "group": "13580_00",
+        "split": "train"
+      },
+      {
+        "id": "05852_00",
+        "group": "05852_00",
+        "split": "train"
+      },
+      {
+        "id": "06967_00",
+        "group": "06967_00",
+        "split": "train"
+      },
+      {
+        "id": "12506_00",
+        "group": "12506_00",
+        "split": "train"
+      },
+      {
+        "id": "11755_00",
+        "group": "11755_00",
+        "split": "train"
+      },
+      {
+        "id": "07521_00",
+        "group": "07521_00",
+        "split": "train"
+      },
+      {
+        "id": "07034_00",
+        "group": "07034_00",
+        "split": "train"
+      },
+      {
+        "id": "04191_00",
+        "group": "04191_00",
+        "split": "train"
+      },
+      {
+        "id": "03496_00",
+        "group": "03496_00",
+        "split": "train"
+      },
+      {
+        "id": "14306_00",
+        "group": "14306_00",
+        "split": "train"
+      },
+      {
+        "id": "13723_00",
+        "group": "13723_00",
+        "split": "train"
+      },
+      {
+        "id": "01074_00",
+        "group": "01074_00",
+        "split": "train"
+      },
+      {
+        "id": "07977_00",
+        "group": "07977_00",
+        "split": "train"
+      },
+      {
+        "id": "10915_00",
+        "group": "10915_00",
+        "split": "train"
+      },
+      {
+        "id": "07475_00",
+        "group": "07475_00",
+        "split": "train"
+      },
+      {
+        "id": "12749_00",
+        "group": "12749_00",
+        "split": "train"
+      },
+      {
+        "id": "09356_00",
+        "group": "09356_00",
+        "split": "train"
+      },
+      {
+        "id": "06025_00",
+        "group": "06025_00",
+        "split": "train"
+      },
+      {
+        "id": "05235_00",
+        "group": "05235_00",
+        "split": "train"
+      },
+      {
+        "id": "12562_00",
+        "group": "12562_00",
+        "split": "train"
+      },
+      {
+        "id": "08674_00",
+        "group": "08674_00",
+        "split": "train"
+      },
+      {
+        "id": "06094_00",
+        "group": "06094_00",
+        "split": "train"
+      },
+      {
+        "id": "04545_00",
+        "group": "04545_00",
+        "split": "train"
+      },
+      {
+        "id": "04528_00",
+        "group": "04528_00",
+        "split": "train"
+      },
+      {
+        "id": "03553_00",
+        "group": "03553_00",
+        "split": "train"
+      },
+      {
+        "id": "05327_00",
+        "group": "05327_00",
+        "split": "train"
+      },
+      {
+        "id": "04662_00",
+        "group": "04662_00",
+        "split": "train"
+      },
+      {
+        "id": "07599_00",
+        "group": "07599_00",
+        "split": "train"
+      },
+      {
+        "id": "09566_00",
+        "group": "09566_00",
+        "split": "train"
+      },
+      {
+        "id": "07966_00",
+        "group": "07966_00",
+        "split": "train"
+      },
+      {
+        "id": "07036_00",
+        "group": "07036_00",
+        "split": "train"
+      },
+      {
+        "id": "11906_00",
+        "group": "11906_00",
+        "split": "train"
+      },
+      {
+        "id": "01731_00",
+        "group": "01731_00",
+        "split": "train"
+      },
+      {
+        "id": "05329_00",
+        "group": "05329_00",
+        "split": "train"
+      },
+      {
+        "id": "14263_00",
+        "group": "14263_00",
+        "split": "train"
+      },
+      {
+        "id": "09924_00",
+        "group": "09924_00",
+        "split": "train"
+      },
+      {
+        "id": "05156_00",
+        "group": "05156_00",
+        "split": "train"
+      },
+      {
+        "id": "09610_00",
+        "group": "09610_00",
+        "split": "train"
+      },
+      {
+        "id": "09889_00",
+        "group": "09889_00",
+        "split": "train"
+      },
+      {
+        "id": "05891_00",
+        "group": "05891_00",
+        "split": "train"
+      },
+      {
+        "id": "03719_00",
+        "group": "03719_00",
+        "split": "train"
+      },
+      {
+        "id": "04215_00",
+        "group": "04215_00",
+        "split": "train"
+      },
+      {
+        "id": "14024_00",
+        "group": "14024_00",
+        "split": "train"
+      },
+      {
+        "id": "11777_00",
+        "group": "11777_00",
+        "split": "train"
+      },
+      {
+        "id": "03880_00",
+        "group": "03880_00",
+        "split": "train"
+      },
+      {
+        "id": "00960_00",
+        "group": "00960_00",
+        "split": "train"
+      },
+      {
+        "id": "13172_00",
+        "group": "13172_00",
+        "split": "train"
+      },
+      {
+        "id": "07762_00",
+        "group": "07762_00",
+        "split": "train"
+      },
+      {
+        "id": "11216_00",
+        "group": "11216_00",
+        "split": "train"
+      },
+      {
+        "id": "03802_00",
+        "group": "03802_00",
+        "split": "train"
+      },
+      {
+        "id": "01046_00",
+        "group": "01046_00",
+        "split": "train"
+      },
+      {
+        "id": "13574_00",
+        "group": "13574_00",
+        "split": "train"
+      },
+      {
+        "id": "00690_00",
+        "group": "00690_00",
+        "split": "train"
+      },
+      {
+        "id": "05531_00",
+        "group": "05531_00",
+        "split": "train"
+      },
+      {
+        "id": "07968_00",
+        "group": "07968_00",
+        "split": "train"
+      },
+      {
+        "id": "06768_00",
+        "group": "06768_00",
+        "split": "train"
+      },
+      {
+        "id": "01696_00",
+        "group": "01696_00",
+        "split": "train"
+      },
+      {
+        "id": "11706_00",
+        "group": "11706_00",
+        "split": "train"
+      },
+      {
+        "id": "05976_00",
+        "group": "05976_00",
+        "split": "train"
+      },
+      {
+        "id": "06396_00",
+        "group": "06396_00",
+        "split": "train"
+      },
+      {
+        "id": "06450_00",
+        "group": "06450_00",
+        "split": "train"
+      },
+      {
+        "id": "04059_00",
+        "group": "04059_00",
+        "split": "train"
+      },
+      {
+        "id": "14032_00",
+        "group": "14032_00",
+        "split": "train"
+      },
+      {
+        "id": "11156_00",
+        "group": "11156_00",
+        "split": "train"
+      },
+      {
+        "id": "09541_00",
+        "group": "09541_00",
+        "split": "train"
+      },
+      {
+        "id": "09204_00",
+        "group": "09204_00",
+        "split": "train"
+      },
+      {
+        "id": "09882_00",
+        "group": "09882_00",
+        "split": "train"
+      },
+      {
+        "id": "00859_00",
+        "group": "00859_00",
+        "split": "train"
+      },
+      {
+        "id": "14000_00",
+        "group": "14000_00",
+        "split": "train"
+      },
+      {
+        "id": "07917_00",
+        "group": "07917_00",
+        "split": "train"
+      },
+      {
+        "id": "12311_00",
+        "group": "12311_00",
+        "split": "train"
+      },
+      {
+        "id": "06647_00",
+        "group": "06647_00",
+        "split": "train"
+      },
+      {
+        "id": "10297_00",
+        "group": "10297_00",
+        "split": "train"
+      },
+      {
+        "id": "13126_00",
+        "group": "13126_00",
+        "split": "train"
+      },
+      {
+        "id": "12723_00",
+        "group": "12723_00",
+        "split": "train"
+      },
+      {
+        "id": "12813_00",
+        "group": "12813_00",
+        "split": "train"
+      },
+      {
+        "id": "11122_00",
+        "group": "11122_00",
+        "split": "train"
+      },
+      {
+        "id": "00074_00",
+        "group": "00074_00",
+        "split": "train"
+      },
+      {
+        "id": "06379_00",
+        "group": "06379_00",
+        "split": "train"
+      },
+      {
+        "id": "10063_00",
+        "group": "10063_00",
+        "split": "train"
+      },
+      {
+        "id": "06968_00",
+        "group": "06968_00",
+        "split": "train"
+      },
+      {
+        "id": "14350_00",
+        "group": "14350_00",
+        "split": "train"
+      },
+      {
+        "id": "08800_00",
+        "group": "08800_00",
+        "split": "train"
+      },
+      {
+        "id": "05997_00",
+        "group": "05997_00",
+        "split": "train"
+      },
+      {
+        "id": "04405_00",
+        "group": "04405_00",
+        "split": "train"
+      },
+      {
+        "id": "05302_00",
+        "group": "05302_00",
+        "split": "train"
+      },
+      {
+        "id": "07151_00",
+        "group": "07151_00",
+        "split": "train"
+      },
+      {
+        "id": "07435_00",
+        "group": "07435_00",
+        "split": "train"
+      },
+      {
+        "id": "03173_00",
+        "group": "03173_00",
+        "split": "train"
+      },
+      {
+        "id": "09093_00",
+        "group": "09093_00",
+        "split": "train"
+      },
+      {
+        "id": "12824_00",
+        "group": "12824_00",
+        "split": "train"
+      },
+      {
+        "id": "01293_00",
+        "group": "01293_00",
+        "split": "train"
+      },
+      {
+        "id": "01625_00",
+        "group": "01625_00",
+        "split": "train"
+      },
+      {
+        "id": "09632_00",
+        "group": "09632_00",
+        "split": "train"
+      },
+      {
+        "id": "11503_00",
+        "group": "11503_00",
+        "split": "train"
+      },
+      {
+        "id": "05165_00",
+        "group": "05165_00",
+        "split": "train"
+      },
+      {
+        "id": "13306_00",
+        "group": "13306_00",
+        "split": "train"
+      },
+      {
+        "id": "01214_00",
+        "group": "01214_00",
+        "split": "train"
+      },
+      {
+        "id": "13109_00",
+        "group": "13109_00",
+        "split": "train"
+      },
+      {
+        "id": "14627_00",
+        "group": "14627_00",
+        "split": "train"
+      },
+      {
+        "id": "01670_00",
+        "group": "01670_00",
+        "split": "train"
+      },
+      {
+        "id": "12379_00",
+        "group": "12379_00",
+        "split": "train"
+      },
+      {
+        "id": "14019_00",
+        "group": "14019_00",
+        "split": "train"
+      },
+      {
+        "id": "13910_00",
+        "group": "13910_00",
+        "split": "train"
+      },
+      {
+        "id": "00287_00",
+        "group": "00287_00",
+        "split": "train"
+      },
+      {
+        "id": "05374_00",
+        "group": "05374_00",
+        "split": "train"
+      },
+      {
+        "id": "09500_00",
+        "group": "09500_00",
+        "split": "train"
+      },
+      {
+        "id": "01008_00",
+        "group": "01008_00",
+        "split": "train"
+      },
+      {
+        "id": "00468_00",
+        "group": "00468_00",
+        "split": "train"
+      },
+      {
+        "id": "13811_00",
+        "group": "13811_00",
+        "split": "train"
+      },
+      {
+        "id": "12534_00",
+        "group": "12534_00",
+        "split": "train"
+      },
+      {
+        "id": "00916_00",
+        "group": "00916_00",
+        "split": "train"
+      },
+      {
+        "id": "04499_00",
+        "group": "04499_00",
+        "split": "train"
+      },
+      {
+        "id": "02872_00",
+        "group": "02872_00",
+        "split": "train"
+      },
+      {
+        "id": "04661_00",
+        "group": "04661_00",
+        "split": "train"
+      },
+      {
+        "id": "01261_00",
+        "group": "01261_00",
+        "split": "train"
+      },
+      {
+        "id": "00633_00",
+        "group": "00633_00",
+        "split": "train"
+      },
+      {
+        "id": "13758_00",
+        "group": "13758_00",
+        "split": "train"
+      },
+      {
+        "id": "03445_00",
+        "group": "03445_00",
+        "split": "train"
+      },
+      {
+        "id": "04847_00",
+        "group": "04847_00",
+        "split": "train"
+      },
+      {
+        "id": "12724_00",
+        "group": "12724_00",
+        "split": "train"
+      },
+      {
+        "id": "05751_00",
+        "group": "05751_00",
+        "split": "train"
+      },
+      {
+        "id": "01143_00",
+        "group": "01143_00",
+        "split": "train"
+      },
+      {
+        "id": "10567_00",
+        "group": "10567_00",
+        "split": "train"
+      },
+      {
+        "id": "06026_00",
+        "group": "06026_00",
+        "split": "train"
+      },
+      {
+        "id": "10371_00",
+        "group": "10371_00",
+        "split": "train"
+      },
+      {
+        "id": "13878_00",
+        "group": "13878_00",
+        "split": "train"
+      },
+      {
+        "id": "03413_00",
+        "group": "03413_00",
+        "split": "train"
+      },
+      {
+        "id": "09067_00",
+        "group": "09067_00",
+        "split": "train"
+      },
+      {
+        "id": "00617_00",
+        "group": "00617_00",
+        "split": "train"
+      },
+      {
+        "id": "08254_00",
+        "group": "08254_00",
+        "split": "train"
+      },
+      {
+        "id": "03025_00",
+        "group": "03025_00",
+        "split": "train"
+      },
+      {
+        "id": "06441_00",
+        "group": "06441_00",
+        "split": "train"
+      },
+      {
+        "id": "01320_00",
+        "group": "01320_00",
+        "split": "train"
+      },
+      {
+        "id": "06796_00",
+        "group": "06796_00",
+        "split": "train"
+      },
+      {
+        "id": "04071_00",
+        "group": "04071_00",
+        "split": "train"
+      },
+      {
+        "id": "00645_00",
+        "group": "00645_00",
+        "split": "train"
+      },
+      {
+        "id": "02171_00",
+        "group": "02171_00",
+        "split": "train"
+      },
+      {
+        "id": "05400_00",
+        "group": "05400_00",
+        "split": "train"
+      },
+      {
+        "id": "09102_00",
+        "group": "09102_00",
+        "split": "train"
+      },
+      {
+        "id": "02996_00",
+        "group": "02996_00",
+        "split": "train"
+      },
+      {
+        "id": "07706_00",
+        "group": "07706_00",
+        "split": "train"
+      },
+      {
+        "id": "04961_00",
+        "group": "04961_00",
+        "split": "train"
+      },
+      {
+        "id": "09192_00",
+        "group": "09192_00",
+        "split": "train"
+      },
+      {
+        "id": "01656_00",
+        "group": "01656_00",
+        "split": "train"
+      },
+      {
+        "id": "08690_00",
+        "group": "08690_00",
+        "split": "train"
+      },
+      {
+        "id": "09036_00",
+        "group": "09036_00",
+        "split": "train"
+      },
+      {
+        "id": "04963_00",
+        "group": "04963_00",
+        "split": "train"
+      },
+      {
+        "id": "03569_00",
+        "group": "03569_00",
+        "split": "train"
+      },
+      {
+        "id": "05275_00",
+        "group": "05275_00",
+        "split": "train"
+      },
+      {
+        "id": "08021_00",
+        "group": "08021_00",
+        "split": "train"
+      },
+      {
+        "id": "08230_00",
+        "group": "08230_00",
+        "split": "train"
+      },
+      {
+        "id": "02645_00",
+        "group": "02645_00",
+        "split": "train"
+      },
+      {
+        "id": "06914_00",
+        "group": "06914_00",
+        "split": "train"
+      },
+      {
+        "id": "13952_00",
+        "group": "13952_00",
+        "split": "train"
+      },
+      {
+        "id": "10968_00",
+        "group": "10968_00",
+        "split": "train"
+      },
+      {
+        "id": "10716_00",
+        "group": "10716_00",
+        "split": "train"
+      },
+      {
+        "id": "01973_00",
+        "group": "01973_00",
+        "split": "train"
+      },
+      {
+        "id": "09824_00",
+        "group": "09824_00",
+        "split": "train"
+      },
+      {
+        "id": "01711_00",
+        "group": "01711_00",
+        "split": "train"
+      },
+      {
+        "id": "12873_00",
+        "group": "12873_00",
+        "split": "train"
+      },
+      {
+        "id": "00920_00",
+        "group": "00920_00",
+        "split": "train"
+      },
+      {
+        "id": "10462_00",
+        "group": "10462_00",
+        "split": "train"
+      },
+      {
+        "id": "13591_00",
+        "group": "13591_00",
+        "split": "train"
+      },
+      {
+        "id": "02682_00",
+        "group": "02682_00",
+        "split": "train"
+      },
+      {
+        "id": "11851_00",
+        "group": "11851_00",
+        "split": "train"
+      },
+      {
+        "id": "01959_00",
+        "group": "01959_00",
+        "split": "train"
+      },
+      {
+        "id": "01645_00",
+        "group": "01645_00",
+        "split": "train"
+      },
+      {
+        "id": "11436_00",
+        "group": "11436_00",
+        "split": "train"
+      },
+      {
+        "id": "00925_00",
+        "group": "00925_00",
+        "split": "train"
+      },
+      {
+        "id": "11401_00",
+        "group": "11401_00",
+        "split": "train"
+      },
+      {
+        "id": "05186_00",
+        "group": "05186_00",
+        "split": "train"
+      },
+      {
+        "id": "05242_00",
+        "group": "05242_00",
+        "split": "train"
+      },
+      {
+        "id": "02759_00",
+        "group": "02759_00",
+        "split": "train"
+      },
+      {
+        "id": "01433_00",
+        "group": "01433_00",
+        "split": "train"
+      },
+      {
+        "id": "09263_00",
+        "group": "09263_00",
+        "split": "train"
+      },
+      {
+        "id": "10675_00",
+        "group": "10675_00",
+        "split": "train"
+      },
+      {
+        "id": "01626_00",
+        "group": "01626_00",
+        "split": "train"
+      },
+      {
+        "id": "07433_00",
+        "group": "07433_00",
+        "split": "train"
+      },
+      {
+        "id": "01011_00",
+        "group": "01011_00",
+        "split": "train"
+      },
+      {
+        "id": "06101_00",
+        "group": "06101_00",
+        "split": "train"
+      },
+      {
+        "id": "07121_00",
+        "group": "07121_00",
+        "split": "train"
+      },
+      {
+        "id": "10680_00",
+        "group": "10680_00",
+        "split": "train"
+      },
+      {
+        "id": "01350_00",
+        "group": "01350_00",
+        "split": "train"
+      },
+      {
+        "id": "14639_00",
+        "group": "14639_00",
+        "split": "train"
+      },
+      {
+        "id": "00440_00",
+        "group": "00440_00",
+        "split": "train"
+      },
+      {
+        "id": "14473_00",
+        "group": "14473_00",
+        "split": "train"
+      },
+      {
+        "id": "11789_00",
+        "group": "11789_00",
+        "split": "train"
+      },
+      {
+        "id": "11599_00",
+        "group": "11599_00",
+        "split": "train"
+      },
+      {
+        "id": "03838_00",
+        "group": "03838_00",
+        "split": "train"
+      },
+      {
+        "id": "03924_00",
+        "group": "03924_00",
+        "split": "train"
+      },
+      {
+        "id": "11709_00",
+        "group": "11709_00",
+        "split": "train"
+      },
+      {
+        "id": "01486_00",
+        "group": "01486_00",
+        "split": "train"
+      },
+      {
+        "id": "07544_00",
+        "group": "07544_00",
+        "split": "train"
+      },
+      {
+        "id": "13643_00",
+        "group": "13643_00",
+        "split": "train"
+      },
+      {
+        "id": "13322_00",
+        "group": "13322_00",
+        "split": "train"
+      },
+      {
+        "id": "06466_00",
+        "group": "06466_00",
+        "split": "train"
+      },
+      {
+        "id": "14212_00",
+        "group": "14212_00",
+        "split": "train"
+      },
+      {
+        "id": "00765_00",
+        "group": "00765_00",
+        "split": "train"
+      },
+      {
+        "id": "03975_00",
+        "group": "03975_00",
+        "split": "train"
+      },
+      {
+        "id": "13684_00",
+        "group": "13684_00",
+        "split": "train"
+      },
+      {
+        "id": "02507_00",
+        "group": "02507_00",
+        "split": "train"
+      },
+      {
+        "id": "07884_00",
+        "group": "07884_00",
+        "split": "train"
+      },
+      {
+        "id": "02151_00",
+        "group": "02151_00",
+        "split": "train"
+      },
+      {
+        "id": "03052_00",
+        "group": "03052_00",
+        "split": "train"
+      },
+      {
+        "id": "04339_00",
+        "group": "04339_00",
+        "split": "train"
+      },
+      {
+        "id": "07209_00",
+        "group": "07209_00",
+        "split": "train"
+      },
+      {
+        "id": "11919_00",
+        "group": "11919_00",
+        "split": "train"
+      },
+      {
+        "id": "08909_00",
+        "group": "08909_00",
+        "split": "train"
+      },
+      {
+        "id": "04581_00",
+        "group": "04581_00",
+        "split": "train"
+      },
+      {
+        "id": "09256_00",
+        "group": "09256_00",
+        "split": "train"
+      },
+      {
+        "id": "03145_00",
+        "group": "03145_00",
+        "split": "train"
+      },
+      {
+        "id": "05469_00",
+        "group": "05469_00",
+        "split": "train"
+      },
+      {
+        "id": "02082_00",
+        "group": "02082_00",
+        "split": "train"
+      },
+      {
+        "id": "11388_00",
+        "group": "11388_00",
+        "split": "train"
+      },
+      {
+        "id": "03913_00",
+        "group": "03913_00",
+        "split": "train"
+      },
+      {
+        "id": "12159_00",
+        "group": "12159_00",
+        "split": "train"
+      },
+      {
+        "id": "02304_00",
+        "group": "02304_00",
+        "split": "train"
+      },
+      {
+        "id": "06650_00",
+        "group": "06650_00",
+        "split": "train"
+      },
+      {
+        "id": "01936_00",
+        "group": "01936_00",
+        "split": "train"
+      },
+      {
+        "id": "02565_00",
+        "group": "02565_00",
+        "split": "train"
+      },
+      {
+        "id": "11854_00",
+        "group": "11854_00",
+        "split": "train"
+      },
+      {
+        "id": "04517_00",
+        "group": "04517_00",
+        "split": "train"
+      },
+      {
+        "id": "05910_00",
+        "group": "05910_00",
+        "split": "train"
+      },
+      {
+        "id": "14008_00",
+        "group": "14008_00",
+        "split": "train"
+      },
+      {
+        "id": "02663_00",
+        "group": "02663_00",
+        "split": "train"
+      },
+      {
+        "id": "08071_00",
+        "group": "08071_00",
+        "split": "train"
+      },
+      {
+        "id": "03509_00",
+        "group": "03509_00",
+        "split": "train"
+      },
+      {
+        "id": "11770_00",
+        "group": "11770_00",
+        "split": "train"
+      },
+      {
+        "id": "09869_00",
+        "group": "09869_00",
+        "split": "train"
+      },
+      {
+        "id": "10687_00",
+        "group": "10687_00",
+        "split": "train"
+      },
+      {
+        "id": "11447_00",
+        "group": "11447_00",
+        "split": "train"
+      },
+      {
+        "id": "03250_00",
+        "group": "03250_00",
+        "split": "train"
+      },
+      {
+        "id": "04197_00",
+        "group": "04197_00",
+        "split": "train"
+      },
+      {
+        "id": "14531_00",
+        "group": "14531_00",
+        "split": "train"
+      },
+      {
+        "id": "01376_00",
+        "group": "01376_00",
+        "split": "train"
+      },
+      {
+        "id": "02253_00",
+        "group": "02253_00",
+        "split": "train"
+      },
+      {
+        "id": "11902_00",
+        "group": "11902_00",
+        "split": "train"
+      },
+      {
+        "id": "10831_00",
+        "group": "10831_00",
+        "split": "train"
+      },
+      {
+        "id": "13565_00",
+        "group": "13565_00",
+        "split": "train"
+      },
+      {
+        "id": "00865_00",
+        "group": "00865_00",
+        "split": "train"
+      },
+      {
+        "id": "03316_00",
+        "group": "03316_00",
+        "split": "train"
+      },
+      {
+        "id": "13523_00",
+        "group": "13523_00",
+        "split": "train"
+      },
+      {
+        "id": "04318_00",
+        "group": "04318_00",
+        "split": "train"
+      },
+      {
+        "id": "04892_00",
+        "group": "04892_00",
+        "split": "train"
+      },
+      {
+        "id": "13302_00",
+        "group": "13302_00",
+        "split": "train"
+      },
+      {
+        "id": "11412_00",
+        "group": "11412_00",
+        "split": "train"
+      },
+      {
+        "id": "13949_00",
+        "group": "13949_00",
+        "split": "train"
+      },
+      {
+        "id": "11307_00",
+        "group": "11307_00",
+        "split": "train"
+      },
+      {
+        "id": "00339_00",
+        "group": "00339_00",
+        "split": "train"
+      },
+      {
+        "id": "14112_00",
+        "group": "14112_00",
+        "split": "train"
+      },
+      {
+        "id": "06132_00",
+        "group": "06132_00",
+        "split": "train"
+      },
+      {
+        "id": "01689_00",
+        "group": "01689_00",
+        "split": "train"
+      },
+      {
+        "id": "13488_00",
+        "group": "13488_00",
+        "split": "train"
+      },
+      {
+        "id": "03921_00",
+        "group": "03921_00",
+        "split": "train"
+      },
+      {
+        "id": "06354_00",
+        "group": "06354_00",
+        "split": "train"
+      },
+      {
+        "id": "07225_00",
+        "group": "07225_00",
+        "split": "train"
+      },
+      {
+        "id": "06802_00",
+        "group": "06802_00",
+        "split": "train"
+      },
+      {
+        "id": "00911_00",
+        "group": "00911_00",
+        "split": "train"
+      },
+      {
+        "id": "07077_00",
+        "group": "07077_00",
+        "split": "train"
+      },
+      {
+        "id": "03392_00",
+        "group": "03392_00",
+        "split": "train"
+      },
+      {
+        "id": "05244_00",
+        "group": "05244_00",
+        "split": "train"
+      },
+      {
+        "id": "05580_00",
+        "group": "05580_00",
+        "split": "train"
+      },
+      {
+        "id": "05230_00",
+        "group": "05230_00",
+        "split": "train"
+      },
+      {
+        "id": "08059_00",
+        "group": "08059_00",
+        "split": "train"
+      },
+      {
+        "id": "01581_00",
+        "group": "01581_00",
+        "split": "train"
+      },
+      {
+        "id": "13283_00",
+        "group": "13283_00",
+        "split": "train"
+      },
+      {
+        "id": "06543_00",
+        "group": "06543_00",
+        "split": "train"
+      },
+      {
+        "id": "00348_00",
+        "group": "00348_00",
+        "split": "train"
+      },
+      {
+        "id": "11095_00",
+        "group": "11095_00",
+        "split": "train"
+      },
+      {
+        "id": "13513_00",
+        "group": "13513_00",
+        "split": "train"
+      },
+      {
+        "id": "08378_00",
+        "group": "08378_00",
+        "split": "train"
+      },
+      {
+        "id": "09797_00",
+        "group": "09797_00",
+        "split": "train"
+      },
+      {
+        "id": "03697_00",
+        "group": "03697_00",
+        "split": "train"
+      },
+      {
+        "id": "01994_00",
+        "group": "01994_00",
+        "split": "train"
+      },
+      {
+        "id": "07272_00",
+        "group": "07272_00",
+        "split": "train"
+      },
+      {
+        "id": "05627_00",
+        "group": "05627_00",
+        "split": "train"
+      },
+      {
+        "id": "03291_00",
+        "group": "03291_00",
+        "split": "train"
+      },
+      {
+        "id": "08780_00",
+        "group": "08780_00",
+        "split": "train"
+      },
+      {
+        "id": "13973_00",
+        "group": "13973_00",
+        "split": "train"
+      },
+      {
+        "id": "10439_00",
+        "group": "10439_00",
+        "split": "train"
+      },
+      {
+        "id": "13036_00",
+        "group": "13036_00",
+        "split": "train"
+      },
+      {
+        "id": "09644_00",
+        "group": "09644_00",
+        "split": "train"
+      },
+      {
+        "id": "09162_00",
+        "group": "09162_00",
+        "split": "train"
+      },
+      {
+        "id": "12929_00",
+        "group": "12929_00",
+        "split": "train"
+      },
+      {
+        "id": "03407_00",
+        "group": "03407_00",
+        "split": "train"
+      },
+      {
+        "id": "11715_00",
+        "group": "11715_00",
+        "split": "train"
+      },
+      {
+        "id": "02771_00",
+        "group": "02771_00",
+        "split": "train"
+      },
+      {
+        "id": "08687_00",
+        "group": "08687_00",
+        "split": "train"
+      },
+      {
+        "id": "01386_00",
+        "group": "01386_00",
+        "split": "train"
+      },
+      {
+        "id": "10470_00",
+        "group": "10470_00",
+        "split": "train"
+      },
+      {
+        "id": "03797_00",
+        "group": "03797_00",
+        "split": "train"
+      },
+      {
+        "id": "09890_00",
+        "group": "09890_00",
+        "split": "train"
+      },
+      {
+        "id": "05260_00",
+        "group": "05260_00",
+        "split": "train"
+      },
+      {
+        "id": "05390_00",
+        "group": "05390_00",
+        "split": "train"
+      },
+      {
+        "id": "05944_00",
+        "group": "05944_00",
+        "split": "train"
+      },
+      {
+        "id": "06173_00",
+        "group": "06173_00",
+        "split": "train"
+      },
+      {
+        "id": "01767_00",
+        "group": "01767_00",
+        "split": "train"
+      },
+      {
+        "id": "01352_00",
+        "group": "01352_00",
+        "split": "train"
+      },
+      {
+        "id": "08579_00",
+        "group": "08579_00",
+        "split": "train"
+      },
+      {
+        "id": "07927_00",
+        "group": "07927_00",
+        "split": "train"
+      },
+      {
+        "id": "09912_00",
+        "group": "09912_00",
+        "split": "train"
+      },
+      {
+        "id": "02184_00",
+        "group": "02184_00",
+        "split": "train"
+      },
+      {
+        "id": "10171_00",
+        "group": "10171_00",
+        "split": "train"
+      },
+      {
+        "id": "13806_00",
+        "group": "13806_00",
+        "split": "train"
+      },
+      {
+        "id": "01248_00",
+        "group": "01248_00",
+        "split": "train"
+      },
+      {
+        "id": "01190_00",
+        "group": "01190_00",
+        "split": "train"
+      },
+      {
+        "id": "11742_00",
+        "group": "11742_00",
+        "split": "train"
+      },
+      {
+        "id": "11660_00",
+        "group": "11660_00",
+        "split": "train"
+      },
+      {
+        "id": "07645_00",
+        "group": "07645_00",
+        "split": "train"
+      },
+      {
+        "id": "06631_00",
+        "group": "06631_00",
+        "split": "train"
+      },
+      {
+        "id": "09774_00",
+        "group": "09774_00",
+        "split": "train"
+      },
+      {
+        "id": "14586_00",
+        "group": "14586_00",
+        "split": "train"
+      },
+      {
+        "id": "06860_00",
+        "group": "06860_00",
+        "split": "train"
+      },
+      {
+        "id": "12186_00",
+        "group": "12186_00",
+        "split": "train"
+      },
+      {
+        "id": "04596_00",
+        "group": "04596_00",
+        "split": "train"
+      },
+      {
+        "id": "12789_00",
+        "group": "12789_00",
+        "split": "train"
+      },
+      {
+        "id": "10116_00",
+        "group": "10116_00",
+        "split": "train"
+      },
+      {
+        "id": "09720_00",
+        "group": "09720_00",
+        "split": "train"
+      },
+      {
+        "id": "05236_00",
+        "group": "05236_00",
+        "split": "train"
+      },
+      {
+        "id": "02861_00",
+        "group": "02861_00",
+        "split": "train"
+      },
+      {
+        "id": "07833_00",
+        "group": "07833_00",
+        "split": "train"
+      },
+      {
+        "id": "10865_00",
+        "group": "10865_00",
+        "split": "train"
+      },
+      {
+        "id": "13369_00",
+        "group": "13369_00",
+        "split": "train"
+      },
+      {
+        "id": "00470_00",
+        "group": "00470_00",
+        "split": "train"
+      },
+      {
+        "id": "12801_00",
+        "group": "12801_00",
+        "split": "train"
+      },
+      {
+        "id": "03158_00",
+        "group": "03158_00",
+        "split": "train"
+      },
+      {
+        "id": "01543_00",
+        "group": "01543_00",
+        "split": "train"
+      },
+      {
+        "id": "08584_00",
+        "group": "08584_00",
+        "split": "train"
+      },
+      {
+        "id": "01171_00",
+        "group": "01171_00",
+        "split": "train"
+      },
+      {
+        "id": "08900_00",
+        "group": "08900_00",
+        "split": "train"
+      },
+      {
+        "id": "09842_00",
+        "group": "09842_00",
+        "split": "train"
+      },
+      {
+        "id": "14097_00",
+        "group": "14097_00",
+        "split": "train"
+      },
+      {
+        "id": "12501_00",
+        "group": "12501_00",
+        "split": "train"
+      },
+      {
+        "id": "10686_00",
+        "group": "10686_00",
+        "split": "train"
+      },
+      {
+        "id": "12341_00",
+        "group": "12341_00",
+        "split": "train"
+      },
+      {
+        "id": "08271_00",
+        "group": "08271_00",
+        "split": "train"
+      },
+      {
+        "id": "10560_00",
+        "group": "10560_00",
+        "split": "train"
+      },
+      {
+        "id": "09691_00",
+        "group": "09691_00",
+        "split": "train"
+      },
+      {
+        "id": "09946_00",
+        "group": "09946_00",
+        "split": "train"
+      },
+      {
+        "id": "00827_00",
+        "group": "00827_00",
+        "split": "train"
+      },
+      {
+        "id": "11373_00",
+        "group": "11373_00",
+        "split": "train"
+      },
+      {
+        "id": "00509_00",
+        "group": "00509_00",
+        "split": "train"
+      },
+      {
+        "id": "01409_00",
+        "group": "01409_00",
+        "split": "train"
+      },
+      {
+        "id": "06452_00",
+        "group": "06452_00",
+        "split": "train"
+      },
+      {
+        "id": "13324_00",
+        "group": "13324_00",
+        "split": "train"
+      },
+      {
+        "id": "04307_00",
+        "group": "04307_00",
+        "split": "train"
+      },
+      {
+        "id": "09236_00",
+        "group": "09236_00",
+        "split": "train"
+      },
+      {
+        "id": "07738_00",
+        "group": "07738_00",
+        "split": "train"
+      },
+      {
+        "id": "09505_00",
+        "group": "09505_00",
+        "split": "train"
+      },
+      {
+        "id": "09509_00",
+        "group": "09509_00",
+        "split": "train"
+      },
+      {
+        "id": "04666_00",
+        "group": "04666_00",
+        "split": "train"
+      },
+      {
+        "id": "11738_00",
+        "group": "11738_00",
+        "split": "train"
+      },
+      {
+        "id": "00121_00",
+        "group": "00121_00",
+        "split": "train"
+      },
+      {
+        "id": "04176_00",
+        "group": "04176_00",
+        "split": "train"
+      },
+      {
+        "id": "14034_00",
+        "group": "14034_00",
+        "split": "train"
+      },
+      {
+        "id": "14555_00",
+        "group": "14555_00",
+        "split": "train"
+      },
+      {
+        "id": "02964_00",
+        "group": "02964_00",
+        "split": "train"
+      },
+      {
+        "id": "14508_00",
+        "group": "14508_00",
+        "split": "train"
+      },
+      {
+        "id": "07293_00",
+        "group": "07293_00",
+        "split": "train"
+      },
+      {
+        "id": "00474_00",
+        "group": "00474_00",
+        "split": "train"
+      },
+      {
+        "id": "07764_00",
+        "group": "07764_00",
+        "split": "train"
+      },
+      {
+        "id": "13985_00",
+        "group": "13985_00",
+        "split": "train"
+      },
+      {
+        "id": "05309_00",
+        "group": "05309_00",
+        "split": "train"
+      },
+      {
+        "id": "07124_00",
+        "group": "07124_00",
+        "split": "train"
+      },
+      {
+        "id": "12162_00",
+        "group": "12162_00",
+        "split": "train"
+      },
+      {
+        "id": "10688_00",
+        "group": "10688_00",
+        "split": "train"
+      },
+      {
+        "id": "01412_00",
+        "group": "01412_00",
+        "split": "train"
+      },
+      {
+        "id": "08852_00",
+        "group": "08852_00",
+        "split": "train"
+      },
+      {
+        "id": "09116_00",
+        "group": "09116_00",
+        "split": "train"
+      },
+      {
+        "id": "09372_00",
+        "group": "09372_00",
+        "split": "train"
+      },
+      {
+        "id": "07980_00",
+        "group": "07975_00",
+        "split": "train"
+      },
+      {
+        "id": "02008_00",
+        "group": "02008_00",
+        "split": "train"
+      },
+      {
+        "id": "04651_00",
+        "group": "04651_00",
+        "split": "train"
+      },
+      {
+        "id": "14383_00",
+        "group": "14383_00",
+        "split": "train"
+      },
+      {
+        "id": "13891_00",
+        "group": "13891_00",
+        "split": "train"
+      },
+      {
+        "id": "01641_00",
+        "group": "01641_00",
+        "split": "train"
+      },
+      {
+        "id": "09260_00",
+        "group": "09260_00",
+        "split": "train"
+      },
+      {
+        "id": "02307_00",
+        "group": "02307_00",
+        "split": "train"
+      },
+      {
+        "id": "14248_00",
+        "group": "14248_00",
+        "split": "train"
+      },
+      {
+        "id": "07410_00",
+        "group": "07410_00",
+        "split": "train"
+      },
+      {
+        "id": "05520_00",
+        "group": "05520_00",
+        "split": "train"
+      },
+      {
+        "id": "10402_00",
+        "group": "10402_00",
+        "split": "train"
+      },
+      {
+        "id": "02871_00",
+        "group": "02871_00",
+        "split": "train"
+      },
+      {
+        "id": "06117_00",
+        "group": "06117_00",
+        "split": "train"
+      },
+      {
+        "id": "10811_00",
+        "group": "10811_00",
+        "split": "train"
+      },
+      {
+        "id": "08784_00",
+        "group": "08784_00",
+        "split": "train"
+      },
+      {
+        "id": "06953_00",
+        "group": "06953_00",
+        "split": "train"
+      },
+      {
+        "id": "10352_00",
+        "group": "10352_00",
+        "split": "train"
+      },
+      {
+        "id": "00832_00",
+        "group": "00832_00",
+        "split": "train"
+      },
+      {
+        "id": "07331_00",
+        "group": "07331_00",
+        "split": "train"
+      },
+      {
+        "id": "11564_00",
+        "group": "11564_00",
+        "split": "train"
+      },
+      {
+        "id": "02460_00",
+        "group": "02460_00",
+        "split": "train"
+      },
+      {
+        "id": "00458_00",
+        "group": "00458_00",
+        "split": "train"
+      },
+      {
+        "id": "11127_00",
+        "group": "11127_00",
+        "split": "train"
+      },
+      {
+        "id": "13383_00",
+        "group": "13383_00",
+        "split": "train"
+      },
+      {
+        "id": "14429_00",
+        "group": "14429_00",
+        "split": "train"
+      },
+      {
+        "id": "00568_00",
+        "group": "00568_00",
+        "split": "train"
+      },
+      {
+        "id": "02054_00",
+        "group": "02054_00",
+        "split": "train"
+      },
+      {
+        "id": "06150_00",
+        "group": "06150_00",
+        "split": "train"
+      },
+      {
+        "id": "08571_00",
+        "group": "08571_00",
+        "split": "train"
+      },
+      {
+        "id": "01176_00",
+        "group": "01176_00",
+        "split": "train"
+      },
+      {
+        "id": "03579_00",
+        "group": "03579_00",
+        "split": "train"
+      },
+      {
+        "id": "01609_00",
+        "group": "01609_00",
+        "split": "train"
+      },
+      {
+        "id": "06516_00",
+        "group": "06516_00",
+        "split": "train"
+      },
+      {
+        "id": "02653_00",
+        "group": "02653_00",
+        "split": "train"
+      },
+      {
+        "id": "07309_00",
+        "group": "07309_00",
+        "split": "train"
+      },
+      {
+        "id": "09176_00",
+        "group": "09176_00",
+        "split": "train"
+      },
+      {
+        "id": "05325_00",
+        "group": "05325_00",
+        "split": "train"
+      },
+      {
+        "id": "03554_00",
+        "group": "03554_00",
+        "split": "train"
+      },
+      {
+        "id": "14679_00",
+        "group": "14679_00",
+        "split": "train"
+      },
+      {
+        "id": "03123_00",
+        "group": "03123_00",
+        "split": "train"
+      },
+      {
+        "id": "00278_00",
+        "group": "00278_00",
+        "split": "train"
+      },
+      {
+        "id": "05533_00",
+        "group": "05533_00",
+        "split": "train"
+      },
+      {
+        "id": "02372_00",
+        "group": "02372_00",
+        "split": "train"
+      },
+      {
+        "id": "10013_00",
+        "group": "10013_00",
+        "split": "train"
+      },
+      {
+        "id": "12634_00",
+        "group": "12634_00",
+        "split": "train"
+      },
+      {
+        "id": "12279_00",
+        "group": "12279_00",
+        "split": "train"
+      },
+      {
+        "id": "02824_00",
+        "group": "02824_00",
+        "split": "train"
+      },
+      {
+        "id": "00620_00",
+        "group": "00620_00",
+        "split": "train"
+      },
+      {
+        "id": "13341_00",
+        "group": "13341_00",
+        "split": "train"
+      },
+      {
+        "id": "11938_00",
+        "group": "11938_00",
+        "split": "train"
+      },
+      {
+        "id": "01753_00",
+        "group": "01753_00",
+        "split": "train"
+      },
+      {
+        "id": "08735_00",
+        "group": "08735_00",
+        "split": "train"
+      },
+      {
+        "id": "10825_00",
+        "group": "10825_00",
+        "split": "train"
+      },
+      {
+        "id": "02278_00",
+        "group": "02278_00",
+        "split": "train"
+      },
+      {
+        "id": "09058_00",
+        "group": "09058_00",
+        "split": "train"
+      },
+      {
+        "id": "14481_00",
+        "group": "14481_00",
+        "split": "train"
+      },
+      {
+        "id": "05208_00",
+        "group": "05208_00",
+        "split": "train"
+      },
+      {
+        "id": "13049_00",
+        "group": "13049_00",
+        "split": "train"
+      },
+      {
+        "id": "05537_00",
+        "group": "05537_00",
+        "split": "train"
+      },
+      {
+        "id": "00888_00",
+        "group": "00888_00",
+        "split": "train"
+      },
+      {
+        "id": "06564_00",
+        "group": "06564_00",
+        "split": "train"
+      },
+      {
+        "id": "07793_00",
+        "group": "07793_00",
+        "split": "train"
+      },
+      {
+        "id": "07147_00",
+        "group": "07147_00",
+        "split": "train"
+      },
+      {
+        "id": "04395_00",
+        "group": "04395_00",
+        "split": "train"
+      },
+      {
+        "id": "01446_00",
+        "group": "01446_00",
+        "split": "train"
+      },
+      {
+        "id": "11372_00",
+        "group": "11372_00",
+        "split": "train"
+      },
+      {
+        "id": "11525_00",
+        "group": "11525_00",
+        "split": "train"
+      },
+      {
+        "id": "06961_00",
+        "group": "06961_00",
+        "split": "train"
+      },
+      {
+        "id": "08110_00",
+        "group": "08110_00",
+        "split": "train"
+      },
+      {
+        "id": "02527_00",
+        "group": "02527_00",
+        "split": "train"
+      },
+      {
+        "id": "06778_00",
+        "group": "06778_00",
+        "split": "train"
+      },
+      {
+        "id": "04836_00",
+        "group": "04836_00",
+        "split": "train"
+      },
+      {
+        "id": "13988_00",
+        "group": "13988_00",
+        "split": "train"
+      },
+      {
+        "id": "09725_00",
+        "group": "09725_00",
+        "split": "train"
+      },
+      {
+        "id": "12807_00",
+        "group": "12807_00",
+        "split": "train"
+      },
+      {
+        "id": "07847_00",
+        "group": "07847_00",
+        "split": "train"
+      },
+      {
+        "id": "13517_00",
+        "group": "13517_00",
+        "split": "train"
+      },
+      {
+        "id": "09187_00",
+        "group": "09187_00",
+        "split": "train"
+      },
+      {
+        "id": "07449_00",
+        "group": "07449_00",
+        "split": "train"
+      },
+      {
+        "id": "06432_00",
+        "group": "06432_00",
+        "split": "train"
+      },
+      {
+        "id": "03694_00",
+        "group": "03694_00",
+        "split": "train"
+      },
+      {
+        "id": "04392_00",
+        "group": "04392_00",
+        "split": "train"
+      },
+      {
+        "id": "01470_00",
+        "group": "01470_00",
+        "split": "train"
+      },
+      {
+        "id": "02988_00",
+        "group": "02988_00",
+        "split": "train"
+      },
+      {
+        "id": "07395_00",
+        "group": "07395_00",
+        "split": "train"
+      },
+      {
+        "id": "14439_00",
+        "group": "14439_00",
+        "split": "train"
+      },
+      {
+        "id": "13097_00",
+        "group": "13097_00",
+        "split": "train"
+      },
+      {
+        "id": "03721_00",
+        "group": "03721_00",
+        "split": "train"
+      },
+      {
+        "id": "11903_00",
+        "group": "11903_00",
+        "split": "train"
+      },
+      {
+        "id": "04351_00",
+        "group": "04351_00",
+        "split": "train"
+      },
+      {
+        "id": "04469_00",
+        "group": "04469_00",
+        "split": "train"
+      },
+      {
+        "id": "00158_00",
+        "group": "00158_00",
+        "split": "train"
+      },
+      {
+        "id": "04130_00",
+        "group": "04130_00",
+        "split": "train"
+      },
+      {
+        "id": "02666_00",
+        "group": "02666_00",
+        "split": "train"
+      },
+      {
+        "id": "08624_00",
+        "group": "08624_00",
+        "split": "train"
+      },
+      {
+        "id": "14529_00",
+        "group": "14529_00",
+        "split": "train"
+      },
+      {
+        "id": "10723_00",
+        "group": "10723_00",
+        "split": "train"
+      },
+      {
+        "id": "07675_00",
+        "group": "07675_00",
+        "split": "train"
+      },
+      {
+        "id": "11237_00",
+        "group": "11237_00",
+        "split": "train"
+      },
+      {
+        "id": "01804_00",
+        "group": "01804_00",
+        "split": "train"
+      },
+      {
+        "id": "10489_00",
+        "group": "10489_00",
+        "split": "train"
+      },
+      {
+        "id": "07593_00",
+        "group": "07593_00",
+        "split": "train"
+      },
+      {
+        "id": "08102_00",
+        "group": "08102_00",
+        "split": "train"
+      },
+      {
+        "id": "07117_00",
+        "group": "07117_00",
+        "split": "train"
+      },
+      {
+        "id": "05162_00",
+        "group": "05162_00",
+        "split": "train"
+      },
+      {
+        "id": "07941_00",
+        "group": "07941_00",
+        "split": "train"
+      },
+      {
+        "id": "08296_00",
+        "group": "08296_00",
+        "split": "train"
+      },
+      {
+        "id": "07802_00",
+        "group": "07802_00",
+        "split": "train"
+      },
+      {
+        "id": "04700_00",
+        "group": "04700_00",
+        "split": "train"
+      },
+      {
+        "id": "02388_00",
+        "group": "02388_00",
+        "split": "train"
+      },
+      {
+        "id": "00008_00",
+        "group": "00008_00",
+        "split": "train"
+      },
+      {
+        "id": "06997_00",
+        "group": "06997_00",
+        "split": "train"
+      },
+      {
+        "id": "08903_00",
+        "group": "08903_00",
+        "split": "train"
+      },
+      {
+        "id": "00858_00",
+        "group": "00858_00",
+        "split": "train"
+      },
+      {
+        "id": "14249_00",
+        "group": "14249_00",
+        "split": "train"
+      },
+      {
+        "id": "10227_00",
+        "group": "10227_00",
+        "split": "train"
+      },
+      {
+        "id": "08955_00",
+        "group": "08955_00",
+        "split": "train"
+      },
+      {
+        "id": "12741_00",
+        "group": "12741_00",
+        "split": "train"
+      },
+      {
+        "id": "02928_00",
+        "group": "02928_00",
+        "split": "train"
+      },
+      {
+        "id": "14358_00",
+        "group": "14358_00",
+        "split": "train"
+      },
+      {
+        "id": "00260_00",
+        "group": "00260_00",
+        "split": "train"
+      },
+      {
+        "id": "07694_00",
+        "group": "07694_00",
+        "split": "train"
+      },
+      {
+        "id": "09466_00",
+        "group": "09466_00",
+        "split": "train"
+      },
+      {
+        "id": "09659_00",
+        "group": "09659_00",
+        "split": "train"
+      },
+      {
+        "id": "10324_00",
+        "group": "10324_00",
+        "split": "train"
+      },
+      {
+        "id": "05710_00",
+        "group": "05710_00",
+        "split": "train"
+      },
+      {
+        "id": "13615_00",
+        "group": "13615_00",
+        "split": "train"
+      },
+      {
+        "id": "07726_00",
+        "group": "07726_00",
+        "split": "train"
+      },
+      {
+        "id": "14547_00",
+        "group": "14547_00",
+        "split": "train"
+      },
+      {
+        "id": "04432_00",
+        "group": "04432_00",
+        "split": "train"
+      },
+      {
+        "id": "12044_00",
+        "group": "12044_00",
+        "split": "train"
+      },
+      {
+        "id": "12345_00",
+        "group": "12345_00",
+        "split": "train"
+      },
+      {
+        "id": "07874_00",
+        "group": "07874_00",
+        "split": "train"
+      },
+      {
+        "id": "10635_00",
+        "group": "10635_00",
+        "split": "train"
+      },
+      {
+        "id": "07148_00",
+        "group": "07148_00",
+        "split": "train"
+      },
+      {
+        "id": "08644_00",
+        "group": "08644_00",
+        "split": "train"
+      },
+      {
+        "id": "05210_00",
+        "group": "05210_00",
+        "split": "train"
+      },
+      {
+        "id": "02783_00",
+        "group": "02783_00",
+        "split": "train"
+      },
+      {
+        "id": "11480_00",
+        "group": "11480_00",
+        "split": "train"
+      },
+      {
+        "id": "08183_00",
+        "group": "08183_00",
+        "split": "train"
+      },
+      {
+        "id": "12624_00",
+        "group": "12624_00",
+        "split": "train"
+      },
+      {
+        "id": "02167_00",
+        "group": "02167_00",
+        "split": "train"
+      },
+      {
+        "id": "08518_00",
+        "group": "08518_00",
+        "split": "train"
+      },
+      {
+        "id": "14227_00",
+        "group": "14227_00",
+        "split": "train"
+      },
+      {
+        "id": "01853_00",
+        "group": "01853_00",
+        "split": "train"
+      },
+      {
+        "id": "02967_00",
+        "group": "02967_00",
+        "split": "train"
+      },
+      {
+        "id": "05922_00",
+        "group": "05922_00",
+        "split": "train"
+      },
+      {
+        "id": "00096_00",
+        "group": "00096_00",
+        "split": "train"
+      },
+      {
+        "id": "08973_00",
+        "group": "08973_00",
+        "split": "train"
+      },
+      {
+        "id": "02270_00",
+        "group": "02270_00",
+        "split": "train"
+      },
+      {
+        "id": "08098_00",
+        "group": "08098_00",
+        "split": "train"
+      },
+      {
+        "id": "06973_00",
+        "group": "06973_00",
+        "split": "train"
+      },
+      {
+        "id": "10458_00",
+        "group": "10458_00",
+        "split": "train"
+      },
+      {
+        "id": "09388_00",
+        "group": "09388_00",
+        "split": "train"
+      },
+      {
+        "id": "05979_00",
+        "group": "05979_00",
+        "split": "train"
+      },
+      {
+        "id": "08186_00",
+        "group": "08186_00",
+        "split": "train"
+      },
+      {
+        "id": "07899_00",
+        "group": "07899_00",
+        "split": "train"
+      },
+      {
+        "id": "00127_00",
+        "group": "00127_00",
+        "split": "train"
+      },
+      {
+        "id": "08569_00",
+        "group": "08569_00",
+        "split": "train"
+      },
+      {
+        "id": "00782_00",
+        "group": "00782_00",
+        "split": "train"
+      },
+      {
+        "id": "09266_00",
+        "group": "09266_00",
+        "split": "train"
+      },
+      {
+        "id": "08847_00",
+        "group": "08847_00",
+        "split": "train"
+      },
+      {
+        "id": "00709_00",
+        "group": "00709_00",
+        "split": "train"
+      },
+      {
+        "id": "10760_00",
+        "group": "10760_00",
+        "split": "train"
+      },
+      {
+        "id": "02116_00",
+        "group": "02116_00",
+        "split": "train"
+      },
+      {
+        "id": "02018_00",
+        "group": "02018_00",
+        "split": "train"
+      },
+      {
+        "id": "08848_00",
+        "group": "08848_00",
+        "split": "train"
+      },
+      {
+        "id": "00714_00",
+        "group": "00714_00",
+        "split": "train"
+      },
+      {
+        "id": "08297_00",
+        "group": "08297_00",
+        "split": "train"
+      },
+      {
+        "id": "10523_00",
+        "group": "10523_00",
+        "split": "train"
+      },
+      {
+        "id": "03361_00",
+        "group": "03361_00",
+        "split": "train"
+      },
+      {
+        "id": "03315_00",
+        "group": "03315_00",
+        "split": "train"
+      },
+      {
+        "id": "07408_00",
+        "group": "07408_00",
+        "split": "train"
+      },
+      {
+        "id": "02523_00",
+        "group": "02523_00",
+        "split": "train"
+      },
+      {
+        "id": "01390_00",
+        "group": "01390_00",
+        "split": "train"
+      },
+      {
+        "id": "01622_00",
+        "group": "01622_00",
+        "split": "train"
+      },
+      {
+        "id": "04393_00",
+        "group": "04393_00",
+        "split": "train"
+      },
+      {
+        "id": "02948_00",
+        "group": "02948_00",
+        "split": "train"
+      },
+      {
+        "id": "07573_00",
+        "group": "07573_00",
+        "split": "train"
+      },
+      {
+        "id": "07050_00",
+        "group": "07050_00",
+        "split": "train"
+      },
+      {
+        "id": "12982_00",
+        "group": "12982_00",
+        "split": "train"
+      },
+      {
+        "id": "06306_00",
+        "group": "06306_00",
+        "split": "train"
+      },
+      {
+        "id": "02457_00",
+        "group": "02457_00",
+        "split": "train"
+      },
+      {
+        "id": "06345_00",
+        "group": "06345_00",
+        "split": "train"
+      },
+      {
+        "id": "01172_00",
+        "group": "01172_00",
+        "split": "train"
+      },
+      {
+        "id": "08633_00",
+        "group": "08633_00",
+        "split": "train"
+      },
+      {
+        "id": "08263_00",
+        "group": "08263_00",
+        "split": "train"
+      },
+      {
+        "id": "06894_00",
+        "group": "06894_00",
+        "split": "train"
+      },
+      {
+        "id": "12178_00",
+        "group": "12178_00",
+        "split": "train"
+      },
+      {
+        "id": "06261_00",
+        "group": "06261_00",
+        "split": "train"
+      },
+      {
+        "id": "01268_00",
+        "group": "01268_00",
+        "split": "train"
+      },
+      {
+        "id": "09493_00",
+        "group": "09493_00",
+        "split": "train"
+      },
+      {
+        "id": "01850_00",
+        "group": "01850_00",
+        "split": "train"
+      },
+      {
+        "id": "11794_00",
+        "group": "11794_00",
+        "split": "train"
+      },
+      {
+        "id": "13668_00",
+        "group": "13668_00",
+        "split": "train"
+      },
+      {
+        "id": "04136_00",
+        "group": "04136_00",
+        "split": "train"
+      },
+      {
+        "id": "06769_00",
+        "group": "06769_00",
+        "split": "train"
+      },
+      {
+        "id": "08158_00",
+        "group": "08158_00",
+        "split": "train"
+      },
+      {
+        "id": "08032_00",
+        "group": "08032_00",
+        "split": "train"
+      },
+      {
+        "id": "09670_00",
+        "group": "09670_00",
+        "split": "train"
+      },
+      {
+        "id": "11584_00",
+        "group": "11584_00",
+        "split": "train"
+      },
+      {
+        "id": "02605_00",
+        "group": "02605_00",
+        "split": "train"
+      },
+      {
+        "id": "13947_00",
+        "group": "13947_00",
+        "split": "train"
+      },
+      {
+        "id": "11713_00",
+        "group": "11713_00",
+        "split": "train"
+      },
+      {
+        "id": "01265_00",
+        "group": "01265_00",
+        "split": "train"
+      },
+      {
+        "id": "13409_00",
+        "group": "13409_00",
+        "split": "train"
+      },
+      {
+        "id": "02305_00",
+        "group": "02305_00",
+        "split": "train"
+      },
+      {
+        "id": "07965_00",
+        "group": "07965_00",
+        "split": "train"
+      },
+      {
+        "id": "09810_00",
+        "group": "09810_00",
+        "split": "train"
+      },
+      {
+        "id": "00462_00",
+        "group": "00462_00",
+        "split": "train"
+      },
+      {
+        "id": "10078_00",
+        "group": "10078_00",
+        "split": "train"
+      },
+      {
+        "id": "00075_00",
+        "group": "00075_00",
+        "split": "train"
+      },
+      {
+        "id": "01287_00",
+        "group": "01287_00",
+        "split": "train"
+      },
+      {
+        "id": "14572_00",
+        "group": "14572_00",
+        "split": "train"
+      },
+      {
+        "id": "06675_00",
+        "group": "06675_00",
+        "split": "train"
+      },
+      {
+        "id": "01854_00",
+        "group": "01854_00",
+        "split": "train"
+      },
+      {
+        "id": "08232_00",
+        "group": "08232_00",
+        "split": "train"
+      },
+      {
+        "id": "05677_00",
+        "group": "05677_00",
+        "split": "train"
+      },
+      {
+        "id": "04298_00",
+        "group": "04298_00",
+        "split": "train"
+      },
+      {
+        "id": "08538_00",
+        "group": "08538_00",
+        "split": "train"
+      },
+      {
+        "id": "06350_00",
+        "group": "06350_00",
+        "split": "train"
+      },
+      {
+        "id": "11778_00",
+        "group": "11778_00",
+        "split": "train"
+      },
+      {
+        "id": "09055_00",
+        "group": "09055_00",
+        "split": "train"
+      },
+      {
+        "id": "10741_00",
+        "group": "10741_00",
+        "split": "train"
+      },
+      {
+        "id": "00821_00",
+        "group": "00821_00",
+        "split": "train"
+      },
+      {
+        "id": "08316_00",
+        "group": "08316_00",
+        "split": "train"
+      },
+      {
+        "id": "11504_00",
+        "group": "11504_00",
+        "split": "train"
+      },
+      {
+        "id": "05360_00",
+        "group": "05360_00",
+        "split": "train"
+      },
+      {
+        "id": "01727_00",
+        "group": "01727_00",
+        "split": "train"
+      },
+      {
+        "id": "07560_00",
+        "group": "07560_00",
+        "split": "train"
+      },
+      {
+        "id": "10618_00",
+        "group": "10618_00",
+        "split": "train"
+      },
+      {
+        "id": "05588_00",
+        "group": "05588_00",
+        "split": "train"
+      },
+      {
+        "id": "07020_00",
+        "group": "07020_00",
+        "split": "train"
+      },
+      {
+        "id": "01449_00",
+        "group": "01449_00",
+        "split": "train"
+      },
+      {
+        "id": "14232_00",
+        "group": "14232_00",
+        "split": "train"
+      },
+      {
+        "id": "11870_00",
+        "group": "11870_00",
+        "split": "train"
+      },
+      {
+        "id": "06192_00",
+        "group": "06192_00",
+        "split": "train"
+      },
+      {
+        "id": "00641_00",
+        "group": "00641_00",
+        "split": "train"
+      },
+      {
+        "id": "07825_00",
+        "group": "07825_00",
+        "split": "train"
+      },
+      {
+        "id": "03601_00",
+        "group": "03601_00",
+        "split": "train"
+      },
+      {
+        "id": "02902_00",
+        "group": "02902_00",
+        "split": "train"
+      },
+      {
+        "id": "08767_00",
+        "group": "08767_00",
+        "split": "train"
+      },
+      {
+        "id": "10819_00",
+        "group": "10819_00",
+        "split": "train"
+      },
+      {
+        "id": "00494_00",
+        "group": "00494_00",
+        "split": "train"
+      },
+      {
+        "id": "03950_00",
+        "group": "03950_00",
+        "split": "train"
+      },
+      {
+        "id": "14583_00",
+        "group": "14583_00",
+        "split": "train"
+      },
+      {
+        "id": "14525_00",
+        "group": "14525_00",
+        "split": "train"
+      },
+      {
+        "id": "12755_00",
+        "group": "12755_00",
+        "split": "train"
+      },
+      {
+        "id": "12621_00",
+        "group": "12621_00",
+        "split": "train"
+      },
+      {
+        "id": "10410_00",
+        "group": "10410_00",
+        "split": "train"
+      },
+      {
+        "id": "03408_00",
+        "group": "03408_00",
+        "split": "train"
+      },
+      {
+        "id": "04639_00",
+        "group": "04639_00",
+        "split": "train"
+      },
+      {
+        "id": "01090_00",
+        "group": "01090_00",
+        "split": "train"
+      },
+      {
+        "id": "09698_00",
+        "group": "09698_00",
+        "split": "train"
+      },
+      {
+        "id": "00013_00",
+        "group": "00013_00",
+        "split": "train"
+      },
+      {
+        "id": "08839_00",
+        "group": "08839_00",
+        "split": "train"
+      },
+      {
+        "id": "07782_00",
+        "group": "07782_00",
+        "split": "train"
+      },
+      {
+        "id": "09298_00",
+        "group": "09298_00",
+        "split": "train"
+      },
+      {
+        "id": "04818_00",
+        "group": "04818_00",
+        "split": "train"
+      },
+      {
+        "id": "06423_00",
+        "group": "06423_00",
+        "split": "train"
+      },
+      {
+        "id": "07414_00",
+        "group": "07414_00",
+        "split": "train"
+      },
+      {
+        "id": "12137_00",
+        "group": "12137_00",
+        "split": "train"
+      },
+      {
+        "id": "10457_00",
+        "group": "10457_00",
+        "split": "train"
+      },
+      {
+        "id": "08008_00",
+        "group": "08008_00",
+        "split": "train"
+      },
+      {
+        "id": "08943_00",
+        "group": "08943_00",
+        "split": "train"
+      },
+      {
+        "id": "11426_00",
+        "group": "11426_00",
+        "split": "train"
+      },
+      {
+        "id": "01054_00",
+        "group": "01054_00",
+        "split": "train"
+      },
+      {
+        "id": "06936_00",
+        "group": "06936_00",
+        "split": "train"
+      },
+      {
+        "id": "10448_00",
+        "group": "10448_00",
+        "split": "train"
+      },
+      {
+        "id": "02649_00",
+        "group": "02649_00",
+        "split": "train"
+      },
+      {
+        "id": "03244_00",
+        "group": "03244_00",
+        "split": "train"
+      },
+      {
+        "id": "00740_00",
+        "group": "00740_00",
+        "split": "train"
+      },
+      {
+        "id": "04574_00",
+        "group": "04574_00",
+        "split": "train"
+      },
+      {
+        "id": "03191_00",
+        "group": "03191_00",
+        "split": "train"
+      },
+      {
+        "id": "06183_00",
+        "group": "06183_00",
+        "split": "train"
+      },
+      {
+        "id": "14161_00",
+        "group": "14161_00",
+        "split": "train"
+      },
+      {
+        "id": "02039_00",
+        "group": "02039_00",
+        "split": "train"
+      },
+      {
+        "id": "09569_00",
+        "group": "09569_00",
+        "split": "train"
+      },
+      {
+        "id": "08270_00",
+        "group": "08270_00",
+        "split": "train"
+      },
+      {
+        "id": "07194_00",
+        "group": "07194_00",
+        "split": "train"
+      },
+      {
+        "id": "12948_00",
+        "group": "12948_00",
+        "split": "train"
+      },
+      {
+        "id": "06682_00",
+        "group": "06682_00",
+        "split": "train"
+      },
+      {
+        "id": "10947_00",
+        "group": "10947_00",
+        "split": "train"
+      },
+      {
+        "id": "07421_00",
+        "group": "07421_00",
+        "split": "train"
+      },
+      {
+        "id": "00902_00",
+        "group": "00902_00",
+        "split": "train"
+      },
+      {
+        "id": "08956_00",
+        "group": "08956_00",
+        "split": "train"
+      },
+      {
+        "id": "00499_00",
+        "group": "00499_00",
+        "split": "train"
+      },
+      {
+        "id": "10451_00",
+        "group": "10451_00",
+        "split": "train"
+      },
+      {
+        "id": "05838_00",
+        "group": "05838_00",
+        "split": "train"
+      },
+      {
+        "id": "13562_00",
+        "group": "13562_00",
+        "split": "train"
+      },
+      {
+        "id": "06978_00",
+        "group": "06978_00",
+        "split": "train"
+      },
+      {
+        "id": "01439_00",
+        "group": "01439_00",
+        "split": "train"
+      },
+      {
+        "id": "10653_00",
+        "group": "10653_00",
+        "split": "train"
+      },
+      {
+        "id": "10223_00",
+        "group": "10223_00",
+        "split": "train"
+      },
+      {
+        "id": "10783_00",
+        "group": "10783_00",
+        "split": "train"
+      },
+      {
+        "id": "09637_00",
+        "group": "09637_00",
+        "split": "train"
+      },
+      {
+        "id": "08430_00",
+        "group": "08430_00",
+        "split": "train"
+      },
+      {
+        "id": "07118_00",
+        "group": "07118_00",
+        "split": "train"
+      },
+      {
+        "id": "12668_00",
+        "group": "12668_00",
+        "split": "train"
+      },
+      {
+        "id": "02244_00",
+        "group": "02244_00",
+        "split": "train"
+      },
+      {
+        "id": "01302_00",
+        "group": "01302_00",
+        "split": "train"
+      },
+      {
+        "id": "00877_00",
+        "group": "00877_00",
+        "split": "train"
+      },
+      {
+        "id": "00824_00",
+        "group": "00824_00",
+        "split": "train"
+      },
+      {
+        "id": "07630_00",
+        "group": "07630_00",
+        "split": "train"
+      },
+      {
+        "id": "04614_00",
+        "group": "04614_00",
+        "split": "train"
+      },
+      {
+        "id": "10258_00",
+        "group": "10258_00",
+        "split": "train"
+      },
+      {
+        "id": "13937_00",
+        "group": "13937_00",
+        "split": "train"
+      },
+      {
+        "id": "04987_00",
+        "group": "04987_00",
+        "split": "train"
+      },
+      {
+        "id": "03247_00",
+        "group": "03247_00",
+        "split": "train"
+      },
+      {
+        "id": "03867_00",
+        "group": "03867_00",
+        "split": "train"
+      },
+      {
+        "id": "14181_00",
+        "group": "14181_00",
+        "split": "train"
+      },
+      {
+        "id": "12818_00",
+        "group": "12818_00",
+        "split": "train"
+      },
+      {
+        "id": "01748_00",
+        "group": "01748_00",
+        "split": "train"
+      },
+      {
+        "id": "13406_00",
+        "group": "13406_00",
+        "split": "train"
+      },
+      {
+        "id": "13567_00",
+        "group": "13567_00",
+        "split": "train"
+      },
+      {
+        "id": "04493_00",
+        "group": "04493_00",
+        "split": "train"
+      },
+      {
+        "id": "10413_00",
+        "group": "10413_00",
+        "split": "train"
+      },
+      {
+        "id": "08466_00",
+        "group": "08466_00",
+        "split": "train"
+      },
+      {
+        "id": "09458_00",
+        "group": "09458_00",
+        "split": "train"
+      },
+      {
+        "id": "12903_00",
+        "group": "12903_00",
+        "split": "train"
+      },
+      {
+        "id": "07889_00",
+        "group": "07889_00",
+        "split": "train"
+      },
+      {
+        "id": "04559_00",
+        "group": "04559_00",
+        "split": "train"
+      },
+      {
+        "id": "00583_00",
+        "group": "00583_00",
+        "split": "train"
+      },
+      {
+        "id": "08256_00",
+        "group": "08256_00",
+        "split": "train"
+      },
+      {
+        "id": "07142_00",
+        "group": "07142_00",
+        "split": "train"
+      },
+      {
+        "id": "04275_00",
+        "group": "04275_00",
+        "split": "train"
+      },
+      {
+        "id": "05888_00",
+        "group": "05888_00",
+        "split": "train"
+      },
+      {
+        "id": "01812_00",
+        "group": "01812_00",
+        "split": "train"
+      },
+      {
+        "id": "09440_00",
+        "group": "09440_00",
+        "split": "train"
+      },
+      {
+        "id": "08088_00",
+        "group": "08088_00",
+        "split": "train"
+      },
+      {
+        "id": "05262_00",
+        "group": "05262_00",
+        "split": "train"
+      },
+      {
+        "id": "11050_00",
+        "group": "11050_00",
+        "split": "train"
+      },
+      {
+        "id": "14471_00",
+        "group": "10618_00",
+        "split": "train"
+      },
+      {
+        "id": "00190_00",
+        "group": "00190_00",
+        "split": "train"
+      },
+      {
+        "id": "07361_00",
+        "group": "07361_00",
+        "split": "train"
+      },
+      {
+        "id": "11085_00",
+        "group": "11085_00",
+        "split": "train"
+      },
+      {
+        "id": "10943_00",
+        "group": "10943_00",
+        "split": "train"
+      },
+      {
+        "id": "06029_00",
+        "group": "06029_00",
+        "split": "train"
+      },
+      {
+        "id": "09133_00",
+        "group": "09133_00",
+        "split": "train"
+      },
+      {
+        "id": "07732_00",
+        "group": "07732_00",
+        "split": "train"
+      },
+      {
+        "id": "05857_00",
+        "group": "05857_00",
+        "split": "train"
+      },
+      {
+        "id": "01154_00",
+        "group": "01154_00",
+        "split": "train"
+      },
+      {
+        "id": "07160_00",
+        "group": "07160_00",
+        "split": "train"
+      },
+      {
+        "id": "10070_00",
+        "group": "10070_00",
+        "split": "train"
+      },
+      {
+        "id": "06054_00",
+        "group": "06054_00",
+        "split": "train"
+      },
+      {
+        "id": "12846_00",
+        "group": "12846_00",
+        "split": "train"
+      },
+      {
+        "id": "05115_00",
+        "group": "05115_00",
+        "split": "train"
+      },
+      {
+        "id": "08322_00",
+        "group": "08322_00",
+        "split": "train"
+      },
+      {
+        "id": "00891_00",
+        "group": "00891_00",
+        "split": "train"
+      },
+      {
+        "id": "13588_00",
+        "group": "13588_00",
+        "split": "train"
+      },
+      {
+        "id": "03366_00",
+        "group": "03366_00",
+        "split": "train"
+      },
+      {
+        "id": "06777_00",
+        "group": "06777_00",
+        "split": "train"
+      },
+      {
+        "id": "10432_00",
+        "group": "10432_00",
+        "split": "train"
+      },
+      {
+        "id": "08875_00",
+        "group": "08875_00",
+        "split": "train"
+      },
+      {
+        "id": "09577_00",
+        "group": "09577_00",
+        "split": "train"
+      },
+      {
+        "id": "01940_00",
+        "group": "01940_00",
+        "split": "train"
+      },
+      {
+        "id": "13589_00",
+        "group": "13589_00",
+        "split": "train"
+      },
+      {
+        "id": "00017_00",
+        "group": "00017_00",
+        "split": "train"
+      },
+      {
+        "id": "00176_00",
+        "group": "00176_00",
+        "split": "train"
+      },
+      {
+        "id": "04143_00",
+        "group": "04143_00",
+        "split": "train"
+      },
+      {
+        "id": "06824_00",
+        "group": "06824_00",
+        "split": "train"
+      },
+      {
+        "id": "11699_00",
+        "group": "11699_00",
+        "split": "train"
+      },
+      {
+        "id": "03527_00",
+        "group": "03527_00",
+        "split": "train"
+      },
+      {
+        "id": "06366_00",
+        "group": "06366_00",
+        "split": "train"
+      },
+      {
+        "id": "04041_00",
+        "group": "04041_00",
+        "split": "train"
+      },
+      {
+        "id": "14173_00",
+        "group": "14173_00",
+        "split": "train"
+      },
+      {
+        "id": "13855_00",
+        "group": "13855_00",
+        "split": "train"
+      },
+      {
+        "id": "03964_00",
+        "group": "03964_00",
+        "split": "train"
+      },
+      {
+        "id": "02425_00",
+        "group": "02425_00",
+        "split": "train"
+      },
+      {
+        "id": "09199_00",
+        "group": "09199_00",
+        "split": "train"
+      },
+      {
+        "id": "05602_00",
+        "group": "05602_00",
+        "split": "train"
+      },
+      {
+        "id": "09507_00",
+        "group": "09507_00",
+        "split": "train"
+      },
+      {
+        "id": "08737_00",
+        "group": "08737_00",
+        "split": "train"
+      },
+      {
+        "id": "12460_00",
+        "group": "12460_00",
+        "split": "train"
+      },
+      {
+        "id": "03393_00",
+        "group": "03393_00",
+        "split": "train"
+      },
+      {
+        "id": "05876_00",
+        "group": "05876_00",
+        "split": "train"
+      },
+      {
+        "id": "06467_00",
+        "group": "06467_00",
+        "split": "train"
+      },
+      {
+        "id": "03600_00",
+        "group": "03600_00",
+        "split": "train"
+      },
+      {
+        "id": "10265_00",
+        "group": "10265_00",
+        "split": "train"
+      },
+      {
+        "id": "03429_00",
+        "group": "03429_00",
+        "split": "train"
+      },
+      {
+        "id": "00609_00",
+        "group": "00609_00",
+        "split": "train"
+      },
+      {
+        "id": "05513_00",
+        "group": "05513_00",
+        "split": "train"
+      },
+      {
+        "id": "01178_00",
+        "group": "01178_00",
+        "split": "train"
+      },
+      {
+        "id": "01832_00",
+        "group": "01832_00",
+        "split": "train"
+      },
+      {
+        "id": "07742_00",
+        "group": "07742_00",
+        "split": "train"
+      },
+      {
+        "id": "10065_00",
+        "group": "10065_00",
+        "split": "train"
+      },
+      {
+        "id": "02763_00",
+        "group": "02763_00",
+        "split": "train"
+      },
+      {
+        "id": "10197_00",
+        "group": "10197_00",
+        "split": "train"
+      },
+      {
+        "id": "08167_00",
+        "group": "08167_00",
+        "split": "train"
+      },
+      {
+        "id": "10665_00",
+        "group": "10665_00",
+        "split": "train"
+      },
+      {
+        "id": "06956_00",
+        "group": "06956_00",
+        "split": "train"
+      },
+      {
+        "id": "12651_00",
+        "group": "12651_00",
+        "split": "train"
+      },
+      {
+        "id": "03988_00",
+        "group": "03988_00",
+        "split": "train"
+      },
+      {
+        "id": "04707_00",
+        "group": "04707_00",
+        "split": "train"
+      },
+      {
+        "id": "11733_00",
+        "group": "11733_00",
+        "split": "train"
+      },
+      {
+        "id": "05373_00",
+        "group": "05373_00",
+        "split": "train"
+      },
+      {
+        "id": "13136_00",
+        "group": "13136_00",
+        "split": "train"
+      },
+      {
+        "id": "11686_00",
+        "group": "11686_00",
+        "split": "train"
+      },
+      {
+        "id": "02534_00",
+        "group": "02534_00",
+        "split": "train"
+      },
+      {
+        "id": "10816_00",
+        "group": "10816_00",
+        "split": "train"
+      },
+      {
+        "id": "05412_00",
+        "group": "05412_00",
+        "split": "train"
+      },
+      {
+        "id": "05682_00",
+        "group": "05682_00",
+        "split": "train"
+      },
+      {
+        "id": "14196_00",
+        "group": "14193_00",
+        "split": "train"
+      },
+      {
+        "id": "00067_00",
+        "group": "00067_00",
+        "split": "train"
+      },
+      {
+        "id": "09744_00",
+        "group": "09744_00",
+        "split": "train"
+      },
+      {
+        "id": "01430_00",
+        "group": "01430_00",
+        "split": "train"
+      },
+      {
+        "id": "08429_00",
+        "group": "08429_00",
+        "split": "train"
+      },
+      {
+        "id": "13912_00",
+        "group": "13912_00",
+        "split": "train"
+      },
+      {
+        "id": "08845_00",
+        "group": "08845_00",
+        "split": "train"
+      },
+      {
+        "id": "02424_00",
+        "group": "02424_00",
+        "split": "train"
+      },
+      {
+        "id": "03696_00",
+        "group": "03696_00",
+        "split": "train"
+      },
+      {
+        "id": "11967_00",
+        "group": "11967_00",
+        "split": "train"
+      },
+      {
+        "id": "10380_00",
+        "group": "10380_00",
+        "split": "train"
+      },
+      {
+        "id": "06502_00",
+        "group": "06502_00",
+        "split": "train"
+      },
+      {
+        "id": "02157_00",
+        "group": "02157_00",
+        "split": "train"
+      },
+      {
+        "id": "00482_00",
+        "group": "00482_00",
+        "split": "train"
+      },
+      {
+        "id": "10930_00",
+        "group": "10930_00",
+        "split": "train"
+      },
+      {
+        "id": "02297_00",
+        "group": "02297_00",
+        "split": "train"
+      },
+      {
+        "id": "02007_00",
+        "group": "02007_00",
+        "split": "train"
+      },
+      {
+        "id": "03475_00",
+        "group": "03475_00",
+        "split": "train"
+      },
+      {
+        "id": "06491_00",
+        "group": "06491_00",
+        "split": "train"
+      },
+      {
+        "id": "02179_00",
+        "group": "02179_00",
+        "split": "train"
+      },
+      {
+        "id": "10548_00",
+        "group": "10548_00",
+        "split": "train"
+      },
+      {
+        "id": "14397_00",
+        "group": "14397_00",
+        "split": "train"
+      },
+      {
+        "id": "03620_00",
+        "group": "03620_00",
+        "split": "train"
+      },
+      {
+        "id": "10706_00",
+        "group": "10706_00",
+        "split": "train"
+      },
+      {
+        "id": "02583_00",
+        "group": "02583_00",
+        "split": "train"
+      },
+      {
+        "id": "08481_00",
+        "group": "08481_00",
+        "split": "train"
+      },
+      {
+        "id": "02071_00",
+        "group": "02071_00",
+        "split": "train"
+      },
+      {
+        "id": "08199_00",
+        "group": "08199_00",
+        "split": "train"
+      },
+      {
+        "id": "10157_00",
+        "group": "10157_00",
+        "split": "train"
+      },
+      {
+        "id": "11334_00",
+        "group": "11334_00",
+        "split": "train"
+      },
+      {
+        "id": "12854_00",
+        "group": "12854_00",
+        "split": "train"
+      },
+      {
+        "id": "10839_00",
+        "group": "10839_00",
+        "split": "train"
+      },
+      {
+        "id": "12325_00",
+        "group": "12325_00",
+        "split": "train"
+      },
+      {
+        "id": "14179_00",
+        "group": "14179_00",
+        "split": "train"
+      },
+      {
+        "id": "08217_00",
+        "group": "08217_00",
+        "split": "train"
+      },
+      {
+        "id": "05498_00",
+        "group": "05498_00",
+        "split": "train"
+      },
+      {
+        "id": "07972_00",
+        "group": "07972_00",
+        "split": "train"
+      },
+      {
+        "id": "11450_00",
+        "group": "11450_00",
+        "split": "train"
+      },
+      {
+        "id": "12693_00",
+        "group": "12693_00",
+        "split": "train"
+      },
+      {
+        "id": "10404_00",
+        "group": "10404_00",
+        "split": "train"
+      },
+      {
+        "id": "02665_00",
+        "group": "02665_00",
+        "split": "train"
+      },
+      {
+        "id": "06154_00",
+        "group": "06154_00",
+        "split": "train"
+      },
+      {
+        "id": "07454_00",
+        "group": "07454_00",
+        "split": "train"
+      },
+      {
+        "id": "12380_00",
+        "group": "12380_00",
+        "split": "train"
+      },
+      {
+        "id": "10355_00",
+        "group": "10355_00",
+        "split": "train"
+      },
+      {
+        "id": "12876_00",
+        "group": "12876_00",
+        "split": "train"
+      },
+      {
+        "id": "07456_00",
+        "group": "07456_00",
+        "split": "train"
+      },
+      {
+        "id": "08627_00",
+        "group": "08627_00",
+        "split": "train"
+      },
+      {
+        "id": "09933_00",
+        "group": "09933_00",
+        "split": "train"
+      },
+      {
+        "id": "04718_00",
+        "group": "04718_00",
+        "split": "train"
+      },
+      {
+        "id": "06004_00",
+        "group": "06004_00",
+        "split": "train"
+      },
+      {
+        "id": "01066_00",
+        "group": "01066_00",
+        "split": "train"
+      },
+      {
+        "id": "03222_00",
+        "group": "03222_00",
+        "split": "train"
+      },
+      {
+        "id": "03148_00",
+        "group": "03148_00",
+        "split": "train"
+      },
+      {
+        "id": "04652_00",
+        "group": "04652_00",
+        "split": "train"
+      },
+      {
+        "id": "02619_00",
+        "group": "02619_00",
+        "split": "train"
+      },
+      {
+        "id": "13071_00",
+        "group": "13071_00",
+        "split": "train"
+      },
+      {
+        "id": "00286_00",
+        "group": "00286_00",
+        "split": "train"
+      },
+      {
+        "id": "14056_00",
+        "group": "14056_00",
+        "split": "train"
+      },
+      {
+        "id": "05540_00",
+        "group": "05540_00",
+        "split": "train"
+      },
+      {
+        "id": "00055_00",
+        "group": "00055_00",
+        "split": "train"
+      },
+      {
+        "id": "00151_00",
+        "group": "00151_00",
+        "split": "train"
+      },
+      {
+        "id": "12358_00",
+        "group": "12358_00",
+        "split": "train"
+      },
+      {
+        "id": "04912_00",
+        "group": "04912_00",
+        "split": "train"
+      },
+      {
+        "id": "09183_00",
+        "group": "09183_00",
+        "split": "train"
+      },
+      {
+        "id": "07546_00",
+        "group": "07546_00",
+        "split": "train"
+      },
+      {
+        "id": "05101_00",
+        "group": "05101_00",
+        "split": "train"
+      },
+      {
+        "id": "14676_00",
+        "group": "14676_00",
+        "split": "train"
+      },
+      {
+        "id": "05170_00",
+        "group": "05170_00",
+        "split": "train"
+      },
+      {
+        "id": "03641_00",
+        "group": "03641_00",
+        "split": "train"
+      },
+      {
+        "id": "13620_00",
+        "group": "13620_00",
+        "split": "train"
+      },
+      {
+        "id": "10152_00",
+        "group": "10152_00",
+        "split": "train"
+      },
+      {
+        "id": "11872_00",
+        "group": "11872_00",
+        "split": "train"
+      },
+      {
+        "id": "13709_00",
+        "group": "13709_00",
+        "split": "train"
+      },
+      {
+        "id": "00683_00",
+        "group": "00683_00",
+        "split": "train"
+      },
+      {
+        "id": "11613_00",
+        "group": "11613_00",
+        "split": "train"
+      },
+      {
+        "id": "08164_00",
+        "group": "08164_00",
+        "split": "train"
+      },
+      {
+        "id": "05383_00",
+        "group": "05383_00",
+        "split": "train"
+      },
+      {
+        "id": "12630_00",
+        "group": "12630_00",
+        "split": "train"
+      },
+      {
+        "id": "12106_00",
+        "group": "12106_00",
+        "split": "train"
+      },
+      {
+        "id": "08989_00",
+        "group": "08989_00",
+        "split": "train"
+      },
+      {
+        "id": "13963_00",
+        "group": "13963_00",
+        "split": "train"
+      },
+      {
+        "id": "09886_00",
+        "group": "09886_00",
+        "split": "train"
+      },
+      {
+        "id": "01215_00",
+        "group": "01215_00",
+        "split": "train"
+      },
+      {
+        "id": "13201_00",
+        "group": "13201_00",
+        "split": "train"
+      },
+      {
+        "id": "04913_00",
+        "group": "04913_00",
+        "split": "train"
+      },
+      {
+        "id": "01201_00",
+        "group": "01201_00",
+        "split": "train"
+      },
+      {
+        "id": "14159_00",
+        "group": "14159_00",
+        "split": "train"
+      },
+      {
+        "id": "01705_00",
+        "group": "01705_00",
+        "split": "train"
+      },
+      {
+        "id": "08314_00",
+        "group": "08314_00",
+        "split": "train"
+      },
+      {
+        "id": "13975_00",
+        "group": "13975_00",
+        "split": "train"
+      },
+      {
+        "id": "10843_00",
+        "group": "10843_00",
+        "split": "train"
+      },
+      {
+        "id": "09523_00",
+        "group": "09523_00",
+        "split": "train"
+      },
+      {
+        "id": "04630_00",
+        "group": "04630_00",
+        "split": "train"
+      },
+      {
+        "id": "06123_00",
+        "group": "06123_00",
+        "split": "train"
+      },
+      {
+        "id": "00397_00",
+        "group": "00397_00",
+        "split": "train"
+      },
+      {
+        "id": "04893_00",
+        "group": "04893_00",
+        "split": "train"
+      },
+      {
+        "id": "05624_00",
+        "group": "05624_00",
+        "split": "train"
+      },
+      {
+        "id": "01624_00",
+        "group": "01624_00",
+        "split": "train"
+      },
+      {
+        "id": "13338_00",
+        "group": "13338_00",
+        "split": "train"
+      },
+      {
+        "id": "08406_00",
+        "group": "08406_00",
+        "split": "train"
+      },
+      {
+        "id": "10721_00",
+        "group": "10721_00",
+        "split": "train"
+      },
+      {
+        "id": "04235_00",
+        "group": "04235_00",
+        "split": "train"
+      },
+      {
+        "id": "13705_00",
+        "group": "13705_00",
+        "split": "train"
+      },
+      {
+        "id": "03304_00",
+        "group": "03304_00",
+        "split": "train"
+      },
+      {
+        "id": "00760_00",
+        "group": "00760_00",
+        "split": "train"
+      },
+      {
+        "id": "08871_00",
+        "group": "08871_00",
+        "split": "train"
+      },
+      {
+        "id": "05446_00",
+        "group": "05446_00",
+        "split": "train"
+      },
+      {
+        "id": "10562_00",
+        "group": "10562_00",
+        "split": "train"
+      },
+      {
+        "id": "07339_00",
+        "group": "07339_00",
+        "split": "train"
+      },
+      {
+        "id": "05721_00",
+        "group": "05721_00",
+        "split": "train"
+      },
+      {
+        "id": "04240_00",
+        "group": "04240_00",
+        "split": "train"
+      },
+      {
+        "id": "06875_00",
+        "group": "06875_00",
+        "split": "train"
+      },
+      {
+        "id": "13983_00",
+        "group": "13983_00",
+        "split": "train"
+      },
+      {
+        "id": "02066_00",
+        "group": "02066_00",
+        "split": "train"
+      },
+      {
+        "id": "01839_00",
+        "group": "01839_00",
+        "split": "train"
+      },
+      {
+        "id": "08348_00",
+        "group": "08348_00",
+        "split": "train"
+      },
+      {
+        "id": "03639_00",
+        "group": "03639_00",
+        "split": "train"
+      },
+      {
+        "id": "08494_00",
+        "group": "08494_00",
+        "split": "train"
+      },
+      {
+        "id": "11286_00",
+        "group": "11286_00",
+        "split": "train"
+      },
+      {
+        "id": "01872_00",
+        "group": "01872_00",
+        "split": "train"
+      },
+      {
+        "id": "02942_00",
+        "group": "02942_00",
+        "split": "train"
+      },
+      {
+        "id": "07388_00",
+        "group": "07388_00",
+        "split": "train"
+      },
+      {
+        "id": "03006_00",
+        "group": "03006_00",
+        "split": "train"
+      },
+      {
+        "id": "01780_00",
+        "group": "01780_00",
+        "split": "train"
+      },
+      {
+        "id": "03718_00",
+        "group": "03718_00",
+        "split": "train"
+      },
+      {
+        "id": "12615_00",
+        "group": "12615_00",
+        "split": "train"
+      },
+      {
+        "id": "10927_00",
+        "group": "10927_00",
+        "split": "train"
+      },
+      {
+        "id": "09832_00",
+        "group": "09832_00",
+        "split": "train"
+      },
+      {
+        "id": "08374_00",
+        "group": "08374_00",
+        "split": "train"
+      },
+      {
+        "id": "09149_00",
+        "group": "09149_00",
+        "split": "train"
+      },
+      {
+        "id": "10290_00",
+        "group": "10290_00",
+        "split": "train"
+      },
+      {
+        "id": "07873_00",
+        "group": "07873_00",
+        "split": "train"
+      },
+      {
+        "id": "04957_00",
+        "group": "04957_00",
+        "split": "train"
+      },
+      {
+        "id": "09996_00",
+        "group": "09996_00",
+        "split": "train"
+      },
+      {
+        "id": "02530_00",
+        "group": "02530_00",
+        "split": "train"
+      },
+      {
+        "id": "07193_00",
+        "group": "07193_00",
+        "split": "train"
+      },
+      {
+        "id": "09807_00",
+        "group": "09807_00",
+        "split": "train"
+      },
+      {
+        "id": "02364_00",
+        "group": "02364_00",
+        "split": "train"
+      },
+      {
+        "id": "06695_00",
+        "group": "06695_00",
+        "split": "train"
+      },
+      {
+        "id": "09345_00",
+        "group": "09345_00",
+        "split": "train"
+      },
+      {
+        "id": "11836_00",
+        "group": "11836_00",
+        "split": "train"
+      },
+      {
+        "id": "05346_00",
+        "group": "05346_00",
+        "split": "train"
+      },
+      {
+        "id": "00057_00",
+        "group": "00057_00",
+        "split": "train"
+      },
+      {
+        "id": "09193_00",
+        "group": "09193_00",
+        "split": "train"
+      },
+      {
+        "id": "13987_00",
+        "group": "13987_00",
+        "split": "train"
+      },
+      {
+        "id": "13289_00",
+        "group": "13289_00",
+        "split": "train"
+      },
+      {
+        "id": "06269_00",
+        "group": "06269_00",
+        "split": "train"
+      },
+      {
+        "id": "12275_00",
+        "group": "12275_00",
+        "split": "train"
+      },
+      {
+        "id": "04523_00",
+        "group": "04523_00",
+        "split": "train"
+      },
+      {
+        "id": "11649_00",
+        "group": "11649_00",
+        "split": "train"
+      },
+      {
+        "id": "13331_00",
+        "group": "13331_00",
+        "split": "train"
+      },
+      {
+        "id": "14188_00",
+        "group": "14188_00",
+        "split": "train"
+      },
+      {
+        "id": "12354_00",
+        "group": "12354_00",
+        "split": "train"
+      },
+      {
+        "id": "09553_00",
+        "group": "09553_00",
+        "split": "train"
+      },
+      {
+        "id": "09588_00",
+        "group": "09588_00",
+        "split": "train"
+      },
+      {
+        "id": "11573_00",
+        "group": "11573_00",
+        "split": "train"
+      },
+      {
+        "id": "06161_00",
+        "group": "06161_00",
+        "split": "train"
+      },
+      {
+        "id": "00989_00",
+        "group": "00989_00",
+        "split": "train"
+      },
+      {
+        "id": "03162_00",
+        "group": "03162_00",
+        "split": "train"
+      },
+      {
+        "id": "12432_00",
+        "group": "12432_00",
+        "split": "train"
+      },
+      {
+        "id": "11676_00",
+        "group": "11676_00",
+        "split": "train"
+      },
+      {
+        "id": "10885_00",
+        "group": "10885_00",
+        "split": "train"
+      },
+      {
+        "id": "01920_00",
+        "group": "01920_00",
+        "split": "train"
+      },
+      {
+        "id": "04641_00",
+        "group": "04641_00",
+        "split": "train"
+      },
+      {
+        "id": "04931_00",
+        "group": "04931_00",
+        "split": "train"
+      },
+      {
+        "id": "10513_00",
+        "group": "10513_00",
+        "split": "train"
+      },
+      {
+        "id": "03712_00",
+        "group": "03712_00",
+        "split": "train"
+      },
+      {
+        "id": "07845_00",
+        "group": "07845_00",
+        "split": "train"
+      },
+      {
+        "id": "06226_00",
+        "group": "06226_00",
+        "split": "train"
+      },
+      {
+        "id": "10294_00",
+        "group": "10294_00",
+        "split": "train"
+      },
+      {
+        "id": "14193_00",
+        "group": "14193_00",
+        "split": "train"
+      },
+      {
+        "id": "03473_00",
+        "group": "03473_00",
+        "split": "train"
+      },
+      {
+        "id": "09751_00",
+        "group": "09751_00",
+        "split": "train"
+      },
+      {
+        "id": "14096_00",
+        "group": "14096_00",
+        "split": "train"
+      },
+      {
+        "id": "02757_00",
+        "group": "02757_00",
+        "split": "train"
+      },
+      {
+        "id": "00986_00",
+        "group": "00986_00",
+        "split": "train"
+      },
+      {
+        "id": "05010_00",
+        "group": "05010_00",
+        "split": "train"
+      },
+      {
+        "id": "09846_00",
+        "group": "09846_00",
+        "split": "train"
+      },
+      {
+        "id": "04450_00",
+        "group": "04450_00",
+        "split": "train"
+      },
+      {
+        "id": "09685_00",
+        "group": "09685_00",
+        "split": "train"
+      },
+      {
+        "id": "11912_00",
+        "group": "11912_00",
+        "split": "train"
+      },
+      {
+        "id": "12477_00",
+        "group": "12477_00",
+        "split": "train"
+      },
+      {
+        "id": "11885_00",
+        "group": "11885_00",
+        "split": "train"
+      },
+      {
+        "id": "03126_00",
+        "group": "03126_00",
+        "split": "train"
+      },
+      {
+        "id": "09969_00",
+        "group": "09969_00",
+        "split": "train"
+      },
+      {
+        "id": "06442_00",
+        "group": "06442_00",
+        "split": "train"
+      },
+      {
+        "id": "07875_00",
+        "group": "07875_00",
+        "split": "train"
+      },
+      {
+        "id": "12661_00",
+        "group": "12661_00",
+        "split": "train"
+      },
+      {
+        "id": "03159_00",
+        "group": "03159_00",
+        "split": "train"
+      },
+      {
+        "id": "10698_00",
+        "group": "10698_00",
+        "split": "train"
+      },
+      {
+        "id": "14120_00",
+        "group": "14120_00",
+        "split": "train"
+      },
+      {
+        "id": "06068_00",
+        "group": "06068_00",
+        "split": "train"
+      },
+      {
+        "id": "10848_00",
+        "group": "10848_00",
+        "split": "train"
+      },
+      {
+        "id": "07280_00",
+        "group": "07280_00",
+        "split": "train"
+      },
+      {
+        "id": "02291_00",
+        "group": "02291_00",
+        "split": "train"
+      },
+      {
+        "id": "00828_00",
+        "group": "00828_00",
+        "split": "train"
+      },
+      {
+        "id": "02941_00",
+        "group": "02941_00",
+        "split": "train"
+      },
+      {
+        "id": "08242_00",
+        "group": "08242_00",
+        "split": "train"
+      },
+      {
+        "id": "08212_00",
+        "group": "08212_00",
+        "split": "train"
+      },
+      {
+        "id": "00785_00",
+        "group": "00785_00",
+        "split": "train"
+      },
+      {
+        "id": "08700_00",
+        "group": "08700_00",
+        "split": "train"
+      },
+      {
+        "id": "11390_00",
+        "group": "11390_00",
+        "split": "train"
+      },
+      {
+        "id": "06517_00",
+        "group": "06517_00",
+        "split": "train"
+      },
+      {
+        "id": "06501_00",
+        "group": "06501_00",
+        "split": "train"
+      },
+      {
+        "id": "08236_00",
+        "group": "08236_00",
+        "split": "train"
+      },
+      {
+        "id": "03608_00",
+        "group": "03608_00",
+        "split": "train"
+      },
+      {
+        "id": "06835_00",
+        "group": "06835_00",
+        "split": "train"
+      }
+    ],
+    "validation": [
+      {
+        "id": "10679_00",
+        "group": "10679_00",
+        "split": "validation"
+      },
+      {
+        "id": "02094_00",
+        "group": "02094_00",
+        "split": "validation"
+      },
+      {
+        "id": "10640_00",
+        "group": "10640_00",
+        "split": "validation"
+      },
+      {
+        "id": "14059_00",
+        "group": "14059_00",
+        "split": "validation"
+      },
+      {
+        "id": "08239_00",
+        "group": "08239_00",
+        "split": "validation"
+      },
+      {
+        "id": "11556_00",
+        "group": "11556_00",
+        "split": "validation"
+      },
+      {
+        "id": "09940_00",
+        "group": "09940_00",
+        "split": "validation"
+      },
+      {
+        "id": "02844_00",
+        "group": "02844_00",
+        "split": "validation"
+      },
+      {
+        "id": "12972_00",
+        "group": "12972_00",
+        "split": "validation"
+      },
+      {
+        "id": "09789_00",
+        "group": "09789_00",
+        "split": "validation"
+      },
+      {
+        "id": "05572_00",
+        "group": "05572_00",
+        "split": "validation"
+      },
+      {
+        "id": "06360_00",
+        "group": "06360_00",
+        "split": "validation"
+      },
+      {
+        "id": "07005_00",
+        "group": "07005_00",
+        "split": "validation"
+      },
+      {
+        "id": "04694_00",
+        "group": "04694_00",
+        "split": "validation"
+      },
+      {
+        "id": "11468_00",
+        "group": "11468_00",
+        "split": "validation"
+      },
+      {
+        "id": "10993_00",
+        "group": "10993_00",
+        "split": "validation"
+      },
+      {
+        "id": "10495_00",
+        "group": "10495_00",
+        "split": "validation"
+      },
+      {
+        "id": "07724_00",
+        "group": "07724_00",
+        "split": "validation"
+      },
+      {
+        "id": "10212_00",
+        "group": "10212_00",
+        "split": "validation"
+      },
+      {
+        "id": "11182_00",
+        "group": "11182_00",
+        "split": "validation"
+      },
+      {
+        "id": "13093_00",
+        "group": "13093_00",
+        "split": "validation"
+      },
+      {
+        "id": "12912_00",
+        "group": "12912_00",
+        "split": "validation"
+      },
+      {
+        "id": "11675_00",
+        "group": "11675_00",
+        "split": "validation"
+      },
+      {
+        "id": "04335_00",
+        "group": "04335_00",
+        "split": "validation"
+      },
+      {
+        "id": "12451_00",
+        "group": "12451_00",
+        "split": "validation"
+      },
+      {
+        "id": "09790_00",
+        "group": "09790_00",
+        "split": "validation"
+      },
+      {
+        "id": "02118_00",
+        "group": "02118_00",
+        "split": "validation"
+      },
+      {
+        "id": "00664_00",
+        "group": "00664_00",
+        "split": "validation"
+      },
+      {
+        "id": "05961_00",
+        "group": "05961_00",
+        "split": "validation"
+      },
+      {
+        "id": "02060_00",
+        "group": "02060_00",
+        "split": "validation"
+      },
+      {
+        "id": "11161_00",
+        "group": "11161_00",
+        "split": "validation"
+      },
+      {
+        "id": "00961_00",
+        "group": "00961_00",
+        "split": "validation"
+      },
+      {
+        "id": "13728_00",
+        "group": "13728_00",
+        "split": "validation"
+      },
+      {
+        "id": "05066_00",
+        "group": "05066_00",
+        "split": "validation"
+      },
+      {
+        "id": "11551_00",
+        "group": "11551_00",
+        "split": "validation"
+      },
+      {
+        "id": "08887_00",
+        "group": "08887_00",
+        "split": "validation"
+      },
+      {
+        "id": "03082_00",
+        "group": "03082_00",
+        "split": "validation"
+      },
+      {
+        "id": "13102_00",
+        "group": "13102_00",
+        "split": "validation"
+      },
+      {
+        "id": "04557_00",
+        "group": "04557_00",
+        "split": "validation"
+      },
+      {
+        "id": "01188_00",
+        "group": "01188_00",
+        "split": "validation"
+      },
+      {
+        "id": "04518_00",
+        "group": "04518_00",
+        "split": "validation"
+      },
+      {
+        "id": "06134_00",
+        "group": "06134_00",
+        "split": "validation"
+      },
+      {
+        "id": "11162_00",
+        "group": "11162_00",
+        "split": "validation"
+      },
+      {
+        "id": "14556_00",
+        "group": "14556_00",
+        "split": "validation"
+      },
+      {
+        "id": "09422_00",
+        "group": "09422_00",
+        "split": "validation"
+      },
+      {
+        "id": "07627_00",
+        "group": "07627_00",
+        "split": "validation"
+      },
+      {
+        "id": "09290_00",
+        "group": "09290_00",
+        "split": "validation"
+      },
+      {
+        "id": "06753_00",
+        "group": "06753_00",
+        "split": "validation"
+      },
+      {
+        "id": "12822_00",
+        "group": "12822_00",
+        "split": "validation"
+      },
+      {
+        "id": "04561_00",
+        "group": "04561_00",
+        "split": "validation"
+      },
+      {
+        "id": "04766_00",
+        "group": "04766_00",
+        "split": "validation"
+      },
+      {
+        "id": "01198_00",
+        "group": "01198_00",
+        "split": "validation"
+      },
+      {
+        "id": "07129_00",
+        "group": "07129_00",
+        "split": "validation"
+      },
+      {
+        "id": "03075_00",
+        "group": "03075_00",
+        "split": "validation"
+      },
+      {
+        "id": "05912_00",
+        "group": "05912_00",
+        "split": "validation"
+      },
+      {
+        "id": "04582_00",
+        "group": "04582_00",
+        "split": "validation"
+      },
+      {
+        "id": "01801_00",
+        "group": "01801_00",
+        "split": "validation"
+      },
+      {
+        "id": "12524_00",
+        "group": "12524_00",
+        "split": "validation"
+      },
+      {
+        "id": "12894_00",
+        "group": "12894_00",
+        "split": "validation"
+      },
+      {
+        "id": "04313_00",
+        "group": "04313_00",
+        "split": "validation"
+      },
+      {
+        "id": "09396_00",
+        "group": "09396_00",
+        "split": "validation"
+      },
+      {
+        "id": "07382_00",
+        "group": "07382_00",
+        "split": "validation"
+      },
+      {
+        "id": "06739_00",
+        "group": "06739_00",
+        "split": "validation"
+      },
+      {
+        "id": "12189_00",
+        "group": "12189_00",
+        "split": "validation"
+      }
+    ],
+    "reserved_test": [
+      {
+        "id": "10832_00",
+        "group": "10832_00",
+        "split": "test"
+      },
+      {
+        "id": "12219_00",
+        "group": "12219_00",
+        "split": "test"
+      },
+      {
+        "id": "11215_00",
+        "group": "11215_00",
+        "split": "test"
+      },
+      {
+        "id": "02327_00",
+        "group": "02327_00",
+        "split": "test"
+      },
+      {
+        "id": "07365_00",
+        "group": "07365_00",
+        "split": "test"
+      },
+      {
+        "id": "10901_00",
+        "group": "10901_00",
+        "split": "test"
+      },
+      {
+        "id": "06180_00",
+        "group": "06180_00",
+        "split": "test"
+      },
+      {
+        "id": "05562_00",
+        "group": "05562_00",
+        "split": "test"
+      },
+      {
+        "id": "05966_00",
+        "group": "05966_00",
+        "split": "test"
+      },
+      {
+        "id": "06110_00",
+        "group": "06110_00",
+        "split": "test"
+      },
+      {
+        "id": "11626_00",
+        "group": "11626_00",
+        "split": "test"
+      },
+      {
+        "id": "08863_00",
+        "group": "08863_00",
+        "split": "test"
+      },
+      {
+        "id": "14274_00",
+        "group": "14274_00",
+        "split": "test"
+      },
+      {
+        "id": "10737_00",
+        "group": "10737_00",
+        "split": "test"
+      },
+      {
+        "id": "13008_00",
+        "group": "13008_00",
+        "split": "test"
+      },
+      {
+        "id": "09623_00",
+        "group": "09623_00",
+        "split": "test"
+      },
+      {
+        "id": "01527_00",
+        "group": "01527_00",
+        "split": "test"
+      },
+      {
+        "id": "05923_00",
+        "group": "05923_00",
+        "split": "test"
+      },
+      {
+        "id": "12024_00",
+        "group": "12024_00",
+        "split": "test"
+      },
+      {
+        "id": "02427_00",
+        "group": "02427_00",
+        "split": "test"
+      },
+      {
+        "id": "12598_00",
+        "group": "12598_00",
+        "split": "test"
+      },
+      {
+        "id": "04579_00",
+        "group": "04579_00",
+        "split": "test"
+      },
+      {
+        "id": "05006_00",
+        "group": "05006_00",
+        "split": "test"
+      },
+      {
+        "id": "07567_00",
+        "group": "07567_00",
+        "split": "test"
+      },
+      {
+        "id": "00579_00",
+        "group": "00579_00",
+        "split": "test"
+      },
+      {
+        "id": "08432_00",
+        "group": "08432_00",
+        "split": "test"
+      },
+      {
+        "id": "11297_00",
+        "group": "11297_00",
+        "split": "test"
+      },
+      {
+        "id": "00396_00",
+        "group": "00396_00",
+        "split": "test"
+      },
+      {
+        "id": "14296_00",
+        "group": "14296_00",
+        "split": "test"
+      },
+      {
+        "id": "11985_00",
+        "group": "11985_00",
+        "split": "test"
+      },
+      {
+        "id": "07703_00",
+        "group": "07703_00",
+        "split": "test"
+      },
+      {
+        "id": "08931_00",
+        "group": "08931_00",
+        "split": "test"
+      }
+    ]
+  },
+  "training": {
+    "initialization": "Pinned pretrained CatVTON-MaskFree, not the 63-case adapter",
+    "trainable": "Existing .attn1. parameters only; no new layers",
+    "resolution": [
+      384,
+      512
+    ],
+    "batch_size": 1,
+    "epochs": 3,
+    "planned_updates_if_1000_valid": 3000,
+    "sampling": "Seeded shuffled full passes; every accepted training case visited once per epoch",
+    "seed": 9026,
+    "optimizer": "AdamW",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "condition_dropout": 0.1,
+    "loss": "Standard denoising MSE, matching the earlier method",
+    "checkpoint_rule": "Use the final planned checkpoint; no choosing a checkpoint from test results",
+    "process_timeout_minutes": 45,
+    "timing_note": "Prior 200 updates summed to 47.36 seconds. Linear projection for 3000 is about 12 minutes of updates only; not a measured new-run duration."
+  },
+  "evaluation": {
+    "models": [
+      "pretrained",
+      "preserved 63-case checkpoint",
+      "new 1000-case checkpoint"
+    ],
+    "validation_count": 64,
+    "fresh_final_test_count": 32,
+    "resolution": [
+      384,
+      512
+    ],
+    "inference_steps": 20,
+    "seeds": [
+      9026,
+      9027
+    ],
+    "guidance": 2.5,
+    "eta": 1.0,
+    "primary": "Garment-region MAE; paired case-level differences",
+    "secondary": [
+      "Garment SSIM",
+      "Outside-input MAE and regression count",
+      "Failure and safety-exclusion counts"
+    ],
+    "policy": "Evaluate matched inputs and seeds; report exclusions for every model. Do not inspect/download fresh test images before protocol and checkpoint are frozen.",
+    "interpretation": "Both data volume and update budget change versus the 63-case run. This is not an isolated causal test of dataset size."
+  },
+  "readiness_requirements": [
+    "Fetch pinned training/validation files and record hashes and source mappings.",
+    "Fully decode all images; verify dimensions and mask alignment.",
+    "Audit byte and decoded-pixel duplicates across development splits; do not claim identity-disjointness.",
+    "Inspect a predetermined contact-sheet sample and investigate technical anomalies; record review coverage honestly.",
+    "Quarantine any newly invalid cases. Do not silently replace them; freeze an amendment before training if the count changes.",
+    "Implement and CPU-test a separate bounded runner; do not modify the completed 63-case protocol.",
+    "Confirm VM availability and avoid overlapping training with studio GPU generation."
+  ],
+  "limits": [
+    "Custom partitions of original official test data; not an official benchmark",
+    "Subject identity separation and upstream exposure remain unverified",
+    "No automatic live-model replacement; results must first be evaluated"
+  ],
+  "downloads_started": false,
+  "gpu_started": false,
+  "training_started": false
+}

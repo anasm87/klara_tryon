@@ -1,0 +1,8 @@
+numpy
+pandas
+Pillow
+scikit-image==0.26.0
+matplotlib
+nbformat
+nbclient
+ipykernel

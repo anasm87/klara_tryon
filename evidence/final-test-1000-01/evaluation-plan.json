@@ -1,0 +1,106 @@
+{
+  "parent_plan_sha256": "c84116c645d1077f2a78482e2f679a380006872f85523e9744b09e4f7b0a4066",
+  "seeds": [
+    9026,
+    9027
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "steps": 20,
+  "guidance": 2.5,
+  "eta": 1.0,
+  "safety_checker": true,
+  "retries": 0,
+  "primary": "garment_mae",
+  "secondary": [
+    "garment_ssim",
+    "outside_mae_input",
+    "outside_mae_target"
+  ],
+  "metric_definition": "Unchanged analyze_edit_evaluation.metrics; erode target mask 3 pixels; exclude 3-pixel image border; outside mask is complement of source/target union dilated 8 pixels; minimum 64 pixels.",
+  "metric_source_sha256": "0be6164e15377da704da8c986581bab01dd6c23fedc66854083577d497b28737",
+  "ssim": {
+    "version": "0.26.0",
+    "win_size": 7,
+    "data_range": 255,
+    "channel_axis": 2,
+    "gaussian_weights": false,
+    "use_sample_covariance": true
+  },
+  "uncertainty": {
+    "method": "descriptive paired case bootstrap",
+    "resamples": 10000,
+    "seed": 41026,
+    "interval": 0.95
+  },
+  "randomness": "Reset Python, NumPy, Torch CPU/CUDA and pipeline generator before every image; includes VAE sampling.",
+  "limits": [
+    "Identity and upstream training exposure unverified; no population/significance claim.",
+    "Both data size and optimizer-update budget differ.",
+    "Reference metrics do not establish realism, identity, size/fit accuracy, or user preference.",
+    "Safety exclusions can bias complete-case summaries.",
+    "One training seed; this does not measure training-seed variability.",
+    "Research resolution; not an evaluation of the higher-resolution website configuration."
+  ],
+  "scope": "Frozen 32-case final test: pretrained versus 1000-case attention adaptation",
+  "frozen_date": "2026-10-03",
+  "case_ids": [
+    "10832_00",
+    "12219_00",
+    "11215_00",
+    "02327_00",
+    "07365_00",
+    "10901_00",
+    "06180_00",
+    "05562_00",
+    "05966_00",
+    "06110_00",
+    "11626_00",
+    "08863_00",
+    "14274_00",
+    "10737_00",
+    "13008_00",
+    "09623_00",
+    "01527_00",
+    "05923_00",
+    "12024_00",
+    "02427_00",
+    "12598_00",
+    "04579_00",
+    "05006_00",
+    "07567_00",
+    "00579_00",
+    "08432_00",
+    "11297_00",
+    "00396_00",
+    "14296_00",
+    "11985_00",
+    "07703_00",
+    "08931_00"
+  ],
+  "variants": [
+    "pretrained",
+    "adapted-1000"
+  ],
+  "expected_attempts": 128,
+  "checkpoints": {
+    "adapted-1000": {
+      "adapter_sha256": "e4f332704879fd3929120c4c038cbb65837c8a9c694bdb9fc75bd5a18924de38",
+      "run_sha256": "87abee913dd9ece72a16598bee7dd90bc7a28312c45c919fa878919919e9d709"
+    }
+  },
+  "pairing": "Both seeds must be valid for both models for the primary case-level analysis. Average seeds within each case, then weight cases equally. Report every safety exclusion and per-metric eligibility.",
+  "comparisons": [
+    [
+      "adapted-1000",
+      "pretrained"
+    ]
+  ],
+  "hard_timeout_minutes": 30,
+  "test_use": "No further model selection, training, seed changes, mask adjustments or rerolls based on these outputs.",
+  "selection": "All 32 cases already reserved by the immutable 1000-case experiment plan; no selection by image or result quality.",
+  "technical_exclusions": "Abort for corrupt inputs or exact overlap; record reason and amend before any generation. Never silently replace IDs.",
+  "deployment": "Current website checkpoint stays unchanged. Restore the studio after evaluation; leave the VM running."
+}

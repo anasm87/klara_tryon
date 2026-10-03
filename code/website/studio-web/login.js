@@ -1,0 +1,5 @@
+const field=document.getElementById('access-code'),button=document.getElementById('signin-submit'),status=document.getElementById('signin-status');
+document.getElementById('show-password').addEventListener('click',event=>{const show=field.type==='password';field.type=show?'text':'password';event.currentTarget.textContent=show?'Hide':'Show';event.currentTarget.setAttribute('aria-label',show?'Hide access code':'Show access code');});
+document.getElementById('signin-form').addEventListener('submit',async event=>{event.preventDefault();button.disabled=true;status.classList.remove('error');status.textContent='Opening your studio…';try{const response=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:field.value})});const data=await response.json();if(!response.ok)throw Error(data.error||'Could not sign in.');sessionStorage.removeItem('klara-job');location.replace('/');}catch(error){status.textContent=error.message;status.classList.add('error');button.disabled=false;}});
+button.disabled=false;
+window.klaraLoginReady=true;

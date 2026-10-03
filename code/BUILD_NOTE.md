@@ -1,0 +1,1 @@
+The current presentation source is tools/build_presentations.py. It rebuilds the editable HTML decks and SVG charts from repository evidence. Open the HTML in a browser and print to PDF with backgrounds enabled. PDF exports are already included in docs/. CPU metric reproduction is documented in REPRODUCE.md.

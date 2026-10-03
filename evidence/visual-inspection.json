@@ -1,0 +1,11 @@
+{
+  "reviewer": "AI assistant, qualitative inspection",
+  "scope": "All 64 case-seed rows, including six exclusion placeholders; 122 generated outputs",
+  "no_human_rating_claim": true,
+  "examples": {
+    "08931_00": "Seed 9026: large artifacts reduced but arm pose and trousers still change.",
+    "07703_00": "Stripe color and hem mismatch the reference.",
+    "04579_00": "Fine fabric texture is smoothed.",
+    "10901_00": "Seed 9026 extends the shirt over the skirt; seed 9027 differs."
+  }
+}
