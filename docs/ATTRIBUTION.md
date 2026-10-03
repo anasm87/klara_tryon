@@ -18,6 +18,6 @@ Included vendor folders retain their licenses and pinned revision records. CatVT
 
 ## Project contribution
 
-Anas Mhana chose and directed the project, operated the environment, reviewed examples and learned the model and evaluation methods. The project-specific training/evaluation workflow, website and submission materials were developed with AI assistance. The project evaluates adaptation of an existing model; it does not claim to introduce a new foundational architecture.
+I chose and directed the project, operated the environment, reviewed examples and studied the model and evaluation methods. I used AI assistance to develop the custom training and evaluation code, website and submission materials. The contribution is an experiment on fine-tuning an existing model and evaluating the outcome.
 
-Qualitative observations in the report include assistant inspection of the saved images. They are not blinded human ratings, a survey or measured customer preferences.
+The report includes observations from AI-assisted inspection of the saved images. These help explain the examples, but they are not human ratings or evidence of customer preferences.

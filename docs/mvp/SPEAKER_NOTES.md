@@ -1,39 +1,39 @@
 # Klara MVP speaker notes
 
-Use these as a rehearsal script. Speak naturally and adjust wording to your voice. Method-focused MVP. Confirm the allotted time with the instructor.
+These notes are a speaking guide. Pause to point at the images and charts, and use your own wording where it feels more natural. The source lines are for reference, not for reading aloud. Method-focused MVP. Confirm the allotted time with the instructor.
 
 ## 1. Would you trust this preview? (35 seconds)
 
-Imagine choosing this pink striped shirt online. You ask an AI tool to show it on a person, and the preview looks believable. But the color is different. If the preview changes the item you are thinking of buying, how useful is it? That is the problem I am investigating with Klara.
+When I started trying clothing previews, some results looked convincing at first. Then I noticed the wrong colors and extra clothing. This example shows why that matters: I chose a pink striped shirt, but the preview changes its color. If I were shopping, I'd want to see the item I'd actually receive. That's the problem behind Klara.
 
 Source: VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use.
 
 ## 2. The research question (40 seconds)
 
-My question is whether fine-tuning the model's attention weights can improve garment reconstruction while preserving the person and background. This is useful to developers building clothing previews. The data gives me an edited person photo, a requested garment and an original reference photo. That lets me compare the generated result with something concrete. It does not tell me whether the garment would physically fit a customer.
+My question is whether fine-tuning the model's attention weights can help it reproduce the requested clothing while keeping the person and background unchanged. Here you can see the data: an edited person photo, a catalog garment and the original photograph. That original gives me something concrete to compare the output with. I'm studying image quality for clothing-preview tools. I'm not measuring whether a garment would physically fit someone.
 
 Source: VITON-HD / VITON-HD-edit. Recorded final-test outputs, seed 9026. Academic use.
 
 ## 3. Separate data for learning and evaluation (40 seconds)
 
-The experiment uses one thousand training cases, sixty-four validation cases and thirty-two final-test cases. The roles are separate: training changes the weights, validation helps development, and the final test checks the fixed model. I check pairings, file quality and exact overlap. A limitation is that different source IDs do not guarantee different people. These are custom splits, so I will not present them as official benchmark results.
+I've separated the data into one thousand training cases, sixty-four for validation and thirty-two for the final test. Each group has a different job. Training updates the model, validation helps with development, and the test checks the chosen model. The checks cover missing files, image sizes, pairings and exact duplicates. One limitation remains: different image IDs don't guarantee different people. This is my own study split, so I won't call the results an official benchmark.
 
 Source: Frozen experiment-plan.json and final-evaluation-plan.json. Split checks and provenance receipts.
 
 ## 4. Fine-tuning existing attention (40 seconds)
 
-I use the pretrained CatVTON-MaskFree model. I am focusing the experiment on existing self-attention projections inside its U-Net. Attention lets spatial features interact, including information from the person and garment. The VAE and the remaining U-Net weights stay frozen. The comparison is therefore between the original checkpoint and the attention-adapted version, rather than between unrelated applications.
+I'm using CatVTON-MaskFree as the starting point. It already has attention layers, which let different parts of the image exchange information. I focused the training on sixteen of those existing self-attention modules. The VAE and the other U-Net weights stay frozen. That gives me a specific change to investigate: how the model behaves before and after updating its attention weights.
 
 Source: CatVTON-MaskFree pinned vendor source. configure_attention in training_core.py.
 
 ## 5. Evaluation plan (45 seconds)
 
-A realistic-looking image is not enough. I measure garment pixel error with MAE and structural agreement with SSIM. Outside the clothing region, I measure changes relative to the input. The colored areas show actual evaluation regions. Both models use the same cases, seeds and generation settings. I compare results case by case and inspect failures, because one average can hide very different outcomes.
+I want to check two things: does the clothing match the reference, and does the rest of the photo stay the same? MAE measures pixel differences in the clothing, while SSIM looks at structure. Outside the clothing, I measure changes from the input photo. These colored regions show where the measurements happen. I'll explain the results case by case as well as with averages, because one overall score can hide some very poor examples.
 
 Source: Exact regional masks and metrics in analyze_edit_evaluation.py. Green: eroded target clothing. Gold: outside dilated source/target union.
 
 ## 6. The feedback I need (30 seconds)
 
-For this MVP, I want feedback on the research question and how I explain the evaluation. Do these measurements cover the important part of the problem? And what would you simplify for the final jury? I will use that feedback to refine the scientific story and choose clear examples for the final presentation.
+The feedback I'd find most useful today is whether the question is clear and whether these measurements answer it. I'd also like to know which parts need a simpler explanation for the jury. I want the final presentation to make sense to someone who hasn't studied neural networks, while still giving enough evidence for the technical audience.
 
 Source: DS#055 schedule and KLARA_DAILY_PROGRESS.md. Method-focused presentation scope, not a claim of unfinished execution.

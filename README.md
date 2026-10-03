@@ -2,13 +2,13 @@
 
 **A data-science project by Anas Mhana, WBS Coding School DS#055.**
 
-An AI clothing preview can look convincing while changing the shirt's color, inventing a pattern or altering the person's trousers. That gap between a plausible picture and the requested garment is the reason for this project.
+When I tried the clothing examples in Klara, some results looked good at first. A closer look showed the wrong color or extra clothing that I hadn't asked for. I wanted to understand whether fine-tuning the model could make the preview more faithful to the garment.
 
-I investigated one question: **does fine-tuning CatVTON-MaskFree's existing self-attention weights improve garment reconstruction while preserving the person and background?** The intended audience is developers evaluating virtual clothing previews for online shoppers.
+I investigated one question: **does fine-tuning CatVTON-MaskFree's existing self-attention weights improve garment reconstruction while preserving the person and background?** This project is for developers building virtual clothing previews for online shoppers.
 
 ## What I found
 
-On the final test, average garment error fell **15.6%**, with improvement in **21 of 27 complete paired cases**. The preservation result was mixed: average outside-clothing error fell, but **14 of 27 cases became worse** on that measure. Better average reconstruction did not make every preview dependable.
+On the final test, average garment error fell **15.6%**, with improvement in **21 of 27 complete paired cases**. The preservation result was mixed: average outside-clothing error fell, but **14 of 27 cases became worse** on that measure. The improvement matters, but I would still want someone to inspect the preview before trusting it.
 
 | Measure | Pretrained | Fine-tuned | Cases improved |
 |---|---:|---:|---:|
@@ -18,7 +18,9 @@ On the final test, average garment error fell **15.6%**, with improvement in **2
 
 ![Each point compares garment error with preservation error for one final-test case.](docs/final/preservation-tradeoff.svg)
 
-The experiment attempted 32 cases with two models and two fixed seeds: 128 attempts. Six safety exclusions across five cases left 27 complete pairs. I kept those exclusions, used no rerolls, and averaged seeds within each case. These are reference-image measurements, not an accuracy percentage or a test of physical fit.
+MAE measures pixel differences, so a lower value is better. SSIM measures structural similarity, so a higher value is better. Neither tells us whether the garment would physically fit.
+
+I tested 32 cases with two models and two fixed random seeds, giving 128 attempts. The safety checker excluded six attempts across five cases. That left 27 cases with all four outputs available. I kept those exclusions without retrying and averaged the two seeds within each case.
 
 ## The experiment
 
@@ -51,12 +53,14 @@ python code/analyze_final_1000.py --output evidence/final-test-1000-01 --plan da
 
 This recomputes the image metrics and paired analysis on a CPU. It makes no model, cloud or paid API calls. The notebook also checks the recorded training epochs. The large attention checkpoint is supplied separately in the course evidence bundle; its hash and loading instructions are in [CHECKPOINT.md](CHECKPOINT.md).
 
-## Limits I would keep in mind
+## Where I would be careful
 
-The inputs are edited versions of aligned reference photos. They do not represent every shopper, pose or garment. Source-ID and exact-image checks passed, but person-identity separation and upstream pretraining exposure remain unverified. The test is small, complete-case exclusion can bias the results, and only one training seed was used. MAE and SSIM cannot establish realism, exact logos, identity retention, sizing or user preference.
+These inputs are edited versions of reference photographs. They cover a limited range of people, poses and garments. I checked source IDs and exact image duplicates, but that doesn't prove that different splits contain different people, or that the pretrained model has never seen related images.
+
+The final comparison is small and leaves out cases with incomplete outputs. That can affect the result. The final model comes from one training run, so I don't know how much a different training seed would change the outcome. The image scores cannot establish realism, correct logos, identity preservation, sizing or customer preference.
 
 ## Attribution and contribution
 
-The model and underlying implementations come from the CatVTON researchers, PyTorch and Hugging Face Diffusers. My project applies and evaluates attention fine-tuning, records the experimental evidence and presents the results through a web demonstration. I directed the project, reviewed examples, operated the environment and studied the architecture. Code, analysis tooling and writing were developed with AI assistance. This is not a claim that I invented CatVTON or wrote every line unaided.
+The CatVTON researchers created the model. This project builds on their work using PyTorch and Hugging Face Diffusers. My contribution is the fine-tuning experiment, its evaluation and the web demonstration. I directed the project, operated the environment, reviewed examples and studied how the model works. I used AI assistance for the custom code, analysis tools and writing.
 
 [Sources, licenses and data attribution](docs/ATTRIBUTION.md). Noncommercial academic research. Third-party code and images retain their original terms.
