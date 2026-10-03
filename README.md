@@ -6,6 +6,16 @@ When I tried the clothing examples in Klara, some results looked good at first. 
 
 I investigated one question: **does fine-tuning CatVTON-MaskFree's existing self-attention weights improve garment reconstruction while preserving the person and background?** This project is for developers building virtual clothing previews for online shoppers.
 
+**Explore:** [Presentation](docs/final/Klara_Final.pdf) · [Analysis notebook](notebooks/Klara_Final_Study.ipynb) · [Read the code](docs/CODE_MAP.md) · [Reproduce the results](REPRODUCE.md)
+
+## A working example
+
+![Input person, requested black shirt, pretrained output, fine-tuned output and original reference. The fine-tuned output retains the orange trousers and more closely matches the requested shirt.](docs/examples/working-example.png)
+
+The fine-tuned model puts the requested black shirt on the person while retaining the orange trousers and pose. The pretrained output changes the trousers and introduces other visible differences. This is a saved output from the final test, not a retouched demonstration image.
+
+Case `11215_00`, seed `9026`. I selected it because it has the lowest fine-tuned garment MAE among the 11 cases that improved both garment and outside-clothing error. It is a selected success, not a claim that every preview works this well. The results below use all 27 complete paired cases.
+
 ## What I found
 
 On the final test, average garment error fell **15.6%**, with improvement in **21 of 27 complete paired cases**. The preservation result was mixed: average outside-clothing error fell, but **14 of 27 cases became worse** on that measure. The improvement matters, but I would still want someone to inspect the preview before trusting it.
@@ -21,6 +31,12 @@ On the final test, average garment error fell **15.6%**, with improvement in **2
 MAE measures pixel differences, so a lower value is better. SSIM measures structural similarity, so a higher value is better. Neither tells us whether the garment would physically fit.
 
 I tested 32 cases with two models and two fixed random seeds, giving 128 attempts. The safety checker excluded six attempts across five cases. That left 27 cases with all four outputs available. I kept those exclusions without retrying and averaged the two seeds within each case.
+
+## Where improvement still falls short
+
+![Input person, requested white top, pretrained output, fine-tuned output and reference. Fine-tuning improves the clothing but still changes the arm pose and trousers.](docs/examples/remaining-failure.png)
+
+Case `08931_00`, seed `9026`, had the largest case-average reduction in garment error. Yet the fine-tuned result still changes the arm and trousers. Looking at this alongside the working example explains why I report reconstruction and preservation separately.
 
 ## The experiment
 
@@ -38,6 +54,8 @@ I tested 32 cases with two models and two fixed random seeds, giving 128 attempt
 4. [Code map](docs/CODE_MAP.md) and [reproduction guide](REPRODUCE.md).
 
 All final-test outputs and their references are in [the evidence folder](evidence/final-test-1000-01). The executed notebook explains the paired results and links them to the experiment records.
+
+The repository has four main parts: `code/` for the research implementation, `data/` for fixed plans and provenance, `evidence/` for recorded runs and outputs, and `notebooks/` for the executed analysis. `docs/` contains the presentation, report and attribution. The website source and personal teaching notes are kept separately; they are not needed to reproduce these scores.
 
 The live research demo is [klara-app.de](https://klara-app.de). It needs the GPU server and an access code provided separately. The site uses the trained checkpoint at 768×1024 and 50 steps, so the controlled research scores do not directly measure website quality.
 
